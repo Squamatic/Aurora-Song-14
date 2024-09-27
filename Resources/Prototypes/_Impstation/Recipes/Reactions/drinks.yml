@@ -16,8 +16,8 @@
     - Stir
   reactants:
     Fiber:
-      amount: 3
+      amount: 1
     EnergyDrink:
-      amount: 2
+      amount: 1
   products:
-    CottonBool: 5
+    CottonBool: 2
