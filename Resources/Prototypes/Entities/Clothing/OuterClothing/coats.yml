@@ -482,8 +482,3 @@
     sprite: Clothing/OuterClothing/Coats/expensive_coat.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/expensive_coat.rsi
-
-- type: entity
-  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatExpensive]
-  id: ClothingOuterCoatExpensiveOpened
-  name: expensive coat
