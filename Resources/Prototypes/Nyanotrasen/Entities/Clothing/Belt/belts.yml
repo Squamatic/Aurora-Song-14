@@ -122,6 +122,9 @@
         whitelist:
           tags:
           - Medkit
+          - Portafib
+          - Compactdefib #Den change
+          - Rollerbed
         insertOnInteract: false # or you can't easily stow medkits in your rig.
 # Aurora - Remove storage override
 #  - type: Storage
