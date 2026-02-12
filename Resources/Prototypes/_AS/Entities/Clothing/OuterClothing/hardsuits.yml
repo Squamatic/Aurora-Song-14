@@ -308,6 +308,40 @@
   - type: ToggleableClothing
     clothingPrototype: ASClothingHeadHelmetHardsuitGolem
 
+- type: entity
+  parent: [ ClothingOuterHardsuitBase, BaseC3NanoTrasenContraband ] # BaseCommandContraband<BaseC2ContrabandUnredeemable
+  id: ASClothingOuterHardsuitSatanus # Just a Death Squad suit with different stats and description
+  name: damaged satanus hardsuit
+  suffix: Aurora's Song
+  description: A damaged looking hardsuit, still sporting some intimidatingly heavy plating. A scratched up serial reading DS-### is barely readable on the chestplate. What the hell is this?
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Hardsuits/deathsquad.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Hardsuits/deathsquad.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: StaminaResistance
+    damageCoefficient: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.3
+        Slash: 0.3
+        Piercing: 0.3
+        Heat: 0.3
+        Radiation: 0.3
+        Caustic: 0.3
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ASClothingHeadHelmetHardsuitSatanus
+
 # Suffixed NT Sec hardsuits - Unremoveables for NPC use
 - type: entity
   parent: [ASClothingOuterHardsuitConstable, ContrabandClothing]

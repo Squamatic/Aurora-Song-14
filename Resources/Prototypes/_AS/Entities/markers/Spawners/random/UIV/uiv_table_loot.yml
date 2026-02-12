@@ -64,3 +64,64 @@
       children:
        - id: SpawnDungeonLootGunT5
        - id: SpawnDungeonLootMeleeT5
+
+# region - NT UIV spawners
+- type: entityTable
+  id: DungeonLootNanoTrasenUIVSuitCommon
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      weight: 50
+      children:
+        - id: ClothingOuterHardsuitEVA
+        - id: ClothingOuterHardsuitPilot
+    - !type:GroupSelector
+      weight: 48
+      children:
+        - id: ASClothingOuterHardsuitConstable
+    - !type:NestedSelector
+      tableId: DungeonLootNanoTrasenUIVSuitUncommon
+      weight: 2
+
+- type: entityTable
+  id: DungeonLootNanoTrasenUIVSuitUncommon
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      weight: 50
+      children:
+        - id: ASClothingOuterHardsuitConstable
+        - id: ASClothingOuterHardsuitShedu
+    - !type:GroupSelector
+      weight: 23
+      children:
+        - id: ASClothingOuterHardsuitHauberk
+    - !type:NestedSelector
+      tableId: DungeonLootNanoTrasenUIVSuitRare
+      weight: 2
+
+- type: entityTable
+  id: DungeonLootNanoTrasenUIVSuitRare
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      weight: 50
+      children:
+        - id: ASClothingOuterHardsuitHauberk
+    - !type:GroupSelector
+      weight: 24.9
+      children:
+        - id: ASClothingOuterHardsuitGolem
+    - !type:NestedSelector
+      tableId: DungeonLootNanoTrasenUIVSuitMythical
+      weight: 0.1
+
+- type: entityTable
+  id: DungeonLootNanoTrasenUIVSuitMythical
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      weight: 100
+      children:
+        - id: ASClothingOuterHardsuitSatanus
+

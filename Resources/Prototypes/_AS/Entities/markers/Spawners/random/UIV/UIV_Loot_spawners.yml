@@ -88,3 +88,113 @@
     table: !type:NestedSelector
       tableId: DungeonLootMercenaryUIVGunsRare
       prob: 1
+
+# region - NT UIV spawners
+- type: entityTable
+  id: SpawnDungeonLootNanoTrasenUIVSuitTable
+  table: !type:GroupSelector
+    children:
+    # 95% chance for the loot tables, lower chance for weapons
+    - !type:GroupSelector
+      weight: 99.9
+      children:
+      - !type:NestedSelector
+        tableId: DungeonLootNanoTrasenUIVSuitCommon
+        weight: 50
+      - !type:NestedSelector
+        tableId: DungeonLootNanoTrasenUIVSuitUncommon
+        weight: 40
+      - !type:NestedSelector
+        tableId: DungeonLootNanoTrasenUIVSuitRare
+        weight: 10
+    # 0.1% chance of the mythical damaged DS hardsuit, which is functionally a Jugsuit with slightly better movement speed
+    - !type:GroupSelector
+      weight: 0.1
+      children:
+      - !type:NestedSelector
+        tableId: DungeonLootNanoTrasenUIVSuitMythical
+
+- type: entityTable
+  id: SpawnDungeonLootNanoTrasenUIVSuitTableT2
+  table: !type:GroupSelector
+    children:
+    # 95% chance for the loot tables, lower chance for weapons
+    - !type:GroupSelector
+      weight: 99.9
+      children:
+      - !type:NestedSelector
+        tableId: DungeonLootNanoTrasenUIVSuitCommon
+        weight: 50
+      - !type:NestedSelector
+        tableId: DungeonLootNanoTrasenUIVSuitUncommon
+        weight: 40
+    # 0.1% chance of the mythical damaged DS hardsuit, which is functionally a Jugsuit with slightly better movement speed
+    - !type:GroupSelector
+      weight: 0.1
+      children:
+      - !type:NestedSelector
+        tableId: DungeonLootNanoTrasenUIVSuitMythical
+
+- type: entityTable
+  id: SpawnDungeonLootNanoTrasenUIVSuitTableT3
+  table: !type:GroupSelector
+    children:
+    # 95% chance for the loot tables, lower chance for weapons
+    - !type:GroupSelector
+      weight: 99.9
+      children:
+      - !type:NestedSelector
+        tableId: DungeonLootNanoTrasenUIVSuitUncommon
+        weight: 40
+      - !type:NestedSelector
+        tableId: DungeonLootNanoTrasenUIVSuitRare
+        weight: 60
+    # 0.1% chance of the mythical damaged DS hardsuit, which is functionally a Jugsuit with slightly better movement speed
+    - !type:GroupSelector
+      weight: 0.1
+      children:
+      - !type:NestedSelector
+        tableId: DungeonLootNanoTrasenUIVSuitMythical
+
+- type: entity
+  parent: MarkerBase
+  id: DungeonLootNanoTrasenUIVSpawner
+  name: NT UIV Loot Spawner
+  suffix: UIV, ALL
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+      scale: 0.7, 0.7
+    - sprite: Clothing/Uniforms/Jumpsuit/security.rsi
+      state: icon
+    - sprite: Effects/crayondecals.rsi
+      state: 4
+      color: red
+  - type: EntityTableSpawner
+    offset: 0.0
+    table: !type:NestedSelector
+      tableId: SpawnDungeonLootNanoTrasenUIVSuitTable
+      prob: 1
+
+- type: entity
+  parent: DungeonLootNanoTrasenUIVSpawner
+  id: DungeonLootNanoTrasenUIVSpawnerT2
+  suffix: UIV, T2
+  components:
+  - type: EntityTableSpawner
+    offset: 0.0
+    table: !type:NestedSelector
+      tableId: SpawnDungeonLootNanoTrasenUIVSuitTableT2
+      prob: 0.5
+
+- type: entity
+  parent: DungeonLootNanoTrasenUIVSpawner
+  id: DungeonLootNanoTrasenUIVSpawnerT3
+  suffix: UIV, T3
+  components:
+  - type: EntityTableSpawner
+    offset: 0.0
+    table: !type:NestedSelector
+      tableId: SpawnDungeonLootNanoTrasenUIVSuitTableT3
+      prob: 1

@@ -170,6 +170,16 @@
   - type: Contraband
     turnInValues: *oneFUC
 
+- type: entity # Aurora's Song - NanoTrasen Specific contraband of military grade, high bounty
+  parent: BaseC3ContrabandUnredeemable
+  id: BaseC3NanoTrasenContraband
+  abstract: true
+  components:
+  - type: Contraband
+    turnInValues:
+      FrontierUplinkCoin: 2
+      Doubloon: 2
+
 - type: entity
   parent: BaseC3ContrabandUnredeemable
   id: BaseC3WizardContrabandUnredeemable
