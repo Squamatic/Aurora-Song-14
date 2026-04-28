@@ -132,7 +132,7 @@
     - ASNanoTrasenRogueOfficerLaser
   - type: Damageable
     damageModifierSet: MobHostileNanoTrasenDamageModifierMed # Slightly tougher modifiers
-  - type: ProjectileBatteryAmmoProvider
+  - type: BatteryAmmoProvider
     proto: NFBulletLaserHeavy
     fireCost: 80
   - type: BatterySelfRecharger
