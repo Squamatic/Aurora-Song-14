@@ -576,7 +576,7 @@
 #region Sniper
 - type: entity
   parent: WeaponCaseLong
-  id: WeaponCaseLongBarlowsBoltExpedition
+  id: WeaponCaseLongMosinExpedition
   suffix: Dungeon, Mosin
   categories: [ HideSpawnMenu ]
   components:
@@ -584,10 +584,12 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: NFWeaponRifleBarlowsBoltExpedition
+        - id: ASWeaponRifleMosinBolt # Aurora's Song | Mosin reworked to AS version
           amount: 1
-        - id: NFAmmunitionBoxRifle30
+        - id: ASSpeedLoaderRifle30Long
           amount: 2
+        - id: ASAmmunitionBoxRifle30L
+          amount: 1
 
 - type: entity
   parent: WeaponCaseLong
