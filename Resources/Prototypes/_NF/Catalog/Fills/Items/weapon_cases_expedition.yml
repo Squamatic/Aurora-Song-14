@@ -644,10 +644,12 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: NFWeaponRifleCeremonialExpedition
+        - id: ASWeaponRifleGarandCeremonialExpedition # Aurora's Song | Ceremonial rifle reworked
           amount: 1
-        - id: NFAmmunitionBoxRifle30
+        - id: ASMagazineEnblocRifle30Long # Aurora's Song | Ceremonial rifle reworked
           amount: 2
+        - id: ASAmmunitionBoxRifle30L # Aurora's Song | As Above
+          amount: 1
 
 #region Launchers
 - type: entity

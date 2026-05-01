@@ -31,7 +31,7 @@
   # Rifles
     NFWeaponRifleBarlowsBolt: 4294967295
     NFWeaponRifleMusket: 4294967295
-    NFWeaponRifleCeremonial: 4294967295
+    ASWeaponRifleGarandCeremonial: 4294967295 # Aurora's Song | Ceremonial rifle reworked
     NFWeaponRifleSVS: 4294967295
     NFWeaponRifleRepeater: 4294967295
   # Assault Rifles

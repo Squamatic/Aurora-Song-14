@@ -571,7 +571,7 @@ WeaponShotgunKammererNonlethal: NFWeaponShotgunKammererLessLethal
 WeaponShotgunSawn: NFWeaponShotgunSawn
 WeaponShotgunSawnEmpty: NFWeaponShotgunSawnEmpty
 WeaponShotgunSawnNonlethal: NFWeaponShotgunSawnLessLethal
-WeaponSniperCeremonial: NFWeaponRifleCeremonial
+WeaponSniperCeremonial: ASWeaponRifleGarandCeremonial # Aurora's Song | Ceremonial rifle reworked
 WeaponSniperHristov: NFWeaponRifleSniperHristov
 WeaponSniperMosin: NFWeaponRifleBarlowsBolt
 WeaponSniperRepeater: NFWeaponRifleRepeater

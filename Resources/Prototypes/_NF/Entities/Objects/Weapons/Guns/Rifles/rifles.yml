@@ -59,6 +59,7 @@
   parent: [ NFBaseWeaponRifleChamber30, NFBaseWeaponFrameRifleFrontierGunsmith ] #Back to .30 rifle with you | Aurora Song
   name: ceremonial rifle
   description: A ceremonial variant of the Mark 1 Rifle, in tasteful blue and white.
+  abstract: true # Aurora's Song | replacing NF ceremonial rifle implementation
   components:
   - type: BallisticAmmoProvider # Internal magazine required | Aurora Song
     capacity: 12
