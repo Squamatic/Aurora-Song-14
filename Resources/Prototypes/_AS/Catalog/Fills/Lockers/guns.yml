@@ -125,6 +125,17 @@
       entity_storage: !type:NestedSelector
         tableId: ASFilLGunSafeUIVMK58
 
+- type: entity
+  id: ASGunSafeExpeditionBRDIP15
+  parent: ASGunSafeNTUIV
+  suffix: UIV, BRDIP15
+  name: BRDIP15 safe
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: ASFillGunSafeUIVBRDIP15
+
 # region NT UIV gun safe fills
 
 - type: entityTable
@@ -162,3 +173,12 @@
       amount: 2
     - id: NFMagazineSubMachineGunTopMounted35
       amount: 6
+
+- type: entityTable
+  id: ASFillGunSafeUIVBRDIP15
+  table: !type:AllSelector
+    children:
+    - id: ASWeaponPistolBRDIP15Expedition
+      amount: 2
+    - id: MagazineBRDIP15
+      amount: 4

@@ -153,11 +153,29 @@
       - !type:NestedSelector
         tableId: DungeonLootNanoTrasenUIVSuitMythical
 
+- type: entityTable
+  id: SpawnDungeonLootNanoTrasenUIVLootLoose
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      weight: 10
+      children:
+      - !type:NestedSelector
+        tableId: DungeonLootNanoTrasenUIVLootLooseCommon
+        weight: 30
+      - !type:NestedSelector
+        tableId: DungeonLootNanoTrasenUIVLootLooseUncommon
+        weight: 20
+      - !type:NestedSelector
+        tableId: DungeonLootNanoTrasenUIVLootLooseRare
+        weight: 10
+
+
 - type: entity
   parent: MarkerBase
   id: DungeonLootNanoTrasenUIVSpawner
   name: NT UIV Loot Spawner
-  suffix: UIV, ALL
+  suffix: UIV, ALL SUITS
   components:
   - type: Sprite
     layers:
@@ -177,7 +195,7 @@
 - type: entity
   parent: DungeonLootNanoTrasenUIVSpawner
   id: DungeonLootNanoTrasenUIVSpawnerT2
-  suffix: UIV, T2
+  suffix: UIV, T2 SUITS
   components:
   - type: EntityTableSpawner
     offset: 0.0
@@ -188,7 +206,7 @@
 - type: entity
   parent: DungeonLootNanoTrasenUIVSpawner
   id: DungeonLootNanoTrasenUIVSpawnerT3
-  suffix: UIV, T3
+  suffix: UIV, T3 SUITS
   components:
   - type: EntityTableSpawner
     offset: 0.0
@@ -205,4 +223,46 @@
     offset: 0.0
     table: !type:NestedSelector
       tableId: DungeonLootNanoTrasenUIVGunSafes
+      prob: 1
+
+- type: entity
+  parent: MarkerBase
+  id: NanoTrasenVendUIVSpawner
+  name: NT UIV Loot Spawner
+  suffix: UIV, VEND
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+      scale: 0.7, 0.7
+    - sprite: Structures/Machines/VendingMachines/secdrobe.rsi
+      state: off
+    - sprite: Effects/crayondecals.rsi
+      state: North
+      color: red
+  - type: EntityTableSpawner
+    offset: 0.0
+    table: !type:NestedSelector
+      tableId: DungeonNanoTrasenUIVSecDrobe
+      prob: 1
+
+- type: entity
+  parent: MarkerBase
+  id: DungeonLootNanoTrasenUIVSpawnerCaptain
+  name: NT UIV Loot Spawner
+  suffix: UIV, CAPTAIN
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+      scale: 0.7, 0.7
+    - sprite: Clothing/OuterClothing/Armor/captain_repeller.rsi
+      state: icon
+    - sprite: Effects/crayondecals.rsi
+      state: North
+      color: red
+  - type: EntityTableSpawner
+    offset: 0.0
+    table: !type:NestedSelector
+      tableId: DungeonLootNanoTrasenUIVCaptain
       prob: 1

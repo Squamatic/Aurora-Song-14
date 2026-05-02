@@ -129,6 +129,80 @@
       children:
         - id: SuitStorageUIVNTSatanus
 
+- type: entityTable
+  id: DungeonLootNanoTrasenUIVLootLooseCommon
+  table: !type:GroupSelector
+    children:
+    - id: SpaceCash1000
+    - id: SpaceCash2500
+    - id: SpaceCash5000
+    # - id: SpawnDungeonLootSecurityClutter #todo: make this table
+
+- type: entityTable
+  id: DungeonLootNanoTrasenUIVLootLooseUncommon
+  table: !type:GroupSelector
+    children:
+    - id: SpaceCash2500
+    - id: SpaceCash5000
+    - id: SpaceCash10000
+    # - id: SpawnDungeonLootArmoryClutterSec #todo: make this table
+
+- type: entityTable
+  id: DungeonLootNanoTrasenUIVLootLooseRare
+  table: !type:GroupSelector
+    children:
+    - id: SpaceCash5000
+    - id: SpaceCash10000
+    - id: SpaceCash20000
+    # - id: SpawnDungeonLootArmoryClutterSec #todo: make this table
+
+- type: entityTable
+  id: DungeonLootNanoTrasenUIVArmoryClutterAll
+  table: !type:GroupSelector
+    children:
+    - id: ClothingBeltSheath
+    - id: ClothingBeltKatanaSheathSingle
+    - !type:NesteSelector
+      tableId: DungeonLootNanoTrasenUIVArmoryClutterWeapons
+
+- type: entityTable
+  id: DungeonLootNanoTrasenUIVArmoryClutterWeapons
+  table: !type:GroupSelector
+    children:
+    - id: NFWeaponPistolMk58Expedition
+    - id: ASWeaponPistolBRDIP15Expedition
+    - id: Katana
+    - id: CaptainSabre
+    - id: NFWeaponRevolverLuckyExpedition
+    - id: NFWeaponPistolN1984Expedition
+
+- type: entityTable
+  id: DungeonLootNanoTrasenUIVArmoryClutterClothing
+  table: !type:GroupSelector
+    children:
+    - id: ClothingUniformJumpsuitSec
+
+- type: entityTable
+  id: DungeonLootNanoTrasenUIVCaptain
+  table: !type:GroupSelector
+    children:
+    - id: ClothingHandsGlovesCaptainflightgloves
+    - id: ClothingEyesGlassesCaptainvisor
+    - id: ClothingBackpackSatchelCommandveteran
+    - id: ClothingBackpackCommandveteran
+    - id: ClothingBackpackDuffelCommandveteran
+    - id: ClothingHeadHatCaptaincrushercap
+    - id: ClothingNeckCloakCaptaingreatcoat
+    - id: ClothingOuterArmorCaptainRepeller
+    - id: ClothingShoesBootsCaptainjumpboots
+    - id: ClothingUniformJumpsuitCaptaineveningattire
+
+- type: entityTable
+  id: DungeonNanoTrasenUIVSecDrobe
+  table: !type:GroupSelector
+    children:
+    - id: VendingMachineSecDrobe
+
 # NT UIV gun safes
 - type: entityTable
   id: DungeonLootNanoTrasenUIVGunSafes
@@ -141,3 +215,4 @@
         - id: ASGunSafeExpeditionLecter
         - id: ASGunSafeExpeditionDrozd
         - id: ASGunSafeExpeditionMK58
+        - id: ASGunSafeExpeditionBRDIP15

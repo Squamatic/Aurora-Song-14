@@ -190,6 +190,14 @@
   categories: [ HideSpawnMenu ]
   id: NFWeaponRevolverPython45Expedition
 
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2
+  - ASWeaponPistolBRDIP15
+  categories: [ HideSpawnMenu ]
+  id: ASWeaponPistolBRDIP15Expedition
+
+
 ## Revolvers
 - type: entity
   parent:
