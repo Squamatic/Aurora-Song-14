@@ -92,6 +92,43 @@
   id: BaseExpeditionWeaponTier5Syndicate
   abstract: true
 
+# Aurora's Song - NanoTrasen labeled contraband
+
+- type: entity
+  parent:
+  - BaseC3NanoTrasenContrabandLowValue
+  - BaseExpeditionWeaponTier1
+  id: BaseExpeditionWeaponTier1NanoTrasen
+  abstract: true
+
+- type: entity
+  parent:
+  - BaseC3NanoTrasenContrabandLowValue
+  - BaseExpeditionWeaponTier2
+  id: BaseExpeditionWeaponTier2NanoTrasen
+  abstract: true
+
+- type: entity
+  parent:
+  - BaseC3NanoTrasenContrabandLowValue
+  - BaseExpeditionWeaponTier3
+  id: BaseExpeditionWeaponTier3NanoTrasen
+  abstract: true
+
+- type: entity
+  parent:
+  - BaseC3NanoTrasenContraband
+  - BaseExpeditionWeaponTier4
+  id: BaseExpeditionWeaponTier4NanoTrasen
+  abstract: true
+
+- type: entity
+  parent:
+  - BaseC3NanoTrasenContraband
+  - BaseExpeditionWeaponTier5
+  id: BaseExpeditionWeaponTier5NanoTrasen
+  abstract: true
+
 # region Tier 1
 ## Pistols
 - type: entity
@@ -342,6 +379,14 @@
   categories: [ HideSpawnMenu ]
   id: NFWeaponSubMachineGunAtreidesExpedition
 
+## Energy
+- type: entity #Aurora's Song | EG-4 for UIV, not for general loot pools
+  parent:
+  - BaseExpeditionWeaponTier3NanoTrasen
+  - ASWeaponEG4EnergyMagnum
+  categories: [ HideSpawnMenu ]
+  id: ASWeaponEG4EnergyMagnumExpedition
+
 # region Tier 4
 ## Shotguns
 - type: entity
@@ -396,6 +441,13 @@
   - NFWeaponEnergyPistolLaserAntique
   categories: [ HideSpawnMenu ]
   id: NFWeaponEnergyPistolLaserAntiqueExpedition
+
+- type: entity #Aurora's Song | Pulse Pistol for NT Captains, possible loot drop.
+  parent:
+  - BaseExpeditionWeaponTier4NanoTrasen
+  - NFWeaponEnergyPistolPulse
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponEnergyPistolPulseExpedition
 
 # region Tier 5
 # Turrets

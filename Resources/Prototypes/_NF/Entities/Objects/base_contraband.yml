@@ -208,8 +208,26 @@
       ExchangeCoin: 1 # AS
       Doubloon: 1
 
-- type: entity # Aurora's Song - NanoTrasen Specific contraband of military grade, high bounty
+- type: entity #Aurora's Song - NanoTrasen contraband flavour text
   parent: BaseC3ContrabandUnredeemable
+  id: BaseC3NanoTrasenContrabandUnredeemable
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class3NanoTrasen
+
+- type: entity # Aurora's Song - NanoTrasen Specific contraband low bounty
+  parent: BaseC3NanoTrasenContrabandUnredeemable
+  id: BaseC3NanoTrasenContrabandLowValue
+  abstract: true
+  components:
+  - type: Contraband
+    turnInValues:
+      FrontierUplinkCoin: 1
+      Doubloon: 1
+
+- type: entity # Aurora's Song - NanoTrasen Specific contraband of military grade, high bounty
+  parent: BaseC3NanoTrasenContrabandUnredeemable
   id: BaseC3NanoTrasenContraband
   abstract: true
   components:

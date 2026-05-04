@@ -136,3 +136,24 @@
       - sprite: _DV/Objects/Weapons/Guns/Rifles/ceremonial_grand.rsi
         state: inhand-right
 
+- type: entity
+  parent: ClothingHandsGlovesColorBlackSMG
+  id: ClothingHandsGlovesColorBlackCombatPulsePistol
+  name: combat gloves
+  suffix: combat
+  description: Some gloves with reinforced knuckles and a sleek design, perfect for combat situations.
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+    color: "#535353"
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/Color/color.rsi
+        state: equipped-HAND
+        color: "#535353"
+      - sprite: Objects/Weapons/Guns/Battery/pulse_pistol.rsi
+        state: inhand-left
