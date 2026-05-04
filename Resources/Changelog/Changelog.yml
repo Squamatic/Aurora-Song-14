@@ -4882,3 +4882,10 @@ Entries:
   id: 9448
   time: '2026-05-04T20:50:58.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1019
+- author: TheLuggage05
+  changes:
+    - type: Fix
+      message: The Typewriter and Hristov should spawn properly now.
+  id: 9449
+  time: '2026-05-04T21:25:49.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1001
