@@ -4921,3 +4921,14 @@ Entries:
   id: 9453
   time: '2026-05-05T03:32:09.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1023
+- author: Karlm4x
+  changes:
+    - type: Add
+      message: Added Plushie of Neem and Eix. Just don't combine them in a juicer...
+    - type: Add
+      message: Added Inhand sprites for Shana's Plushie
+    - type: Add
+      message: Added random voicelines to the custom plushies
+  id: 9454
+  time: '2026-05-05T11:29:32.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1026
