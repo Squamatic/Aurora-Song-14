@@ -4910,3 +4910,14 @@ Entries:
   id: 9452
   time: '2026-05-04T22:18:59.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/953
+- author: crekulon
+  changes:
+    - type: Fix
+      message: Fairies now process meds, cryo chems, and poison at 10x efficiency
+    - type: Fix
+      message: 'Fairies now process narcotics at 10x scale '
+    - type: Fix
+      message: 'Fairies are now able to be fed '
+  id: 9453
+  time: '2026-05-05T03:32:09.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1023
