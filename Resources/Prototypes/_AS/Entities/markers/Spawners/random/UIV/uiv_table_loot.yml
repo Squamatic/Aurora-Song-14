@@ -216,6 +216,17 @@
     - id: ClothingUniformJumpsuitCaptaineveningattire
 
 - type: entityTable
+  id: DungeonLootNanoTrasenUIVRareGuns
+  table: !type:GroupSelector
+    children:
+    - id: ASWeaponMk1UEPulseRifle
+      weight: 50
+    - id: NFWeaponLauncherRocket
+      weight: 5
+    - id: WeaponCaseChesterExpeditionT4
+      weight: 50
+
+- type: entityTable
   id: DungeonNanoTrasenUIVSecDrobe
   table: !type:GroupSelector
     children:

@@ -1,0 +1,21 @@
+﻿#region - Ammo and ammoboxes
+- type: entity
+  id: ASBlueprintRifl30LongBox
+  name: 30 long rifle ammo schematic
+  description: A schematic for crafting boxes of .30 long rifle ammo.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - ASAmmunitionBoxRifle30Long
+
+- type: entity
+  id: ASBlueprintShotgun8gMunitions
+  parent: NFBaseBlueprintExpeditionArmory
+  name: 8 gauge shotgun ammo schematic
+  description: A schematic for crafting enblocs and boxes of 8 gauge buckshot.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MagazineShotgunLeverEmpty
+    - MagazineShotgunLever
+    - ASAmmunitionBoxShellShotgun8gBuckshot

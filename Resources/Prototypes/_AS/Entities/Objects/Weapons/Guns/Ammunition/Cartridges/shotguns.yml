@@ -20,6 +20,6 @@
     - state: base
       map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
-    proto: ASPelletShotgunSpread8g #todo: make and then replace prototype with 8g spread
+    proto: ASPelletShotgunSpread8g
   - type: SpentAmmoVisuals
     state: "base"

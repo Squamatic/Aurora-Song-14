@@ -173,6 +173,68 @@
 
 #endregion
 
+#region .30 long rifle magazines
+- type: latheRecipe
+  parent: BaseEmptyMagazineRecipe
+  id: ASMagazineEnblocRifle30LongEmpty
+  result: ASMagazineEnblocRifle30LongEmpty
+  materials:
+    Steel: 15
+
+- type: latheRecipe
+  parent: BaseFilledMagazineRecipe
+  id: ASMagazineEnblocRifle30Long
+  result: ASMagazineEnblocRifle30Long
+  materials:
+    Steel: 335 # 15 [magazine] + 8 [bullets] * 40 [Steel per bullet]
+
+- type: latheRecipe
+  parent: BaseEmptyMagazineRecipe
+  id: ASSpeedLoaderRifle30LongEmpty
+  result: ASSpeedLoaderRifle30LongEmpty
+  materials:
+    Steel: 10
+
+- type: latheRecipe
+  parent: BaseFilledMagazineRecipe
+  id: ASSpeedLoaderRifle30Long
+  result: ASSpeedLoaderRifle30Long
+  materials:
+      Steel: 210 # 10 [speedloader] + 5 [bullets] * 40 [Steel per bullet]
+
+#region .30 long rifle ammo boxes
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: ASAmmunitionBoxRifle30Long
+  result: ASAmmunitionBoxRifle30Long
+  materials:
+    Steel: 2000 # box - free, 50 [bullets] * 40 [Steel per bullet]
+
+#region 8gauge enblocs
+- type: latheRecipe
+  parent: BaseEmptyMagazineRecipe
+  id: MagazineShotgunLeverEmpty
+  result: MagazineShotgunLeverEmpty
+  materials:
+    Steel: 25
+
+- type: latheRecipe
+  parent: BaseFilledMagazineRecipe
+  id: MagazineShotgunLever
+  result: MagazineShotgunLever
+  materials:
+    Steel: 265 # 25 [magazine] + 8 [shells] * 30 [Steel per shell]
+
+# AS8gShellBuckshot
+#region 8gauge shell boxes
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: ASAmmunitionBoxShellShotgun8gBuckshot
+  result: ASAmmunitionBoxShellShotgun8gBuckshot
+  materials:
+    Steel: 480 # box - free, 16 [shells] * 30 [Steel per shell]
+
 #region Misc
 - type: latheRecipe
   id: ASClothingEyesHudSLE

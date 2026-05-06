@@ -588,7 +588,7 @@
           amount: 1
         - id: ASSpeedLoaderRifle30Long
           amount: 2
-        - id: ASAmmunitionBoxRifle30L
+        - id: ASAmmunitionBoxRifle30Long
           amount: 1
 
 - type: entity
@@ -650,7 +650,7 @@
           amount: 1
         - id: ASMagazineEnblocRifle30Long # Aurora's Song | Ceremonial rifle reworked
           amount: 2
-        - id: ASAmmunitionBoxRifle30L # Aurora's Song | As Above
+        - id: ASAmmunitionBoxRifle30Long # Aurora's Song | As Above
           amount: 1
 
 #region Launchers

@@ -236,6 +236,27 @@
 
 - type: entity
   parent: MarkerBase
+  id: DungeonLootNanoTrasenUIVRareGunSpawner
+  name: NT UIV Rare Gun Spawner
+  suffix: UIV, RARE GUNS
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+      scale: 0.7, 0.7
+    - sprite: Effects/crayondecals.rsi
+      state: North
+      color: red
+    - sprite: Objects/Weapons/Guns/Battery/pulse_rifle.rsi
+      state: icon
+  - type: EntityTableSpawner
+    offset: 0.0
+    table: !type:NestedSelector
+      tableId: DungeonLootNanoTrasenUIVRareGuns
+      prob: 1
+
+- type: entity
+  parent: MarkerBase
   id: NanoTrasenVendUIVSpawner
   name: NT UIV Loot Spawner
   suffix: UIV, VEND

@@ -1,7 +1,7 @@
 ﻿# Aurora Song
 #region base
 - type: entity
-  id: ASBaseAmmunitionBoxRifle30L
+  id: ASBaseAmmunitionBoxRifle30Long
   parent: NFBaseAmmunitionBox
   name: ammunition box (.30 Long rifle)
   abstract: true
@@ -16,8 +16,8 @@
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/rifle.rsi
 
 - type: entity
-  id: ASAmmunitionBoxRifle30L
-  parent: ASBaseAmmunitionBoxRifle30L
+  id: ASAmmunitionBoxRifle30Long
+  parent: ASBaseAmmunitionBoxRifle30Long
   name: ammunition box (.30 Long rifle)
   components:
   - type: BallisticAmmoProvider
