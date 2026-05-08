@@ -4953,3 +4953,14 @@ Entries:
   id: 9457
   time: '2026-05-06T04:52:05.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1029
+- author: portfiend
+  changes:
+    - type: Fix
+      message: You can no longer eat entire deep fryers.
+    - type: Fix
+      message: >-
+        Or kegs. Or casks. Or spray bottles. Or squeeze bottles. Or condiment
+        bottles. Or amphorae. Or jerry cans. Or the janicart
+  id: 9458
+  time: '2026-05-08T12:50:25.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1035
