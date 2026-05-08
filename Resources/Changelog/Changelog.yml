@@ -4980,3 +4980,12 @@ Entries:
   id: 9460
   time: '2026-05-08T12:54:46.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1031
+- author: Karlm4x
+  changes:
+    - type: Tweak
+      message: >-
+        Reduced the reflect chance of Hypereuctatic Blade. You gotta actually
+        face the problems head on now.
+  id: 9461
+  time: '2026-05-08T12:56:08.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/985
