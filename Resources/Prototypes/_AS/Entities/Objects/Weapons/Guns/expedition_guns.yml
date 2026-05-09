@@ -1,5 +1,12 @@
 ﻿- type: entity
   parent:
+  - BaseExpeditionWeaponTier2
+  - ASWeaponPistolBRDIP15
+  categories: [ HideSpawnMenu ]
+  id: ASWeaponPistolBRDIP15Expedition
+
+- type: entity
+  parent:
   - BaseExpeditionWeaponTier3
   - ASWeaponKasyreLasRifle
   categories: [ HideSpawnMenu ]
@@ -39,3 +46,10 @@
   - ASWeaponShotgunHushpup
   categories: [ HideSpawnMenu ]
   id: ASWeaponShotgunHushpupExpedition
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier5
+  - ASWeaponEnergyPistolPulse
+  categories: [ HideSpawnMenu ]
+  id: ASWeaponEnergyPistolPulseExpedition

@@ -196,7 +196,7 @@
     items:
     - id: ASWeaponEG4EnergyMagnumExpedition
       orGroup: gun
-    - id: NFWeaponEnergyPistolPulseExpedition
+    - id: ASWeaponEnergyPistolPulseExpedition
       orGroup: gun
     - id: SpaceCash10000
     - id: SpaceCash10000
