@@ -154,22 +154,18 @@
         tableId: DungeonLootNanoTrasenUIVSuitMythical
 
 - type: entityTable
-  id: SpawnDungeonLootNanoTrasenUIVLootLoose
+  id: SpawnDungeonLootNanoTrasenUIVLootLooseAll
   table: !type:GroupSelector
     children:
-    - !type:GroupSelector
+    - !type:NestedSelector
+      tableId: DungeonLootNanoTrasenUIVLootLooseCommon
+      weight: 30
+    - !type:NestedSelector
+      tableId: DungeonLootNanoTrasenUIVLootLooseUncommon
+      weight: 20
+    - !type:NestedSelector
+      tableId: DungeonLootNanoTrasenUIVLootLooseRare
       weight: 10
-      children:
-      - !type:NestedSelector
-        tableId: DungeonLootNanoTrasenUIVLootLooseCommon
-        weight: 30
-      - !type:NestedSelector
-        tableId: DungeonLootNanoTrasenUIVLootLooseUncommon
-        weight: 20
-      - !type:NestedSelector
-        tableId: DungeonLootNanoTrasenUIVLootLooseRare
-        weight: 10
-
 
 - type: entity
   parent: MarkerBase
@@ -190,7 +186,7 @@
     offset: 0.0
     table: !type:NestedSelector
       tableId: SpawnDungeonLootNanoTrasenUIVSuitTable
-      prob: 1
+      prob: 0.8
 
 - type: entity
   parent: DungeonLootNanoTrasenUIVSpawner
@@ -201,7 +197,7 @@
     offset: 0.0
     table: !type:NestedSelector
       tableId: SpawnDungeonLootNanoTrasenUIVSuitTableT2
-      prob: 1
+      prob: 0.8
 
 - type: entity
   parent: DungeonLootNanoTrasenUIVSpawner
@@ -212,7 +208,7 @@
     offset: 0.0
     table: !type:NestedSelector
       tableId: SpawnDungeonLootNanoTrasenUIVSuitTableT3
-      prob: 1
+      prob: 0.75
 
 - type: entity
   parent: DungeonLootNanoTrasenUIVSpawner
@@ -232,7 +228,61 @@
     offset: 0.0
     table: !type:NestedSelector
       tableId: DungeonLootNanoTrasenUIVGunSafes
-      prob: 1
+      prob: 0.65
+
+- type: entity
+  parent: DungeonLootNanoTrasenUIVSpawner
+  id: DungeonLootNanoTrasenUIVLootCommon
+  suffix: UIV, Loot Common
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+      scale: 0.7, 0.7
+    - sprite: Effects/crayondecals.rsi
+      state: North
+      color: red
+  - type: EntityTableSpawner
+    offset: 0.0
+    table: !type:NestedSelector
+      tableId: DungeonLootNanoTrasenUIVLootLooseCommon
+      prob: 0.85
+
+- type: entity
+  parent: DungeonLootNanoTrasenUIVSpawner
+  id: DungeonLootNanoTrasenUIVLootUncommon
+  suffix: UIV, Loot Uncommon
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+      scale: 0.7, 0.7
+    - sprite: Effects/crayondecals.rsi
+      state: North
+      color: red
+  - type: EntityTableSpawner
+    offset: 0.0
+    table: !type:NestedSelector
+      tableId: DungeonLootNanoTrasenUIVLootLooseUncommon
+      prob: 0.75
+
+- type: entity
+  parent: DungeonLootNanoTrasenUIVSpawner
+  id: DungeonLootNanoTrasenUIVLootRare
+  suffix: UIV, Loot Rare
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+      scale: 0.7, 0.7
+    - sprite: Effects/crayondecals.rsi
+      state: North
+      color: red
+  - type: EntityTableSpawner
+    offset: 0.0
+    table: !type:NestedSelector
+      tableId: DungeonLootNanoTrasenUIVLootLooseRare
+      prob: 0.7
 
 - type: entity
   parent: MarkerBase
@@ -253,7 +303,7 @@
     offset: 0.0
     table: !type:NestedSelector
       tableId: DungeonLootNanoTrasenUIVRareGuns
-      prob: 1
+      prob: 0.5
 
 - type: entity
   parent: MarkerBase
@@ -316,7 +366,7 @@
     offset: 0.0
     table: !type:NestedSelector
       tableId: DungeonLootNanoTrasenUIVArmoryClutterClothing
-      prob: 1
+      prob: 0.7
 
 - type: entity
   parent: MarkerBase
@@ -337,7 +387,7 @@
     offset: 0.0
     table: !type:NestedSelector
       tableId: DungeonLootNanoTrasenUIVArmoryClutterWeapons
-      prob: 1
+      prob: 0.7
 
 - type: entity
   parent: MarkerBase
@@ -358,4 +408,4 @@
     offset: 0.0
     table: !type:NestedSelector
       tableId: DungeonLootNanoTrasenUIVArmoryClutterAll
-      prob: 1
+      prob: 0.75
