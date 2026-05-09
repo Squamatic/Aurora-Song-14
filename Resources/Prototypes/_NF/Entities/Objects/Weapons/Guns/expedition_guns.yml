@@ -264,6 +264,13 @@
   categories: [ HideSpawnMenu ]
   id: NFWeaponRevolverWard45Expedition
 
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2
+  - NFWeaponRevolverInspector
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRevolverInspectorExpedition
+
 ## Shotguns
 - type: entity
   parent:

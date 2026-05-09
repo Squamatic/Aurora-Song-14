@@ -254,12 +254,12 @@
   id: DungeonLootNanoTrasenUIVArmoryClutterWeapons
   table: !type:GroupSelector
     children:
-    - id: NFWeaponPistolMk58Expedition
-    - id: ASWeaponPistolBRDIP15Expedition
+    - id: WeaponCaseShortMk58Expedition
+    - id: WeaponCaseBRDPIExpedition
     - id: Katana
     - id: CaptainSabre
-    - id: NFWeaponRevolverInspector #todo: make an expedition version of this gun, seriously what the hell
-    - id: NFWeaponPistolN1984Expedition
+    - id: WeaponCaseInspectorExpedition
+    - id: WeaponCaseShortN1984Expedition
 
 - type: entityTable
   id: DungeonLootNanoTrasenUIVArmoryClutterClothing

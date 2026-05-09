@@ -354,7 +354,7 @@
   name: Rogue DS-Commando
   parent: [ MobMovementSpeedModifierRanged, MobStaminaFodder, MobHostileNTBase, MobHumanoidHostileAISimpleRanged ]
   id: MobNTDeathSquad
-  description: The mask of capitalism has slipped, and it the beast is here to kill everything you love.
+  description: The mask of capitalism has slipped, and it, the beast, is here to kill everything you love.
   categories: [ HideSpawnMenu ]
   components:
   - type: Inventory
