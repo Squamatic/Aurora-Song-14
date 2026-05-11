@@ -328,6 +328,27 @@
 
 - type: entity
   parent: MarkerBase
+  id: NanoTrasenBridgeVendUIVSpawner
+  name: NT UIV Loot Spawner
+  suffix: UIV, VEND
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+      scale: 0.7, 0.7
+    - sprite: Effects/crayondecals.rsi
+      state: North
+      color: red
+    - sprite: _AS/Structures/Machines/VendingMachines/nanovend.rsi
+      state: off
+  - type: EntityTableSpawner
+    offset: 0.0
+    table: !type:NestedSelector
+      tableId: DungeonNanoTrasenUIVOfficerVend
+      prob: 1
+
+- type: entity
+  parent: MarkerBase
   id: DungeonLootNanoTrasenUIVSpawnerCaptain
   name: NT UIV Loot Spawner
   suffix: UIV, CAPTAIN

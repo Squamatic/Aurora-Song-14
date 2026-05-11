@@ -293,6 +293,12 @@
     children:
     - id: VendingMachineSecDrobe
 
+- type: entityTable
+  id: DungeonNanoTrasenUIVOfficerVend
+  table: !type:GroupSelector
+    children:
+    - id: ASVendingMachineNanoVend
+
 # NT UIV gun safes
 - type: entityTable
   id: DungeonLootNanoTrasenUIVGunSafes

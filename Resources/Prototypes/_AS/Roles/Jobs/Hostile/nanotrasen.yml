@@ -42,7 +42,7 @@
     gloves: ClothingHandsGlovesColorBlackLaser
     outerClothing: ASClothingOuterHardsuitConstableUnremoveable
     belt: ClothingBeltSecurity
-    back: NanoTrasenBackpackLoot_SecGruntLecter
+    back: NanoTrasenBackpackLoot_SecGruntLaser
 
 - type: startingGear
   id: ASNanoTrasenRogueOfficerDrozd
