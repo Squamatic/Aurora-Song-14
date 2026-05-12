@@ -1,7 +1,8 @@
+# Aurora's Song | Replaced names of all entities with locale strings
 - type: entity
   parent: ChairWood
   id: N14ChairWood
-  name: wooden chair
+  name: furniture-n14-chair-wooden
   description: A wooden chair suitable for sitting on.
   components:
   - type: Sprite
@@ -10,10 +11,11 @@
   - type: Construction
     graph: N14Seat
     node: N14ChairWood
-    
+
 - type: entity
   parent: ChairWood
   id: N14ChairWood1
+  name: furniture-n14-chair-wooden
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
@@ -21,10 +23,11 @@
   - type: Construction
     graph: N14Seat
     node: N14ChairWood1
-    
+
 - type: entity
   parent: ChairWood
   id: N14ChairWoodPadded
+  name: furniture-n14-chair-padded
   suffix: padded
   components:
   - type: Sprite
@@ -33,11 +36,11 @@
   - type: Construction
     graph: N14Seat
     node: N14ChairWoodPadded
-    
+
 - type: entity
   parent: N14ChairWood
   id: N14ChairWoodSettler
-  name: wooden chair
+  name: furniture-n14-chair-settler
   description: A wooden chair claimed by some settlers.
   components:
   - type: Sprite
@@ -45,10 +48,11 @@
   - type: Construction
     graph: N14Seat
     node: N14ChairWoodSettler
-    
+
 - type: entity
   parent: StoolBase
   id: N14ChairStoolBarBlack
+  name: furniture-n14-chair-stool-black
   description: A black bar stool.
   components:
   - type: Sprite
@@ -58,10 +62,11 @@
   - type: Construction
     graph: N14Seat
     node: N14ChairStoolBarBlack
-    
+
 - type: entity
   parent: StoolBase
   id: N14ChairStoolBarTan
+  name: furniture-n14-chair-stool-tan
   description: A tan bar stool.
   components:
   - type: Sprite
@@ -70,10 +75,11 @@
   - type: Construction
     graph: N14Seat
     node: N14ChairStoolBarTan
-    
+
 - type: entity
   parent: StoolBase
   id: N14ChairStoolBarRed
+  name: furniture-n14-chair-stool-red
   description: A red bar stool.
   components:
   - type: Sprite
@@ -82,11 +88,11 @@
   - type: Construction
     graph: N14Seat
     node: N14ChairStoolBarRed
-    
+
 - type: entity
   parent: N14ChairWood
   id: N14ChairArmchair
-  name: armchair
+  name: furniture-n14-chair-armchair
   description: A padded armchair.
   components:
   - type: Sprite
@@ -95,11 +101,12 @@
   - type: Construction
     graph: N14Seat
     node: N14ChairArmchair
-    
+
 # Metal Chairs
 - type: entity
   parent: Chair
   id: N14ChairMetalGreen
+  name: furniture-n14-chair-metal-green
   description: A metal chair for sitting on.
   components:
   - type: Sprite
@@ -108,27 +115,30 @@
   - type: Construction
     graph: N14Seat
     node: N14ChairMetalGreen
-    
+
 - type: entity
   parent: N14ChairMetalGreen
   id: N14ChairMetalGreenUnfinished
+  name: furniture-n14-chair-metal-green
   suffix: unfinished
   components:
   - type: Sprite
     state: metal_chair_unfinished
-    
+
 - type: entity
   parent: N14ChairMetalGreen
   id: N14ChairMetalGreenBroken
+  name: furniture-n14-chair-metal-green
   suffix: broken
   components:
   - type: Sprite
     state: metal_chair_broken
-    
-    
+
+
 - type: entity
   parent: N14ChairMetalGreen
   id: N14ChairMetalBlue
+  name: furniture-n14-chair-metal-blue
   suffix: blue
   components:
   - type: Sprite
@@ -137,27 +147,30 @@
   - type: Construction
     graph: N14Seat
     node: N14ChairMetalBlue
-    
+
 - type: entity
   parent: N14ChairMetalGreen
   id: N14ChairMetalBlueUnfinished
+  name: furniture-n14-chair-metal-blue
   suffix: blue, unfinished
   components:
   - type: Sprite
     state: metal_chair_blue_unfinished
-    
+
 - type: entity
   parent: N14ChairMetalGreen
   id: N14ChairMetalBlueBroken
+  name: furniture-n14-chair-metal-blue
   suffix: blue, broken
   components:
   - type: Sprite
     state: metal_chair_blue_broken
-    
-    
+
+
 - type: entity
   parent: N14ChairMetalGreen
   id: N14ChairMetalRed
+  name: furniture-n14-chair-metal-red
   suffix: red
   components:
   - type: Sprite
@@ -166,28 +179,30 @@
   - type: Construction
     graph: N14Seat
     node: N14ChairMetalRed
-    
+
 - type: entity
   parent: N14ChairMetalGreen
   id: N14ChairMetalRedUnfinished
+  name: furniture-n14-chair-metal-red
   suffix: red, unfinished
   components:
   - type: Sprite
     state: metal_chair_red_unfinished
-    
+
 - type: entity
   parent: N14ChairMetalGreen
   id: N14ChairMetalRedBroken
+  name: furniture-n14-chair-metal-red
   suffix: red, broken
   components:
   - type: Sprite
     state: metal_chair_red_broken
-    
-    
+
+
 - type: entity
   parent: OfficeChairBase
   id: N14ChairOfficeRed
-  name: office chair
+  name: furniture-n14-chair-office-red
   suffix: red
   components:
   - type: Sprite
@@ -196,21 +211,22 @@
   - type: Construction
     graph: N14Seat
     node: N14ChairOfficeRed
-    
+
 - type: entity
   parent: OfficeChairBase
   id: N14ChairOfficeRedBroken
+  name: furniture-n14-chair-office-red
   suffix: red, broken
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
     state: office_chair_broken
-    
-    
+
+
 - type: entity
   parent: OfficeChairBase
   id: N14ChairOfficeBlue
-  name: office chair
+  name: furniture-n14-chair-office-blue
   suffix: blue
   components:
   - type: Sprite
@@ -219,21 +235,22 @@
   - type: Construction
     graph: N14Seat
     node: N14ChairOfficeBlue
-    
+
 - type: entity
   parent: N14ChairOfficeRed
   id: N14ChairOfficeBlueBroken
+  name: furniture-n14-chair-office-blue
   suffix: blue, broken
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
     state: office_chair_blue_broken
-    
-    
+
+
 - type: entity
   parent: OfficeChairBase
   id: N14ChairOfficeGreen
-  name: office chair
+  name: furniture-n14-chair-office-green
   suffix: green
   components:
   - type: Sprite
@@ -242,20 +259,22 @@
   - type: Construction
     graph: N14Seat
     node: N14ChairOfficeGreen
-    
+
 - type: entity
   parent: OfficeChairBase
   id: N14ChairOfficeGreenBroken
+  name: furniture-n14-chair-office-green
   suffix: green, broken
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/chairs.rsi
     state: office_chair_green_broken
-    
-    
+
+
 - type: entity
   parent: OfficeChairBase
   id: N14ChairOfficeErgonomic
+  name: furniture-n14-chair-office-ergonomic
   suffix: ergo
   components:
   - type: Sprite
@@ -264,11 +283,11 @@
   - type: Construction
     graph: N14Seat
     node: N14ChairOfficeErgonomic
-    
+
 - type: entity
   parent: N14ChairMetalGreen
   id: N14ChairMetalFolding
-  name: folding chair
+  name: furniture-n14-chair-folding
   suffix: folding
   components:
   - type: Sprite
@@ -276,20 +295,20 @@
   - type: Construction
     graph: N14Seat
     node: N14ChairMetalFolding
-    
+
 - type: entity
   parent: N14ChairMetalGreen
   id: N14ChairBarRetro
-  name: retro chair
+  name: furniture-n14-chair-retro
   suffix: retro
   components:
   - type: Sprite
     state: retro_chair
-    
+
 - type: entity
   parent: N14ChairMetalGreen
   id: N14ChairPlastic
-  name: plastic chair
+  name: furniture-n14-chair-plastic
   description: A plastic chair. Looks uncomfy.
   suffix: plastic
   components:
@@ -298,11 +317,11 @@
   - type: Construction
     graph: N14Seat
     node: N14ChairPlastic
-    
+
 - type: entity
   parent: N14ChairMetalGreen
   id: N14ChairDinerBench
-  name: diner chair
+  name: furniture-n14-chair-diner
   description: An American Diner bench.
   components:
   - type: Sprite

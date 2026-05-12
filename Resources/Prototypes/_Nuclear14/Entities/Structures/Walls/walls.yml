@@ -194,7 +194,7 @@
 - type: entity
   parent: N14WallWoodWhite
   id: N14WallWoodLog
-  name: log wall
+  name: structures-n14-wall-log
   description: A wall made out of wooden logs.
   components:
   - type: Sprite

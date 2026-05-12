@@ -101,7 +101,7 @@
 - type: entity
   parent: N14DoorMakeshift
   id: N14DoorWoodHousePainted
-  name: wooden door
+  name: structures-n14-door-wooden
   suffix: painted
   description: It's a painted door.
   components:

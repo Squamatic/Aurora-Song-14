@@ -1,6 +1,7 @@
+Aurora's Song | replaced names with locale strings
 - type: entity
   id: N14Torch
-  name: torch
+  name: structures-n14-torch
   suffix: floor
   description: A torch for lighting an area, add your own fire. #Aurora's Song | Rewrote description to make behavior clearer.
   placement:
@@ -63,6 +64,7 @@
 - type: entity
   parent: N14Torch
   id: N14TorchWall
+  name: structures-n14-torch-wall
   suffix: wall
   components:
   - type: Sprite

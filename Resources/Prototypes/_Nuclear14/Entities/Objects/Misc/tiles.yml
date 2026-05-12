@@ -1,6 +1,7 @@
 # Metal Tiles
+# Aurora's Song | added locale strings for every tile.
 - type: entity
-  name: metal floor blue
+  name: tiles-n14-metal-blue
   parent: FloorTileItemBase
   id: FloorTileItemMetalBlue
   components:
@@ -14,9 +15,9 @@
       - FloorMetalBlue
   - type: Stack
     stackType: FloorTileMetalBlue
-    
+
 - type: entity
-  name: metal floor blue solid
+  name: tiles-n14-metal-blue-solid
   parent: FloorTileItemBase
   id: FloorTileItemMetalBlueSolid
   components:
@@ -30,9 +31,9 @@
       - FloorMetalBlueSolid
   - type: Stack
     stackType: FloorTileMetalBlueSolid
-    
+
 - type: entity
-  name: metal floor green
+  name: tiles-n14-metal-green
   parent: FloorTileItemBase
   id: FloorTileItemMetalGreen
   components:
@@ -46,9 +47,9 @@
       - FloorMetalGreen
   - type: Stack
     stackType: FloorTileMetalGreen
-    
+
 - type: entity
-  name: metal floor green solid
+  name: tiles-n14-metal-green-solid
   parent: FloorTileItemBase
   id: FloorTileItemMetalGreenSolid
   components:
@@ -62,9 +63,9 @@
       - FloorMetalGreenSolid
   - type: Stack
     stackType: FloorTileMetalGreenSolid
-    
+
 - type: entity
-  name: metal floor grey
+  name: tiles-n14-metal-grey
   parent: FloorTileItemBase
   id: FloorTileItemMetalGrey
   components:
@@ -78,9 +79,9 @@
       - FloorMetalGrey
   - type: Stack
     stackType: FloorTileMetalGrey
-    
+
 - type: entity
-  name: metal floor grey solid
+  name: tiles-n14-metal-grey-solid
   parent: FloorTileItemBase
   id: FloorTileItemMetalGreySolid
   components:
@@ -94,9 +95,9 @@
       - FloorMetalGreySolid
   - type: Stack
     stackType: FloorTileMetalGreySolid
-    
+
 - type: entity
-  name: metal floor grey dark
+  name: tiles-n14-metal-grey-dark
   parent: FloorTileItemBase
   id: FloorTileItemMetalGreyDark
   components:
@@ -110,9 +111,9 @@
       - FloorMetalGreyDark
   - type: Stack
     stackType: FloorTileMetalGreyDark
-    
+
 - type: entity
-  name: metal floor grey dark solid
+  name: tiles-n14-metal-grey-dark-solid
   parent: FloorTileItemBase
   id: FloorTileItemMetalGreyDarkSolid
   components:
@@ -126,9 +127,9 @@
       - FloorMetalGreyDarkSolid
   - type: Stack
     stackType: FloorTileMetalGreyDarkSolid
-    
+
 - type: entity
-  name: metal floor purple
+  name: tiles-n14-metal-purple
   parent: FloorTileItemBase
   id: FloorTileItemMetalPurple
   components:
@@ -142,9 +143,9 @@
       - FloorMetalPurple
   - type: Stack
     stackType: FloorTileMetalPurple
-    
+
 - type: entity
-  name: metal floor purple solid
+  name: tiles-n14-metal-purple-solid
   parent: FloorTileItemBase
   id: FloorTileItemMetalPurpleSolid
   components:
@@ -158,9 +159,9 @@
       - FloorMetalPurpleSolid
   - type: Stack
     stackType: FloorTileMetalPurpleSolid
-    
+
 - type: entity
-  name: metal floor red
+  name: tiles-n14-metal-red
   parent: FloorTileItemBase
   id: FloorTileItemMetalRed
   components:
@@ -174,9 +175,9 @@
       - FloorMetalRed
   - type: Stack
     stackType: FloorTileMetalRed
-    
+
 - type: entity
-  name: metal floor red solid
+  name: tiles-n14-metal-red-solid
   parent: FloorTileItemBase
   id: FloorTileItemMetalRedSolid
   components:
@@ -190,9 +191,9 @@
       - FloorMetalRedSolid
   - type: Stack
     stackType: FloorTileMetalRedSolid
-    
+
 - type: entity
-  name: metal floor teal
+  name: tiles-n14-metal-teal
   parent: FloorTileItemBase
   id: FloorTileItemMetalTeal
   components:
@@ -206,9 +207,9 @@
       - FloorMetalTeal
   - type: Stack
     stackType: FloorTileMetalTeal
-    
+
 - type: entity
-  name: metal floor teal solid
+  name: tiles-n14-metal-teal
   parent: FloorTileItemBase
   id: FloorTileItemMetalTealSolid
   components:
@@ -222,9 +223,9 @@
       - FloorMetalTealSolid
   - type: Stack
     stackType: FloorTileMetalTealSolid
-    
+
 - type: entity
-  name: metal floor white
+  name: tiles-n14-metal-white
   parent: FloorTileItemBase
   id: FloorTileItemMetalWhite
   components:
@@ -238,9 +239,9 @@
       - FloorMetalWhite
   - type: Stack
     stackType: FloorTileMetalWhite
-    
+
 - type: entity
-  name: metal floor white solid
+  name: tiles-n14-metal-white-solid
   parent: FloorTileItemBase
   id: FloorTileItemMetalWhiteSolid
   components:
@@ -254,9 +255,9 @@
       - FloorMetalWhiteSolid
   - type: Stack
     stackType: FloorTileMetalWhiteSolid
-    
+
 - type: entity
-  name: metal floor yellow
+  name: tiles-n14-metal-yellow
   parent: FloorTileItemBase
   id: FloorTileItemMetalYellow
   components:
@@ -270,9 +271,9 @@
       - FloorMetalYellow
   - type: Stack
     stackType: FloorTileMetalYellow
-    
+
 - type: entity
-  name: metal floor yellow solid
+  name: tiles-n14-metal-yellow-solid
   parent: FloorTileItemBase
   id: FloorTileItemMetalYellowSolid
   components:
@@ -286,9 +287,9 @@
       - FloorMetalYellowSolid
   - type: Stack
     stackType: FloorTileMetalYellowSolid
-    
+
 - type: entity
-  name: metal floor freezer
+  name: tiles-n14-freezer
   parent: FloorTileItemBase
   id: FloorTileItemMetalFreezer
   components:
@@ -306,7 +307,7 @@
 # Wood Tiles
 
 - type: entity
-  name: oak wood floor
+  name: tiles-n14-wood-oak
   parent: FloorTileItemBase
   id: FloorTileItemWoodOak
   components:
@@ -325,7 +326,7 @@
 #    node: woodtileoak
 
 - type: entity
-  name: house wood floor
+  name: tiles-n14-wood-house
   parent: FloorTileItemBase
   id: FloorTileItemWoodHouse
   components:
@@ -344,7 +345,7 @@
 #    node: woodtiledark
 
 - type: entity
-  name: maple floor
+  name: tile-n14-wood-maple
   parent: FloorTileItemBase
   id: FloorTileItemWoodMaple
   components:
@@ -363,7 +364,7 @@
 #    node: woodtilelight
 
 - type: entity
-  name: industrial floor
+  name: tiles-n14-industrial
   parent: FloorTileItemBase
   id: FloorTileItemMetalIndustrial
   components:
@@ -377,9 +378,9 @@
       - FloorMS13MetalIndustrial
   - type: Stack
     stackType: FloorTileMetalIndustrial
-    
+
 - type: entity
-  name: metal floor
+  name: tiles-n14-metal-tile
   parent: FloorTileItemBase
   id: FloorTileItemMetalMS13
   components:
@@ -393,9 +394,9 @@
       - FloorMS13MetalTile
   - type: Stack
     stackType: FloorTileMetalMS13
-    
+
 - type: entity
-  name: metal grate floor
+  name: tiles-n14-metal-grate
   parent: FloorTileItemBase
   id: FloorTileItemMetalGrate
   components:
@@ -409,9 +410,9 @@
       - FloorMS13MetalGrate
   - type: Stack
     stackType: FloorTileMetalGrate
-    
+
 - type: entity
-  name: metal solid floor
+  name: tiles-n14-metal-solid
   parent: FloorTileItemBase
   id: FloorTileItemMetalSolid
   components:
@@ -429,7 +430,7 @@
 # Carpets
 
 - type: entity
-  name: red carpet
+  name: tiles-n14-carpet
   parent: FloorTileItemBase
   id: FloorTileItemCarpetRed
   components:
