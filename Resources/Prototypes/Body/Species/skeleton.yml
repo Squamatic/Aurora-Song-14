@@ -31,7 +31,6 @@
   parent:
   - AppearanceSkeletonPerson
   - BaseSpeciesMob
-  - StorableSpecies # Aurora's Song
   id: MobSkeletonPerson
   name: Urist McSkelly
   components:
