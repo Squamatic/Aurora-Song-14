@@ -1,18 +1,26 @@
 - type: entity
+  parent: AppearanceHuman
+  id: AppearanceOni
+  name: oni appearance
+  components:
+  - type: HumanoidAppearance
+    species: Oni
+    hideLayersOnEquip:
+    - Hair
+    - HeadTop # Frontier
+    - Snout
+  - type: Sprite
+    scale: 1.2, 1.2
+
+- type: entity
+  parent:
+  - AppearanceOni
+  - BaseSpeciesMobOrganic # starcup: changed from BaseMobHuman for consistency
+  id: MobOni
   name: Urist McOni
-  parent: BaseMobHuman
-  id: MobOniBase
-  abstract: true
   components:
   - type: Speech
     speechSounds: Baritone
-  - type: HumanoidAppearance
-    species: Oni
-    hideLayersOnEquip: # Frontier
-    - Hair # Frontier
-    - HeadTop # Frontier
-  - type: Sprite
-    scale: 1.2, 1.2
   - type: Oni
     modifiers:
       coefficients:
@@ -22,8 +30,6 @@
         Asphyxiation: 1.2
   - type: Damageable
     damageModifierSet: Oni
-  - type: Body
-    prototype: Human
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:
@@ -37,14 +43,4 @@
         layer:
         - MobLayer
   - type: Stamina
-  - type: NpcFactionMember
-    factions:
-    - NanoTrasen
-
-- type: entity
-  save: false
-  name: Urist McOni
-  parent: MobHumanDummy
-  id: MobOniDummy
-  categories: [ HideSpawnMenu ]
-  description: A dummy oni meant to be used in character setup.
+    baseCritThreshold: 115
