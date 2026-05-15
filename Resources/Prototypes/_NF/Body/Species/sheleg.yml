@@ -50,7 +50,6 @@
   - AppearanceSheleg
   - BaseSpeciesMobOrganic
   id: MobSheleg
-  abstract: true
   components:
   - type: Hunger
     baseDecayRate: 0.0165 # Baseline 0.0200;

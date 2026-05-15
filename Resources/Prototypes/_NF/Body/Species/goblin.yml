@@ -49,7 +49,6 @@
   - BaseSpeciesMobOrganic
   name: Urist McGoblin
   id: MobGoblin
-  abstract: true
   components:
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
