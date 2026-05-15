@@ -62,7 +62,7 @@ public sealed class RechargeableBlockingSystem : EntitySystem
         if (!_battery.TryGetBatteryComponent(uid, out var battery, out var batteryUid))
             return;
         var currentCharge = _battery.GetCharge((batteryUid.Value, battery));
-        if (currentCharge < (0.25 * battery.MaxCharge))
+        if (currentCharge < (0.45 * battery.MaxCharge))
         {
             _popup.PopupEntity(Loc.GetString("shield-low-charge-toggle-fail"), args.User ?? uid);
             args.Cancelled = true;
