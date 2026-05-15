@@ -140,7 +140,7 @@
   abstract: true
   components:
   - type: Metabolizer
-    metabolizerTypes: [ Fairy ]
+    metabolizerTypes: [ Human, Fairy ]
 
 - type: entity
   parent: OrganFairy
@@ -164,18 +164,22 @@
   id: OrganFairyHeart
   components:
   - type: Metabolizer
+    updateInterval: 1.5
     groups:
     - id: Medicine
-      rateModifier: 0.1
-    - id: Cryogenic # Frontier
-      rateModifier: 0.1
+      rateModifier: 0.2
+      scaleModifier: 5
+    - id: Cryogenic
+      rateModifier: 0.2
+      scaleModifier: 5
     - id: Poison
-      rateModifier: 0.1
+      rateModifier: 0.2
+      scaleModifier: 5 # Stop infinite fairy chems fr, also make them weak to poisons
     - id: Narcotic
-      scaleModifier: 10 # because low rate mods stop narcotics from accumulating correctly presently, we use scale
+      scaleModifier: 5 # because low rate mods stop narcotics from accumulating correctly presently, scale only. Also makes things like tear gas and noct hit them harder
 
 - type: entity
-  parent: [ OrganBaseStomach, OrganFairyInternal, OrganHumanMetabolizer ]
+  parent: [ OrganBaseStomach, OrganFairyInternal, OrganFairyMetabolizer ]
   id: OrganFairyStomach
   components:
   - type: SolutionContainerManager
@@ -183,6 +187,7 @@
       stomach:
         maxVol: 30
   - type: Metabolizer
+    updateInterval: 1.5
     groups:
     - id: Food
       rateModifier: 0.1
@@ -196,12 +201,14 @@
   id: OrganFairyLiver
   components:
   - type: Metabolizer
-    metabolizerTypes: [ Animal, Fairy ]
+    updateInterval: 1.5
     groups:
     - id: Alcohol
-      rateModifier: 0.1 # removes alcohol very slowly along with the stomach removing it as a drink
+      rateModifier: 0.5 # removes alcohol very slowly along with the stomach removing it as a drink
 
 - type: entity
-  parent: [ OrganBaseKidneys, OrganFairy, OrganHumanInternal, OrganAnimalMetabolizer ]
+  parent: [ OrganBaseKidneys, OrganFairy, OrganHumanInternal, OrganFairyMetabolizer ]
   id: OrganFairyKidneys
-  # Note for future reader, the kidneys now properly handle unhandled chems, the rest get digested in the heart
+  components:
+  - type: Metabolizer
+    updateInterval: 1.5
