@@ -212,6 +212,7 @@
   parent: N14WindowBaseAirtight
   id: N14WindowHouseVertical
   name: structures-n14-window-house
+  components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Windows/window_ruins.rsi
     state: housewindowvertical
