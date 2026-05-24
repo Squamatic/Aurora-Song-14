@@ -453,7 +453,7 @@ public sealed partial class SalvageSystem
 
         var query =
             EntityQueryEnumerator<
-                HumanoidAppearanceComponent,
+                HumanoidProfileComponent, // Aurora's Song
                 MindContainerComponent,
                 MobStateComponent,
                 TransformComponent>();
