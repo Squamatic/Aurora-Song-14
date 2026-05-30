@@ -80,10 +80,10 @@
     state: r_foot_doll
 
 - type: marking
+  parent: [BaseTattoo, BaseSpeciesEyesStandard]   # Aurora's Song
   id: HeadHeavyTattoos
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Human, Dwarf, Arachnid, SlimePerson, Reptilian]
   coloring:
     default:
       type:
@@ -96,10 +96,10 @@
     state: head_heavy2
 
 - type: marking
+  parent: [BaseTattoo, BaseSpeciesChestStandardOrganic]   # Aurora's Song
   id: ChestHeavyTattoos
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Human, Dwarf, Arachnid, SlimePerson, Reptilian]
   coloring:
     default:
       type:
@@ -114,10 +114,10 @@
     state: chest_heavy3
 
 - type: marking
+  parent: [BaseTattoo, BaseSpeciesArmsStandardOrganic]   # Aurora's Song
   id: ArmHeavyTattoosLeft
   bodyPart: LArm
   markingCategory: Arms
-  speciesRestriction: [Human, Dwarf, Arachnid, SlimePerson, Reptilian]
   coloring:
     default:
       type:
@@ -130,10 +130,10 @@
     state: l_arm_heavy2
 
 - type: marking
+  parent: [BaseTattoo, BaseSpeciesArmsStandardOrganic]   # Aurora's Song
   id: ArmHeavyTattoosRight
   bodyPart: RArm
   markingCategory: Arms
-  speciesRestriction: [Human, Dwarf, Arachnid, SlimePerson, Reptilian]
   coloring:
     default:
       type:
@@ -146,10 +146,10 @@
     state: r_arm_heavy2
 
 - type: marking
+  parent: [BaseTattoo, BaseSpeciesArmsStandardOrganic]   # Aurora's Song
   id: HandHeavyTattoosLeft
   bodyPart: LHand
   markingCategory: Arms
-  speciesRestriction: [Human, Dwarf, Arachnid, SlimePerson, Reptilian]
   coloring:
     default:
       type:
@@ -162,10 +162,10 @@
     state: l_hand_heavy2
 
 - type: marking
+  parent: [BaseTattoo, BaseSpeciesArmsStandardOrganic]   # Aurora's Song
   id: HandHeavyTattoosRight
   bodyPart: RHand
   markingCategory: Arms
-  speciesRestriction: [Human, Dwarf, Arachnid, SlimePerson, Reptilian]
   coloring:
     default:
       type:
@@ -178,10 +178,10 @@
     state: r_hand_heavy2
 
 - type: marking
+  parent: [BaseTattoo, BaseSpeciesLegsStandardOrganic]   # Aurora's Song
   id: LegHeavyTattoosLeft
   bodyPart: LLeg
   markingCategory: Legs
-  speciesRestriction: [Human, Dwarf, Arachnid, SlimePerson, Reptilian]
   coloring:
     default:
       type:
@@ -194,10 +194,10 @@
     state: l_leg_heavy2
 
 - type: marking
+  parent: [BaseTattoo, BaseSpeciesLegsStandardOrganic]   # Aurora's Song
   id: LegHeavyTattoosRight
   bodyPart: RLeg
   markingCategory: Legs
-  speciesRestriction: [Human, Dwarf, Arachnid, SlimePerson, Reptilian]
   coloring:
     default:
       type:
@@ -210,10 +210,10 @@
     state: r_leg_heavy2
 
 - type: marking
+  parent: [BaseTattoo, BaseSpeciesLegsStandardOrganic]   # Aurora's Song
   id: FootHeavyTattoosLeft
   bodyPart: LFoot
   markingCategory: Legs
-  speciesRestriction: [Human, Dwarf, Arachnid, SlimePerson]
   coloring:
     default:
       type:
@@ -226,10 +226,10 @@
     state: l_foot_heavy2
 
 - type: marking
+  parent: [BaseTattoo, BaseSpeciesLegsStandardOrganic]   # Aurora's Song
   id: FootHeavyTattoosRight
   bodyPart: RFoot
   markingCategory: Legs
-  speciesRestriction: [Human, Dwarf, Arachnid, SlimePerson]
   coloring:
     default:
       type:

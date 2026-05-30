@@ -34,7 +34,6 @@ marking-SlimeBonehead-bone = Floating Skull
 
 marking-SlimeNose = Nose (Profile)
 marking-SlimeNose-nose = Nose (Profile)
-marking-SlimeNose = Nose (Profile)
 
 marking-SlimeMouth-mouth = Mouth
 marking-SlimeMouth = Mouth
@@ -72,24 +71,34 @@ marking-SlimeBonearmright-bone = Floating Bones (Right Arm)
 # LArm
 
 marking-SlimeBonearmleft = Floating Bones (Left Arm)
+marking-SlimeBonearmleft-bone = Floating Bones (Left Arm)
 
-marking-SlimeBonearmright-bonearmright = Floating Bones (Right Arm)
-marking-SlimeBonearmright = Floating Bones (Right Arm)
+# RHand
 
-marking-SlimeBonefootleft-bonefootleft = Floating Bones (Left Foot)
-marking-SlimeBonefootleft = Floating Bones (Left Foot)
-
-marking-SlimeBonefootright-bonefootright = Floating Bones (Right Foot)
-marking-SlimeBonefootright = Floating Bones (Right Foot)
-
-marking-SlimeBonehandleft-bonehandleft = Floating Bones (Left Hand)
-marking-SlimeBonehandleft = Floating Bones (Left Hand)
-
-marking-SlimeBonehandright-bonehandright = Floating Bones (Right Hand)
 marking-SlimeBonehandright = Floating Bones (Right Hand)
+marking-SlimeBonehandright-bone = Floating Bones (Right Hand)
 
-marking-SlimeBonelegleft-bonelegleft = Floating Bones (Left Leg)
-marking-SlimeBonelegleft = Floating Bones (Left Leg)
+# LHand
 
-marking-SlimeBonelegright-bonelegright = Floating Bones (Right Leg)
+marking-SlimeBonehandleft = Floating Bones (Left Hand)
+marking-SlimeBonehandleft-bone = Floating Bones (Left Hand)
+
+# RLeg
+
 marking-SlimeBonelegright = Floating Bones (Right Leg)
+marking-SlimeBonelegright-bone = Floating Bones (Right Leg)
+
+# LLeg
+
+marking-SlimeBonelegleft = Floating Bones (Left Leg)
+marking-SlimeBonelegleft-bone = Floating Bones (Left Leg)
+
+# RFoot
+
+marking-SlimeBonefootright = Floating Bones (Right Foot)
+marking-SlimeBonefootright-bone = Floating Bones (Right Foot)
+
+# LFoot
+
+marking-SlimeBonefootleft = Floating Bones (Left Foot)
+marking-SlimeBonefootleft-bone = Floating Bones (Left Foot)
