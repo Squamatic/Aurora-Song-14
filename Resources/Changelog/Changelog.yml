@@ -5174,3 +5174,12 @@ Entries:
   id: 9486
   time: '2026-05-24T02:45:13.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1036
+- author: Zenixic
+  changes:
+    - type: Add
+      message: >-
+        The spray painter has received some QoL features like palettes and a
+        color picker!
+  id: 9487
+  time: '2026-05-24T02:36:23.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1039
