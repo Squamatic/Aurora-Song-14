@@ -5307,3 +5307,10 @@ Entries:
   id: 9503
   time: '2026-05-15T18:04:33.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1033
+- author: BlitzTheSquishy
+  changes:
+    - type: Add
+      message: A new advertisement campaign for Iverian Heavy Shipyards has started.
+  id: 9504
+  time: '2026-05-15T12:58:41.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1044
