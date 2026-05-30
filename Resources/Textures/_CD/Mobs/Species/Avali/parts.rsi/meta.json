@@ -19,7 +19,7 @@
             "directions": 4
         },
         {
-            "name": "head",
+            "name": "head_m",
             "directions": 4
         },
         {
@@ -59,7 +59,7 @@
             "directions": 4
         },
         {
-            "name": "torso",
+            "name": "torso_m",
             "directions": 4
         }
     ]
