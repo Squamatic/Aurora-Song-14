@@ -5254,3 +5254,14 @@ Entries:
   id: 9496
   time: '2026-05-18T21:53:27.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1059
+- author: ZigTag
+  changes:
+    - type: Add
+      message: Spiky Ponytail
+    - type: Remove
+      message: Messy Ponytail no longer shows up twice!
+    - type: Fix
+      message: Tajaran animated tails now work properly
+  id: 9497
+  time: '2026-05-18T21:53:09.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1056
