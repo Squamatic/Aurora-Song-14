@@ -5194,3 +5194,10 @@ Entries:
   id: 9488
   time: '2026-05-24T02:31:27.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1025
+- author: assignedgod
+  changes:
+    - type: Tweak
+      message: Renamed the mantis coffin to pyxis
+  id: 9489
+  time: '2026-05-24T02:09:26.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1072
