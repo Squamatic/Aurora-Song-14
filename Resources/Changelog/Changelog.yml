@@ -5068,3 +5068,10 @@ Entries:
   id: 9472
   time: '2026-05-27T03:04:33.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1091
+- author: assignedgod
+  changes:
+    - type: Remove
+      message: 'Removed catgirlium, daviscium, and mothrazine '
+  id: 9473
+  time: '2026-05-27T03:03:06.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1086
