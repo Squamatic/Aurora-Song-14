@@ -5012,3 +5012,10 @@ Entries:
   id: 9464
   time: '2026-05-30T04:05:09.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1103
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: APCs and subsequent devices can be disabled with EMPs again
+  id: 9465
+  time: '2026-05-30T04:03:27.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1099
