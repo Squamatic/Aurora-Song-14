@@ -512,8 +512,8 @@ public sealed class FaxSystem : EntitySystem
                                        paper.StampState,
                                        paper.StampedBy,
                                        paper.EditingDisabled,
-                                       _tag.HasTag(sendEntity.Value, NFPaperStampProtectedTag), // Frontier
-                                       blueprintRecipes // Frontier
+                                       stampProtected: _tag.HasTag(sendEntity.Value, NFPaperStampProtectedTag), // Frontier
+                                       blueprintRecipes: blueprintRecipes // Frontier
                                        );
 
         component.PrintingQueue.Enqueue(printout);

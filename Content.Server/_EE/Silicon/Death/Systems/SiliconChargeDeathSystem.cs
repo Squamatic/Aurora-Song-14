@@ -53,7 +53,7 @@ public sealed class SiliconDeathSystem : EntitySystem
         EntityManager.EnsureComponent<SleepingComponent>(uid);
         _statusEffect.TrySetStatusEffectDuration(uid, SleepingSystem.StatusEffectForcedSleeping); // starcup: edited for status effects refactor
 
-        _hidableLayers.SetLayerVisibility(uid, HumanoidVisualLayers.Eyes, visible: false, SlotFlags.PREVENTEQUIP); // Aurora's Song
+        _hidableLayers.SetLayerOcclusion(uid, HumanoidVisualLayers.Eyes, hidden: true, SlotFlags.PREVENTEQUIP); // Aurora's Song
 
         siliconDeadComp.Dead = true;
 
@@ -64,6 +64,8 @@ public sealed class SiliconDeathSystem : EntitySystem
     {
         _statusEffect.TryRemoveStatusEffect(uid, SleepingSystem.StatusEffectForcedSleeping); // starcup: edited for status effects refactor
         _sleep.TryWaking(uid, true, null);
+
+        _hidableLayers.SetLayerOcclusion(uid, HumanoidVisualLayers.Eyes, hidden: false, SlotFlags.PREVENTEQUIP); // Aurora's Song
 
         siliconDeadComp.Dead = false;
 

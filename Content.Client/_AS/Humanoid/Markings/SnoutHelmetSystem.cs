@@ -39,7 +39,7 @@ public sealed class SnoutHelmetSystem : EntitySystem
         foreach (var marking in markings)
         {
             // Cannot figure out how to dynamically set custom race
-            var markingLower = marking.MarkingId.ToLower();
+            var markingLower = marking.MarkingId.Id.ToLower();
             if (markingLower.Contains("vulp"))
             {
                 component.AlternateHelmet = "vulpkanin";

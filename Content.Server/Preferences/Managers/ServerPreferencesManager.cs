@@ -535,12 +535,14 @@ namespace Content.Server.Preferences.Managers
 
                 if (prefs != null)
                 {
-                    prefsData.Prefs = prefs;
+                    var playerPrefs = ConvertPreferences(prefs); // Aurora's Song - Convert Preference
+
+                    prefsData.Prefs = playerPrefs; // Aurora's Song - Reuse conversion here
                     prefsData.PrefsLoaded = true;
 
                     var msg = new MsgPreferencesAndSettings
                     {
-                        Preferences = prefs,
+                        Preferences = playerPrefs, // Aurora's Song - Reuse conversion here
                         Settings = new GameSettings
                         {
                             MaxCharacterSlots = MaxCharacterSlots
