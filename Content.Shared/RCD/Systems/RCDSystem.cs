@@ -1,4 +1,3 @@
-using Content.Shared.Access.Components;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Charges.Systems;
 using Content.Shared.Construction;
@@ -445,22 +444,6 @@ public sealed class RCDSystem : EntitySystem
                     _popup.PopupClient(reason, uid, user);
 
                 return false;
-            }
-
-            var tileDef = _turf.GetContentTileDefinition(tile);
-
-            // Check rule: Respect baseTurf and baseWhitelist
-            if (prototype.Prototype != null && _tileDefMan.TryGetDefinition(prototype.Prototype, out var replacementDef))
-            {
-                var replacementContentDef = (ContentTileDefinition) replacementDef;
-
-                if (replacementContentDef.BaseTurf != tileDef.ID && !replacementContentDef.BaseWhitelist.Contains(tileDef.ID))
-                {
-                    if (popMsgs)
-                        _popup.PopupClient(Loc.GetString("rcd-component-cannot-build-on-empty-tile-message"), uid, user);
-
-                    return false;
-                }
             }
 
             var tileDef = _turf.GetContentTileDefinition(tile);
