@@ -7,8 +7,10 @@
   flavor: medicine
   color: "#880077"
   worksOnTheDead: true
+  tags: # Aurora's Song
+  - Cryogenic
   metabolisms:
-    Cryogenic:
+    Bloodstream: # Aurora's Song - Cryogenic>Bloodstream
       effects:
       - !type:HealthChange
         conditions:
@@ -29,8 +31,10 @@
   flavor: medicine
   color: "#FFA861"
   worksOnTheDead: true
+  tags: # Aurora's Song
+  - Cryogenic
   metabolisms:
-    Cryogenic:
+    Bloodstream: # Aurora's Song - Cryogenic>Bloodstream
       effects:
       - !type:HealthChange
         conditions:

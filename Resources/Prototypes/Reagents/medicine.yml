@@ -180,6 +180,8 @@
   flavor: medicine
   color: "#0091ff"
   worksOnTheDead: true # Frontier
+  tags: # Aurora's Song
+  - Cryogenic
   plantMetabolism:
   - !type:PlantAdjustToxins
     amount: -5
@@ -210,6 +212,8 @@
   flavor: medicine
   color: "#32cd32"
   worksOnTheDead: true # Frontier
+  tags: # Aurora's Song
+  - Cryogenic
   metabolisms:
     Bloodstream:
       effects:
@@ -940,13 +944,12 @@
   physicalDesc: reagent-physical-desc-translucent
   flavor: medicine
   color: "#404040"
+  tags:
+  - Sheleg
   metabolisms:
     Bloodstream:
       effects:
       - !type:EyeDamage
-    Sheleg: # Frontier
-      effects: # Frontier
-      - !type:EyeDamage # Frontier
 
 - type: reagent
   id: Cognizine
@@ -1298,6 +1301,8 @@
   flavor: acid
   color: "#b5e36d"
   worksOnTheDead: true
+  tags: # Aurora's Song
+  - Cryogenic
   metabolisms:
     Bloodstream:
       effects:
@@ -1328,6 +1333,8 @@
   flavor: medicine
   color: "#0cbfe9"
   worksOnTheDead: true
+  tags: # Aurora's Song
+  - Cryogenic
   metabolisms:
     Bloodstream:
       effects:
@@ -1359,6 +1366,8 @@
   flavor: medicine
   color: "#86a5bd"
   worksOnTheDead: true
+  tags: # Aurora's Song
+  - Cryogenic
   plantMetabolism:
   - !type:PlantAdjustToxins
     amount: -5
@@ -1392,6 +1401,8 @@
   flavor: medicine
   color: "#89f77f"
   worksOnTheDead: true
+  tags: # Aurora's Song
+  - Cryogenic
   metabolisms:
     Bloodstream:
       effects:

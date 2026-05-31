@@ -97,8 +97,10 @@
   physicalDesc: reagent-physical-desc-creamy
   flavor: milk
   color: "#FFFFD4"
+  tags: # Aurora's Song
+  - Cryogenic
   metabolisms:
-    Cryogenic:
+    Bloodstream: # Aurora's Song - Cryogenic>Bloodstream
       metabolismRate : 0.03 #One 5u dose is 2.7 minutes
       effects:
       - !type:PopupMessage
@@ -124,8 +126,10 @@
   physicalDesc: reagent-physical-desc-sparkly
   flavor: fruity
   color: "#51c955"
+  tags: # Aurora's Song
+  - Cryogenic
   metabolisms:
-    Cryogenic:
+    Bloodstream: # Aurora's Song - Cryogenic>Bloodstream
       metabolismRate: 0.2 #Sheleg are going to process this at like, 0.04. So it's going to last nearly 2 minutes for 5u
       effects:
       - !type:PopupMessage

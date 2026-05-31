@@ -217,8 +217,10 @@
   physicalDesc: reagent-physical-desc-icy
   flavor: coldDeath
   color: "#47ffbf"
+  tags:
+  - Cryogenic
   metabolisms:
-    Cryogenic:
+    Bloodstream: # Aurora's Song - Cryogenic>Bloodstream
         metabolismRate: 2.5 # Sheleg seem to specifically metabolise things slower, so to compensate it has to be declared higher
         # Secondary benefit of this is that it makes these "Sheleg drugs" less useful for non Sheleg, which is good for roleplay reasons
         # and also makes them less universally good than the other cryo chems, which is nice for balance reasons.
@@ -281,8 +283,10 @@
   physicalDesc: reagent-physical-desc-mjod
   flavor: frostmjod
   color: "#b57600"
+  tags:
+  - Cryogenic
   metabolisms:
-      Cryogenic:
+      Bloodstream: # Aurora's Song - Cryogenic>Bloodstream
           metabolismRate: 2.5
           effects:
           - !type:MovementSpeedModifier
@@ -329,8 +333,10 @@
   physicalDesc: reagent-physical-desc-roiling
   flavor: murderDraught
   color: "#ff2121"
+  tags:
+  - Cryogenic
   metabolisms:
-    Cryogenic:
+    Bloodstream: # Aurora's Song - Cryogenic>Bloodstream
       metabolismRate: 5.0
       effects:
       - !type:MovementSpeedModifier
