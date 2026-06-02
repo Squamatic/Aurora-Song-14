@@ -214,10 +214,10 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: _DV/Mobs/Species/Vulpkanin/parts.rsi # starcup: use delta-v spritesdd
+    sprite: _DV/Mobs/Species/Vulpkanin/parts.rsi # starcup: use delta-v sprites
 
 - type: entity
-  parent: [ OrganBaseTorsoSexed, OrganBaseTorsoSexed, OrganBaseTorso, OrganVulpkaninExternal ] # Aurora's Song - Add sexed organs
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganVulpkaninExternal ]
   id: OrganVulpkaninTorso
 
 - type: entity
