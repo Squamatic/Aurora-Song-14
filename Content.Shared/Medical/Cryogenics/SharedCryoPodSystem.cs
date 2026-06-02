@@ -79,6 +79,7 @@ public abstract partial class SharedCryoPodSystem : EntitySystem
         SubscribeLocalEvent<CryoPodComponent, ActivatableUIOpenAttemptEvent>(OnActivateUIAttempt);
         SubscribeLocalEvent<CryoPodComponent, EntRemovedFromContainerMessage>(OnEjected);
         SubscribeLocalEvent<CryoPodComponent, EntInsertedIntoContainerMessage>(OnBodyInserted);
+        SubscribeLocalEvent<CryoPodComponent, GotUnEmaggedEvent>(OnUnemagged); // Frontier
 
         _bloodstreamQuery = GetEntityQuery<BloodstreamComponent>();
         _itemSlotsQuery = GetEntityQuery<ItemSlotsComponent>();
