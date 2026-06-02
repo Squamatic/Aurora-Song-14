@@ -9,9 +9,8 @@
   recognizable: true
   metabolisms:
     Digestion: # Aurora's Song - Drink>Digestion
+      metabolites:
+        Ethanol: 0.3
       effects:
       - !type:SatiateThirst
         factor: 1
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.3

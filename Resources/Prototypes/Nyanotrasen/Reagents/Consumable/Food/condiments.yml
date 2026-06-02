@@ -9,13 +9,9 @@
   recognizable: true
   metabolisms:
     Digestion: # Aurora's Song - Food>Digestion
-      effects:
-      - !type:AdjustReagent
-        reagent: Nutriment
-        amount: 0.15
-      - !type:AdjustReagent
-        reagent: JuiceTomato
-        amount: 0.60
+      metabolites:
+        Nutriment: 0.15
+        JuiceTomato: 0.6
 
 - type: reagent
   id: Pesto
@@ -28,16 +24,10 @@
   recognizable: true
   metabolisms:
     Digestion: # Aurora's Song - Food>Digestion
-      effects:
-      - !type:AdjustReagent
-        reagent: Nutriment
-        amount: 0.10
-      - !type:AdjustReagent
-        reagent: OilOlive
-        amount: 0.35
-      - !type:AdjustReagent
-        reagent: Allicin
-        amount: 0.25
+      metabolites:
+        Nutriment: 0.1
+        OilOlive: 0.35
+        Allicin: 0.25
 
 - type: reagent
   id: Bechamel
@@ -50,16 +40,10 @@
   recognizable: true
   metabolisms:
     Digestion: # Aurora's Song - Food>Digestion
-      effects:
-      - !type:AdjustReagent
-        reagent: Nutriment
-        amount: 0.10
-      - !type:AdjustReagent
-        reagent: Cream
-        amount: 0.55
-      - !type:AdjustReagent
-        reagent: OilOlive
-        amount: 0.10
+      metabolites:
+        Nutriment: 0.1
+        Cream: 0.55
+        OilOlive: 0.1
 
 - type: reagent
   id: OilGhee

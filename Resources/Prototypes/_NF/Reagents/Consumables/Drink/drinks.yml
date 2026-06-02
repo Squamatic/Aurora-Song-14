@@ -9,15 +9,12 @@
   color: "#a45c08"
   metabolisms:
     Digestion: # Aurora's Song - Drink>Digestion
+      metabolites:
+        Theobromine: 0.05
+        Sugar: 0.2
       effects:
       - !type:SatiateThirst
         factor: 2
-      - !type:AdjustReagent
-        reagent: Theobromine
-        amount: 0.05
-      - !type:AdjustReagent
-        reagent: Sugar
-        amount: 0.2
   metamorphicSprite:
     sprite: _NF/Objects/Consumable/Drinks/pumpkinspicelatte.rsi
     state: icon_empty
@@ -96,12 +93,11 @@
   color: "#81b42f"
   metabolisms:
     Digestion: # Aurora's Song - Drink>Digestion
+      metabolites:
+        PumpkinFlesh: 1
       effects:
       - !type:SatiateThirst
         factor: 2
-      - !type:AdjustReagent
-        reagent: PumpkinFlesh
-        amount: 1
       - !type:HealthChange
         damage:
           types: # Aurora's Song - Convert groups to types
@@ -139,15 +135,12 @@
   color: "#3061e3"
   metabolisms:
     Digestion: # Aurora's Song - Drink>Digestion
+      metabolites:
+        Ethanol: 0.03
+        Desoxyephedrine: 0.25
       effects:
       - !type:SatiateThirst
         factor: 1
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.03
-      - !type:AdjustReagent
-        reagent: Desoxyephedrine
-        amount: 0.25
   metamorphicSprite:
     sprite: _NF/Objects/Consumable/Drinks/ginandsonic.rsi
     state: icon_empty
@@ -165,12 +158,11 @@
   color: "#eed037"
   metabolisms:
     Digestion: # Aurora's Song - Drink>Digestion
+      metabolites:
+        Ethanol: 0.25
       effects:
       - !type:SatiateThirst
         factor: 0.2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.25
   metamorphicSprite:
     sprite: _NF/Objects/Consumable/Drinks/goldencat.rsi
     state: icon_empty
@@ -188,12 +180,11 @@
   color: "#8c934c"
   metabolisms:
     Digestion: # Aurora's Song - Drink>Digestion
+      metabolites:
+        Ethanol: 0.25
       effects:
       - !type:SatiateThirst
         factor: 1
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.25
       - !type:Explosion # Aurora's Song - ExplosionReactionEffect>Explosion
         explosionType: Default
         maxIntensity: 0.1
@@ -218,12 +209,11 @@
   color: "#d4db9a"
   metabolisms:
     Digestion: # Aurora's Song - Drink>Digestion
+      metabolites:
+        Ethanol: 0.3
       effects:
       - !type:SatiateThirst
         factor: 0.8
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.3
   metamorphicSprite:
     sprite: _NF/Objects/Consumable/Drinks/torpedojuice.rsi
     state: icon_empty
@@ -241,12 +231,11 @@
   color: "#f1d25f"
   metabolisms:
     Digestion: # Aurora's Song - Drink>Digestion
+      metabolites:
+        Ethanol: 0.08
       effects:
       - !type:SatiateThirst
         factor: 0.5
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.08
       - !type:SatiateHunger
         factor: 0.1
       - !type:HealthChange

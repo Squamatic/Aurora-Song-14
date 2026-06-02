@@ -44,14 +44,10 @@
   recognizable: true
   metabolisms:
     Digestion: # Aurora's Song - Food>Digestion
-      effects:
+      metabolites:
       # Minimally filling
-      - !type:AdjustReagent
-        reagent: Sugar
-        amount: 0.2
-      - !type:AdjustReagent
-        reagent: Nutriment
-        amount: 0.1
+        Sugar: 0.2
+        Nutriment: 0.1
 
 - type: reagent
   id: SourCream

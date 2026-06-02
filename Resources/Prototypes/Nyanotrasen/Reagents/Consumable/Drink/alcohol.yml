@@ -14,12 +14,11 @@
   metamorphicChangeColor: false
   metabolisms:
     Digestion: # Aurora's Song - Drink>Digestion
+      metabolites:
+        Ethanol: 0.07
       effects:
       - !type:SatiateThirst
         factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.07
 
 - type: reagent
   id: Soju
@@ -37,12 +36,11 @@
   metamorphicChangeColor: false
   metabolisms:
     Digestion: # Aurora's Song - Drink>Digestion
+      metabolites:
+        Ethanol: 0.15
       effects:
       - !type:SatiateThirst
         factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.15
 
 - type: reagent
   id: OrangeCreamice
@@ -60,12 +58,11 @@
   metamorphicChangeColor: false
   metabolisms:
     Digestion: # Aurora's Song - Drink>Digestion
+      metabolites:
+        Ethanol: 0.05
       effects:
       - !type:SatiateThirst
         factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.05
 
 - type: reagent
   id: Silverjack
@@ -83,12 +80,11 @@
   metamorphicChangeColor: false
   metabolisms:
     Digestion: # Aurora's Song - Drink>Digestion
+      metabolites:
+        Ethanol: 0.0625
       effects:
       - !type:SatiateThirst
         factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.0625
 
 - type: reagent
   id: Brainbomb
@@ -106,6 +102,10 @@
   metamorphicChangeColor: false
   metabolisms:
     Digestion: # Aurora's Song - Drink>Digestion
+      metabolites:
+        Ethanol: 0.085
+        THC: 0.33
+        SpaceDrugs: 0.33
       effects:
       - !type:HealthChange
         conditions:
@@ -117,15 +117,6 @@
             Caustic: 0.25
       - !type:SatiateThirst
         factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.085
-      - !type:AdjustReagent
-        reagent: THC
-        amount: 0.33
-      - !type:AdjustReagent
-        reagent: SpaceDrugs
-        amount: 0.33
 
 - type: reagent
   id: ClownBlood
@@ -143,12 +134,11 @@
   metamorphicChangeColor: false
   metabolisms:
     Digestion: # Aurora's Song - Drink>Digestion
+      metabolites:
+        Ethanol: 0.025
       effects:
       - !type:SatiateThirst
         factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.025
 
 - type: reagent
   id: CircusJuice
@@ -166,12 +156,11 @@
   metamorphicChangeColor: false
   metabolisms:
     Digestion: # Aurora's Song - Drink>Digestion
+      metabolites:
+        Ethanol: 0.0625
       effects:
       - !type:SatiateThirst
         factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.0625
       - !type:Emote #It's very funny
         emote: Laugh
         probability: 0.15
@@ -192,12 +181,11 @@
   metamorphicChangeColor: false
   metabolisms:
     Digestion: # Aurora's Song - Drink>Digestion
+      metabolites:
+        Ethanol: 0.065
       effects:
       - !type:SatiateThirst
         factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.065
       - !type:AdjustTemperature
         amount: 75 # thermal energy, not temperature!
 
@@ -217,9 +205,8 @@
   metamorphicChangeColor: false
   metabolisms:
     Digestion: # Aurora's Song - Drink>Digestion
+      metabolites:
+        Ethanol: 0.03
       effects:
       - !type:SatiateThirst
         factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.03
