@@ -247,6 +247,8 @@ namespace Content.Shared.Chemistry.Reagent
 
         public List<string>? PlantMetabolisms = null;
 
+        public List<string>? Tags = null; // Aurora's Song
+
         public ReagentGuideEntry(ReagentPrototype proto, IPrototypeManager prototype, IEntitySystemManager entSys)
         {
             ReagentPrototype = proto.ID;
@@ -257,6 +259,11 @@ namespace Content.Shared.Chemistry.Reagent
             {
                 PlantMetabolisms =
                     new List<string>(proto.GuidebookReagentEffectsDescription(prototype, entSys, proto.PlantMetabolisms, FixedPoint2.New(1f)));
+            }
+            // Aurora's Song
+            if (proto.Tags.Count > 0)
+            {
+                Tags = new List<string>(proto.Tags.Select(tag => tag.Id));
             }
         }
     }

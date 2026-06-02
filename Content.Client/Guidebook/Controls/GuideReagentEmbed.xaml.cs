@@ -216,6 +216,25 @@ public sealed partial class GuideReagentEmbed : BoxContainer, IDocumentTag, ISea
         }
         #endregion
 
+        #region Tags - Aurora's Song
+        if (_chemistryGuideData.ReagentGuideRegistry.TryGetValue(reagent.ID, out var guideEntryRegistryTags) &&
+            guideEntryRegistryTags.Tags != null)
+        {
+            TagsDescriptionContainer.Children.Clear();
+
+            foreach (var tag in guideEntryRegistryTags.Tags)
+            {
+                var tagLabel = new RichTextLabel();
+                tagLabel.SetMarkup(Loc.GetString("guidebook-reagent-tags", ("tag", tag)));
+                TagsDescriptionContainer.AddChild(tagLabel);
+            }
+        }
+        else
+        {
+            TagsContainer.Visible = false;
+        }
+        #endregion
+
         GenerateSources(reagent);
 
         FormattedMessage description = new();
