@@ -211,10 +211,19 @@
 - type: entity
   parent: [ OrganBaseArmLeft, OrganHarpyExternal ]
   id: OrganHarpyArmLeft
+  # Aurora's Song - Omitting LArmExt because its unused currently
 
 - type: entity
   parent: [ OrganBaseArmRight, OrganHarpyExternal ]
   id: OrganHarpyArmRight
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers: # Aurora's Song - Heel stockings
+    - enum.HumanoidVisualLayers.RArmExtension
+    markingData:
+      layers:
+      - RArm
+      - RArmExtension
 
 - type: entity
   parent: [ OrganBaseHandLeft, OrganHarpyExternal ]
