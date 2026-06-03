@@ -723,7 +723,7 @@
     - id: ToyMauler
     - id: ToyNuke
     - id: ToySword
-    - id: WeaponRevolverPythonAP
+    - id: NFWeaponRevolverPython45 # Aurora's Song - WeaponRevolverPythonAP>NFWeaponRevolverPython45
       weight: 0.4
     - id: BalloonSyn
       weight: 0.3

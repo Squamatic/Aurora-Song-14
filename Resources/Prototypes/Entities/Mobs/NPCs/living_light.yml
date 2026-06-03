@@ -192,18 +192,18 @@
   parent: MobLuminousPerson
   suffix: "Salvage Ruleset"
   components:
-  - type: SalvageMobRestrictions #So they don't linger after a wreck despawns
+  - type: NFSalvageMobRestrictions #So they don't linger after a wreck despawns # Aurora's Song - SalvageMobRestrictions>NFSalvageMobRestrictions
 
 - type: entity
   id: MobLuminousObjectSalvage
   parent: MobLuminousObject
   suffix: "Salvage Ruleset"
   components:
-  - type: SalvageMobRestrictions #So they don't linger after a wreck despawns
+  - type: NFSalvageMobRestrictions #So they don't linger after a wreck despawns # Aurora's Song - SalvageMobRestrictions>NFSalvageMobRestrictions
 
 - type: entity
   id: MobLuminousEntitySalvage
   parent: MobLuminousEntity
   suffix: "Salvage Ruleset"
   components:
-  - type: SalvageMobRestrictions #So they don't linger after a wreck despawns
+  - type: NFSalvageMobRestrictions #So they don't linger after a wreck despawns # Aurora's Song - SalvageMobRestrictions>NFSalvageMobRestrictions

@@ -173,6 +173,8 @@
     data:
       state: l_leg
   - type: VisualOrganMarkings
+    hideableLayers: # Aurora's Song - Heel stockings
+    - enum.HumanoidVisualLayers.LLeg
     markingData:
       layers:
       - LLeg
@@ -192,6 +194,8 @@
     data:
       state: r_leg
   - type: VisualOrganMarkings
+    hideableLayers: # Aurora's Song - Heel stockings
+    - enum.HumanoidVisualLayers.RLeg
     markingData:
       layers:
       - RLeg
@@ -211,6 +215,8 @@
     data:
       state: l_foot
   - type: VisualOrganMarkings
+    hideableLayers: # Aurora's Song - Heel stockings
+    - enum.HumanoidVisualLayers.LFoot
     markingData:
       layers:
       - LFoot
@@ -230,6 +236,8 @@
     data:
       state: r_foot
   - type: VisualOrganMarkings
+    hideableLayers: # Aurora's Song - Heel stockings
+    - enum.HumanoidVisualLayers.RFoot
     markingData:
       layers:
       - RFoot
