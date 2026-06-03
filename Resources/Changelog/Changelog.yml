@@ -5342,3 +5342,10 @@ Entries:
   id: 9508
   time: '2026-05-24T21:09:30.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1077
+- author: Phoenix51505
+  changes:
+    - type: Fix
+      message: The ESS will properly strap you to things when teleporting you back.
+  id: 9509
+  time: '2026-06-03T22:35:10.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1113
