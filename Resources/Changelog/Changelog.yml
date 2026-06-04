@@ -5388,3 +5388,10 @@ Entries:
   id: 9514
   time: '2026-06-04T23:29:13.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1114
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: svalinn having double batteries
+  id: 9515
+  time: '2026-06-04T23:30:20.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1100
