@@ -248,6 +248,11 @@
   - type: VisualOrganMarkings
     hideableLayers:
     - enum.HumanoidVisualLayers.HeadTop
+    # Aurora's Song Start - Correct hideable head layers
+    - enum.HumanoidVisualLayers.Snout
+    - enum.HumanoidVisualLayers.FacialHair
+    - enum.HumanoidVisualLayers.Hair
+    # Aurora's Song End
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganMothExternal ]

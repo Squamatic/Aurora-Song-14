@@ -203,6 +203,16 @@
 - type: entity
   parent: [ OrganBaseHead, OrganAvaliExternal ]
   id: OrganAvaliHead
+  # Aurora's Song Start - Correct hideable head layers
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.HeadTop
+    - enum.HumanoidVisualLayers.HeadSide
+    - enum.HumanoidVisualLayers.Hair
+    - enum.HumanoidVisualLayers.FacialHair
+    - enum.HumanoidVisualLayers.Snout
+  # Aurora's Song End
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganAvaliExternal ]

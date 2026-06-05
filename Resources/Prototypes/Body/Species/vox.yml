@@ -310,6 +310,7 @@
     - enum.HumanoidVisualLayers.Snout
     - enum.HumanoidVisualLayers.Hair
     - enum.HumanoidVisualLayers.FacialHair
+    - enum.HumanoidVisualLayers.Head # Aurora's Song - Correct hideable head layers
     dependentHidingLayers:
       enum.HumanoidVisualLayers.Snout:
       - enum.HumanoidVisualLayers.SnoutCover

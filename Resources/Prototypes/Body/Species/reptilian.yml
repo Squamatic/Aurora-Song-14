@@ -226,6 +226,10 @@
     - enum.HumanoidVisualLayers.Snout
     - enum.HumanoidVisualLayers.HeadTop
     - enum.HumanoidVisualLayers.HeadSide
+    # Aurora's Song Start - Correct hideable head layers
+    - enum.HumanoidVisualLayers.Hair
+    - enum.HumanoidVisualLayers.FacialHair
+    # Aurora's Song End
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganReptilianExternal ]

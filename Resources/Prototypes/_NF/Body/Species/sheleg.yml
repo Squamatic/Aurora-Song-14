@@ -278,6 +278,15 @@
 - type: entity
   parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganShelegExternal ] # Aurora's Song - Add sexed organs
   id: OrganShelegHead
+  # Aurora's Song Start - Correct hideable head layers
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Hair
+    - enum.HumanoidVisualLayers.Snout
+    - enum.HumanoidVisualLayers.FacialHair
+    - enum.HumanoidVisualLayers.HeadTop #imp
+  # Aurora's Song End
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganShelegExternal ]
