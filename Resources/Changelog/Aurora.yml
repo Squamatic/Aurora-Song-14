@@ -1276,3 +1276,10 @@ Entries:
   id: 9522
   time: '2026-06-05T01:00:58.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1108
+- author: snaviian
+  changes:
+    - type: Add
+      message: You can now print cubes for various trees from a biogenerator!
+  id: 9523
+  time: '2026-06-05T01:25:06.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1105
