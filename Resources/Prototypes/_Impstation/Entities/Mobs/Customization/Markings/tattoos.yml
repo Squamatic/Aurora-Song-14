@@ -74,7 +74,6 @@
   parent: [BaseTattoo, BaseSpeciesEyesStandard]   # Aurora's Song
   id: HeadHeavyTattoos
   bodyPart: Head
-  markingCategory: Head
   coloring:
     default:
       type:
@@ -90,7 +89,6 @@
   parent: [BaseTattoo, BaseSpeciesChestStandardOrganic]   # Aurora's Song
   id: ChestHeavyTattoos
   bodyPart: Chest
-  markingCategory: Chest
   coloring:
     default:
       type:
@@ -108,7 +106,6 @@
   parent: [BaseTattoo, BaseSpeciesArmsStandardOrganic]   # Aurora's Song
   id: ArmHeavyTattoosLeft
   bodyPart: LArm
-  markingCategory: Arms
   coloring:
     default:
       type:
@@ -124,7 +121,6 @@
   parent: [BaseTattoo, BaseSpeciesArmsStandardOrganic]   # Aurora's Song
   id: ArmHeavyTattoosRight
   bodyPart: RArm
-  markingCategory: Arms
   coloring:
     default:
       type:
@@ -140,7 +136,6 @@
   parent: [BaseTattoo, BaseSpeciesArmsStandardOrganic]   # Aurora's Song
   id: HandHeavyTattoosLeft
   bodyPart: LHand
-  markingCategory: Arms
   coloring:
     default:
       type:
@@ -156,7 +151,6 @@
   parent: [BaseTattoo, BaseSpeciesArmsStandardOrganic]   # Aurora's Song
   id: HandHeavyTattoosRight
   bodyPart: RHand
-  markingCategory: Arms
   coloring:
     default:
       type:
@@ -172,7 +166,6 @@
   parent: [BaseTattoo, BaseSpeciesLegsStandardOrganic]   # Aurora's Song
   id: LegHeavyTattoosLeft
   bodyPart: LLeg
-  markingCategory: Legs
   coloring:
     default:
       type:
@@ -188,7 +181,6 @@
   parent: [BaseTattoo, BaseSpeciesLegsStandardOrganic]   # Aurora's Song
   id: LegHeavyTattoosRight
   bodyPart: RLeg
-  markingCategory: Legs
   coloring:
     default:
       type:
@@ -204,7 +196,6 @@
   parent: [BaseTattoo, BaseSpeciesLegsStandardOrganic]   # Aurora's Song
   id: FootHeavyTattoosLeft
   bodyPart: LFoot
-  markingCategory: Legs
   coloring:
     default:
       type:
@@ -220,7 +211,6 @@
   parent: [BaseTattoo, BaseSpeciesLegsStandardOrganic]   # Aurora's Song
   id: FootHeavyTattoosRight
   bodyPart: RFoot
-  markingCategory: Legs
   coloring:
     default:
       type:

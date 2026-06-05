@@ -25,7 +25,6 @@
   id: DionaMossChest
   bodyPart: Chest
   groupWhitelist: [ Diona ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: dionamosschest
@@ -34,7 +33,6 @@
   id: DionaMoonBloom
   bodyPart: HeadTop
   groupWhitelist: [ Diona ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: dionamoonbloom
@@ -44,7 +42,6 @@
   id: DionaBigFirefly
   bodyPart: Head
   groupWhitelist: [ Diona ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dionabigfirefly
@@ -54,7 +51,6 @@
   id: DionaFirefly
   bodyPart: Chest
   groupWhitelist: [ Diona ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dionafirefly
@@ -64,7 +60,6 @@
   id: DionaPollenDust
   bodyPart: Head
   groupWhitelist: [ Diona ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dionapollendust
@@ -341,7 +336,6 @@
   id: VoxCocktail
   bodyPart: Tail
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxcocktail1
@@ -374,7 +368,6 @@
   id: VoxTailStripes
   bodyPart: Chest
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailstripes
@@ -383,7 +376,6 @@
   id: VoxLArmProsthetic
   bodyPart: LHand
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   coloring:
     default:
       type:
@@ -397,7 +389,6 @@
   id: VoxRArmProsthetic
   bodyPart: RHand
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   coloring:
     default:
       type:
@@ -411,7 +402,6 @@
   id: VoxBeakColor
   bodyPart: Snout
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxbeakcolor
@@ -420,7 +410,6 @@
   id: VoxBeakSplit
   bodyPart: Snout
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxbeaksplit1
@@ -431,7 +420,6 @@
   id: VoxBeakTipped
   bodyPart: Snout
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxbeaktipped
@@ -440,7 +428,6 @@
   id: VoxChestPlumage
   bodyPart: Chest
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxchestplumage
@@ -449,7 +436,6 @@
   id: VoxFootSpines
   bodyPart: Tail
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxfootspines
@@ -458,7 +444,6 @@
   id: VoxFootGradientLFoot
   bodyPart: LFoot
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxfootgradientl1
@@ -467,7 +452,6 @@
   id: VoxFootGradientRFoot
   bodyPart: RFoot
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxfootgradientr1
@@ -476,7 +460,6 @@
   id: VoxLegGradientLLeg
   bodyPart: LLeg
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxfootgradientl2
@@ -485,7 +468,6 @@
   id: VoxLegGradientRLeg
   bodyPart: RFoot
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxfootgradientr2
@@ -494,7 +476,6 @@
   id: VoxHandGradientRHand
   bodyPart: RHand
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxhandgradientr1
@@ -507,7 +488,6 @@
   id: VoxHandGradientLHand
   bodyPart: LHand
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxhandgradientl1
@@ -520,7 +500,6 @@
   id: VoxHeadGradient
   bodyPart: Head
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxheadgradient1
@@ -533,7 +512,6 @@
   id: VoxTailBell
   bodyPart: Tail
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailbell1
@@ -553,7 +531,6 @@
   id: VoxTailLantern
   bodyPart: Tail
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtaillantern
@@ -563,7 +540,6 @@
   id: VoxTailSingleStripe
   bodyPart: Chest
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailsinglestripe
@@ -572,7 +548,6 @@
   id: VoxTailSmallPlume
   bodyPart: Tail
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailsmallplume
@@ -581,7 +556,6 @@
   id: VoxTailSpines
   bodyPart: Tail
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailspines
@@ -590,7 +564,6 @@
   id: VoxArmsStripesLHand
   bodyPart: LArm
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxarmsstripesl
@@ -599,7 +572,6 @@
   id: VoxArmsStripesRHand
   bodyPart: RArm
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxarmsstripesr
@@ -608,7 +580,6 @@
   id: VoxLegsStripesLLeg
   bodyPart: LLeg
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxlegsstripesl
@@ -617,7 +588,6 @@
   id: VoxLegsStripesRLeg
   bodyPart: RFoot
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxlegsstripesr
@@ -626,7 +596,6 @@
   id: VoxChains
   bodyPart: Tail
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxchains
@@ -635,7 +604,6 @@
   id: VoxSunAndMoon
   bodyPart: Tail
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxsunandmoon
@@ -644,7 +612,6 @@
   id: VoxCheeks
   bodyPart: Head
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxcheeks
@@ -653,7 +620,6 @@
   id: VoxBelly
   bodyPart: Chest
   groupWhitelist: [ Vox ]
-  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxbelly

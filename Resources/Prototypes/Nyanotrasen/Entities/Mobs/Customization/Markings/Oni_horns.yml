@@ -1,7 +1,6 @@
 - type: marking
   id: OniHornSingleCurved
   bodyPart: HeadTop
-  forcedColoring: false
   groupWhitelist: [Oni]
   sprites:
   - sprite: Nyanotrasen/Mobs/Customization/oni_horns.rsi
@@ -10,7 +9,6 @@
 - type: marking
   id: OniHornSingleLeftCurved
   bodyPart: HeadTop
-  forcedColoring: false
   groupWhitelist: [Oni]
   sprites:
   - sprite: Nyanotrasen/Mobs/Customization/oni_horns.rsi
@@ -19,7 +17,6 @@
 - type: marking
   id: OniHornSingleRightCurved
   bodyPart: HeadTop
-  forcedColoring: false
   groupWhitelist: [Oni]
   sprites:
   - sprite: Nyanotrasen/Mobs/Customization/oni_horns.rsi
@@ -28,7 +25,6 @@
 - type: marking
   id: OniHornDoubleCurvedOutwards
   bodyPart: HeadTop
-  forcedColoring: false
   groupWhitelist: [Oni]
   sprites:
   - sprite: Nyanotrasen/Mobs/Customization/oni_horns.rsi
@@ -37,7 +33,6 @@
 - type: marking
   id: OniHornDoubleCurved
   bodyPart: HeadTop
-  forcedColoring: false
   groupWhitelist: [Oni]
   sprites:
   - sprite: Nyanotrasen/Mobs/Customization/oni_horns.rsi
@@ -46,7 +41,6 @@
 - type: marking
   id: OniHornDoubleLeftBrokeCurved
   bodyPart: HeadTop
-  forcedColoring: false
   groupWhitelist: [Oni]
   sprites:
   - sprite: Nyanotrasen/Mobs/Customization/oni_horns.rsi
@@ -55,7 +49,6 @@
 - type: marking
   id: OniHornDoubleRightBrokeCurved
   bodyPart: HeadTop
-  forcedColoring: false
   groupWhitelist: [Oni]
   sprites:
   - sprite: Nyanotrasen/Mobs/Customization/oni_horns.rsi

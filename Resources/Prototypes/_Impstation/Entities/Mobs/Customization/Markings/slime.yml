@@ -3,10 +3,7 @@
 - type: marking
   id: bubble
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ SlimePerson ]
-  forcedColoring: false
-  followSkinColor: false
+  groupWhitelist: [ Slime ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/SlimePerson/chest.rsi
     state: bubble
@@ -14,10 +11,7 @@
 - type: marking
   id: fishbowl
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ SlimePerson ]
-  forcedColoring: false
-  followSkinColor: false
+  groupWhitelist: [ Slime ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/SlimePerson/chest.rsi
     state: fishbowl1
@@ -27,9 +21,7 @@
 - type: marking
   id: SlimeBonechest
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [SlimePerson]
-  followSkinColor: false
+  groupWhitelist: [ Slime ]
   coloring:
     default:
       type:
@@ -42,9 +34,8 @@
 - type: marking
   id: SlimeCore
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [SlimePerson]
-  followSkinColor: true
+  groupWhitelist: [ Slime ]
+  forcedColoring: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/SlimePerson/chest.rsi
     state: core
@@ -52,9 +43,7 @@
 - type: marking
   id: SlimeCoreGlowing
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ SlimePerson ]
-  followSkinColor: false
+  groupWhitelist: [ Slime ]
   coloring:
     default:
       type:
@@ -67,9 +56,8 @@
 - type: marking
   id: SlimeLungs
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [SlimePerson]
-  followSkinColor: true
+  groupWhitelist: [ Slime ]
+  forcedColoring: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/SlimePerson/chest.rsi
     state: lungs
@@ -79,10 +67,7 @@
 - type: marking
   id: FadingStars
   bodyPart: HeadSide # Aurora's Song Head>HeadSide
-  markingCategory: Overlay # Aurora's Song - Moved slime markings to overlay
-  speciesRestriction: [ SlimePerson ]
-  forcedColoring: false
-  followSkinColor: false
+  groupWhitelist: [ Slime ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/SlimePerson/head.rsi
     state: fadingstars1
@@ -95,10 +80,7 @@
 - type: marking
   id: fizz
   bodyPart: HeadSide # Aurora's Song Head>HeadSide
-  markingCategory: Overlay # Aurora's Song - Moved slime markings to overlay
-  speciesRestriction: [ SlimePerson ]
-  forcedColoring: false
-  followSkinColor: false
+  groupWhitelist: [ Slime ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/SlimePerson/head.rsi
     state: fizz
@@ -106,9 +88,7 @@
 - type: marking
   id: SlimeBonehead
   bodyPart: HeadSide # Aurora's Song Head>HeadSide
-  markingCategory: Overlay # Aurora's Song - Moved slime's markings to overlay
-  speciesRestriction: [SlimePerson]
-  followSkinColor: false
+  groupWhitelist: [ Slime ]
   coloring:
     default:
       type:
@@ -166,8 +146,7 @@
 - type: marking
   id: SlimeEyesDroopy
   bodyPart: Eyes
-  markingCategory: Overlay # Aurora's Song - Moved slime's markings to overlay
-  speciesRestriction: [ SlimePerson ]
+  groupWhitelist: [ Slime ]
   coloring:
     default:
       type:
@@ -180,8 +159,7 @@
 - type: marking
   id: SlimeEyesDroopyGlowing
   bodyPart: Eyes
-  markingCategory: Overlay # Aurora's Song - Moved slime's markings to overlay
-  speciesRestriction: [ SlimePerson ]
+  groupWhitelist: [ Slime ]
   coloring:
     default:
       type:
@@ -195,8 +173,7 @@
 - type: marking
   id: SlimeEyesCyclops
   bodyPart: Eyes
-  markingCategory: Overlay # Aurora's Song - Moved slime's markings to overlay
-  speciesRestriction: [ SlimePerson ]
+  groupWhitelist: [ Slime ]
   coloring:
     default:
       type:
@@ -209,8 +186,7 @@
 - type: marking
   id: SlimeEyesCyclopsGlowing
   bodyPart: Eyes
-  markingCategory: Overlay # Aurora's Song - Moved slime's markings to overlay
-  speciesRestriction: [ SlimePerson ]
+  groupWhitelist: [ Slime ]
   coloring:
     default:
       type:
@@ -226,9 +202,7 @@
 - type: marking
   id: SlimeBonearmright
   bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [SlimePerson]
-  followSkinColor: false
+  groupWhitelist: [ Slime ]
   coloring:
     default:
       type:
@@ -243,9 +217,7 @@
 - type: marking
   id: SlimeBonearmleft
   bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [SlimePerson]
-  followSkinColor: false
+  groupWhitelist: [ Slime ]
   coloring:
     default:
       type:
@@ -260,9 +232,7 @@
 - type: marking
   id: SlimeBonelegright
   bodyPart: RLeg
-  markingCategory: Legs
-  speciesRestriction: [SlimePerson]
-  followSkinColor: false
+  groupWhitelist: [ Slime ]
   coloring:
     default:
       type:
@@ -277,9 +247,7 @@
 - type: marking
   id: SlimeBonelegleft
   bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [SlimePerson]
-  followSkinColor: false
+  groupWhitelist: [ Slime ]
   coloring:
     default:
       type:
@@ -298,9 +266,7 @@
 - type: marking
   id: SlimeBonefootleft
   bodyPart: LFoot
-  markingCategory: Legs
-  speciesRestriction: [SlimePerson]
-  followSkinColor: false
+  groupWhitelist: [ Slime ]
   coloring:
     default:
       type:
@@ -315,9 +281,7 @@
 - type: marking
   id: SlimeBonefootright
   bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [SlimePerson]
-  followSkinColor: false
+  groupWhitelist: [ Slime ]
   coloring:
     default:
       type:
@@ -332,9 +296,7 @@
 - type: marking
   id: SlimeBonehandleft
   bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [SlimePerson]
-  followSkinColor: false
+  groupWhitelist: [ Slime ]
   coloring:
     default:
       type:
@@ -349,9 +311,7 @@
 - type: marking
   id: SlimeBonehandright
   bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [SlimePerson]
-  followSkinColor: false
+  groupWhitelist: [ Slime ]
   coloring:
     default:
       type:

@@ -1,7 +1,6 @@
 - type: marking
   id: OniHornShaved
   bodyPart: HeadTop
-  forcedColoring: false
   groupWhitelist: [Oni]
   sprites:
   - sprite: _DV/Mobs/Customization/Oni/oni_horns.rsi
@@ -10,7 +9,6 @@
 - type: marking
   id: OniHornBull
   bodyPart: HeadTop
-  forcedColoring: false
   groupWhitelist: [Oni, Ovinia] # Auroras Song - added Ovinia
   sprites:
   - sprite: _DV/Mobs/Customization/Oni/oni_horns.rsi
