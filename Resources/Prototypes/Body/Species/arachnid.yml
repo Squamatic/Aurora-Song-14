@@ -153,7 +153,7 @@
   abstract: true
   components:
   - type: Metabolizer
-    metabolizerTypes: [ Arachnid ]
+    metabolizerTypes: [ Animal, Arachnid ] # Aurora's Song - Add Animal to prevent digestion poisoning from raw meat
 
 - type: entity
   parent: OrganArachnid
@@ -260,13 +260,13 @@
   id: OrganArachnidHeart
 
 - type: entity
-  parent: [ OrganBaseStomach, OrganArachnidInternal, OrganAnimalMetabolizer ]
+  parent: [ OrganBaseStomach, OrganArachnidInternal, OrganArachnidMetabolizer ] # Aurora's Song - Use Arachnid metabolizer because it has animal metabolization as well
   id: OrganArachnidStomach
 
 - type: entity
-  parent: [ OrganBaseLiver, OrganSpriteHumanInternal, OrganArachnidInternal, OrganAnimalMetabolizer ]
+  parent: [ OrganBaseLiver, OrganSpriteHumanInternal, OrganArachnidInternal, OrganArachnidMetabolizer ] # Aurora's Song - Use Arachnid metabolizer because it has animal metabolization as well
   id: OrganArachnidLiver
 
 - type: entity
-  parent: [ OrganBaseKidneys, OrganSpriteHumanInternal, OrganArachnidInternal, OrganAnimalMetabolizer ]
+  parent: [ OrganBaseKidneys, OrganSpriteHumanInternal, OrganArachnidInternal, OrganArachnidMetabolizer ] # Aurora's Song - Use Arachnid metabolizer because it has animal metabolization as well
   id: OrganArachnidKidneys
