@@ -1414,7 +1414,7 @@
   flavorType: Complex
   description: flavor-complex-compressed-meat
 
-- type: flavor
+- type: flavor # imp
   id: street-food
   flavorType: Complex
   description: flavor-complex-street-food
