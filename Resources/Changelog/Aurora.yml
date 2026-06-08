@@ -1301,3 +1301,10 @@ Entries:
   id: 9525
   time: '2026-06-08T03:27:52.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1120
+- author: Smugman
+  changes:
+    - type: Add
+      message: Pompoms and Associated Items from Impstation
+  id: 9526
+  time: '2026-06-08T04:53:53.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/995
