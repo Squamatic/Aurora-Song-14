@@ -5,6 +5,7 @@
   desc: reagent-desc-toxin
   flavor: bitter
   color: "#cf3600"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   physicalDesc: reagent-physical-desc-opaque
   contrabandSeverity: Minor
   plantMetabolism:
@@ -27,6 +28,7 @@
   desc: reagent-desc-carpotoxin
   flavor: bitter
   color: "#e2a38c"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   physicalDesc: reagent-physical-desc-exotic-smelling
   allowedDepartments:
   - Medical
@@ -55,6 +57,7 @@
   desc: reagent-desc-chloral-hydrate
   flavor: bitter
   color: "#000067"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   physicalDesc: reagent-physical-desc-nondescript
   allowedDepartments:
   - Medical
@@ -88,6 +91,7 @@
   desc: reagent-desc-gastrotoxin
   flavor: bitter
   color: "#acc91a"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   physicalDesc: reagent-physical-desc-putrid
   metabolisms:
     Bloodstream:
@@ -110,6 +114,7 @@
   desc: reagent-desc-mold
   flavor: bitter
   color: "#8a9a5b"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   recognizable: true
   physicalDesc: reagent-physical-desc-fuzzy
   metabolisms:
@@ -132,6 +137,7 @@
   contrabandSeverity: Major
   flavor: acid
   color: "#a1000b"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   boilingPoint: 78.2 # This isn't a real chemical...
   meltingPoint: -19.4
   plantMetabolism:
@@ -177,6 +183,7 @@
   desc: reagent-desc-ferrochromic-acid
   flavor: sour
   color: "#48b3b8"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   physicalDesc: reagent-physical-desc-ferrous
   metabolisms:
     Bloodstream:
@@ -199,6 +206,7 @@
   contrabandSeverity: Minor
   flavor: acid
   color: "#5050ff"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   boilingPoint: 165
   meltingPoint: -87
   reactiveEffects:
@@ -240,6 +248,7 @@
   - Chemist
   flavor: acid
   color: "#BF8C00"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   recognizable: true
   boilingPoint: 337.0
   meltingPoint: 10.31
@@ -290,6 +299,7 @@
   - Botanist
   flavor: bitter
   color: "#00ff5f"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   boilingPoint: 340282300 # Ethidium bromide, which doesn't boil.
   meltingPoint: 261.0
   plantMetabolism:
@@ -311,6 +321,7 @@
   physicalDesc: reagent-physical-desc-strong-smelling
   contrabandSeverity: Major
   color: "#5f959c"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       effects:
@@ -330,6 +341,7 @@
   physicalDesc: reagent-physical-desc-pungent
   contrabandSeverity: Syndicate
   color: "#6b0007"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       effects:
@@ -347,6 +359,7 @@
   physicalDesc: reagent-physical-desc-opaque
   flavor: bitter
   color: "#53b598" # TheDen - Slightly cooler color to differentiate it from space drugs
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   plantMetabolism:
   - !type:PlantAdjustToxins
     amount: 10
@@ -366,6 +379,7 @@
   desc: reagent-desc-histamine
   physicalDesc: reagent-physical-desc-abrasive
   color: "#FA6464"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       effects:
@@ -406,6 +420,7 @@
   desc: reagent-desc-theobromine
   physicalDesc: reagent-physical-desc-grainy
   color: "#f5f5f5"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   meltingPoint: 351
   boilingPoint: 554 # I'm not a chemist, but it boils at 295, lower than melting point, idk how it works so I gave it higher value
   metabolisms:
@@ -436,6 +451,7 @@
   physicalDesc: reagent-physical-desc-nondescript
   contrabandSeverity: Major
   color: "#D6CE7B"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       metabolismRate: 0.2
@@ -453,6 +469,7 @@
   physicalDesc: reagent-physical-desc-sticky
   flavor: bitter
   color: "#000000"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       effects:
@@ -470,6 +487,7 @@
   contrabandSeverity: Syndicate
   flavor: bitter
   color: "#7e916e"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   worksOnTheDead: true
   metabolisms:
     Bloodstream:
@@ -488,6 +506,7 @@
   physicalDesc: reagent-physical-desc-clumpy
   flavor: bitter
   color: "#FFFFE5"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       effects:
@@ -550,6 +569,7 @@
   physicalDesc: reagent-physical-desc-pungent
   flavor: bitter
   color: "#F2E9D2"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Digestion:
       metabolismRate: 0.05
@@ -575,6 +595,7 @@
   - Security
   - Medical
   color: "#AAAAAA"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       effects:
@@ -591,6 +612,7 @@
   physicalDesc: reagent-physical-desc-pungent
   flavor: bitter
   color: "#F2E9D2"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       metabolismRate: 0.05
@@ -621,6 +643,7 @@
   physicalDesc: reagent-physical-desc-metallic
   contrabandSeverity: Major
   color: "#5C6274"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       metabolismRate: 0.03 # Effectively once every 30 seconds.
@@ -638,6 +661,7 @@
   physicalDesc: reagent-physical-desc-nondescript
   contrabandSeverity: Major
   color: "#EBFF8E"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       metabolismRate: 0.2
@@ -656,6 +680,7 @@
   contrabandSeverity: Syndicate
   flavor: medicine
   color: "#435166"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   plantMetabolism:
   - !type:PlantMutateChemicals
     randomPickBotanyReagent: EvilRandomFillSolution
@@ -687,6 +712,7 @@
   contrabandSeverity: Syndicate
   flavor: shocking
   color: "#FDD023"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       metabolismRate: 2.0
@@ -705,6 +731,7 @@
   - Medical
   flavor: mothballs #why does weightloss juice taste like mothballs
   color: "#F0FFF0"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       effects:
@@ -727,6 +754,7 @@
   desc: reagent-desc-mechanotoxin
   flavor: sweet
   color: "#00b408"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   physicalDesc: reagent-physical-desc-nondescript
   metabolisms:
     Bloodstream:
@@ -768,6 +796,7 @@
   desc: reagent-desc-toxintrash
   flavor: trashy
   physicalDesc: reagent-physical-desc-nondescript
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Digestion:
       effects:
@@ -786,6 +815,7 @@
   contrabandSeverity: Major
   flavor: sharp
   color: "#96424f"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       effects:

@@ -6,6 +6,7 @@
   physicalDesc: reagent-physical-desc-inky
   flavor: spooky
   color: "#A77C8B"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   metabolisms:
     Bloodstream: # Aurora's Song - Narcotic>Bloodstream
       metabolismRate : 0.05
@@ -32,6 +33,7 @@
   physicalDesc: reagent-physical-desc-necrotic
   flavor: sharp
   color: "#412663"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   metabolisms:
     Bloodstream: # Aurora's Song - Medicine>Bloodstream
       metabolismRate : 0.1
@@ -70,6 +72,7 @@
   physicalDesc: reagent-physical-desc-inky
   flavor: hope
   color: "#55B82E"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   metabolisms:
     Bloodstream: # Aurora's Song - Narcotic>Bloodstream
       metabolismRate : 0.05
@@ -93,6 +96,7 @@
   physicalDesc: reagent-physical-desc-inky
   flavor: mindful
   color: "#A77C8B"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   metabolisms:
     Bloodstream: # Aurora's Song - Narcotic>Bloodstream
       metabolismRate : 0.5
@@ -119,6 +123,7 @@
   physicalDesc: reagent-physical-desc-acrid
   flavor: spooky
   color: "#363B4D"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   metabolisms:
     Bloodstream: # Aurora's Song - Narcotic>Bloodstream
       metabolismRate: 0.1
@@ -153,6 +158,7 @@
   physicalDesc: reagent-physical-desc-sparkly
   flavor: magical
   color: "#D05183"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   metabolisms:
     Bloodstream: # Aurora's Song - Narcotic>Bloodstream
       metabolismRate : 0.5
@@ -217,8 +223,7 @@
   physicalDesc: reagent-physical-desc-icy
   flavor: coldDeath
   color: "#47ffbf"
-  tags:
-  - Cryogenic
+  tags: [ Cryogenic, Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   metabolisms:
     Bloodstream: # Aurora's Song - Cryogenic>Bloodstream
         metabolismRate: 2.5 # Sheleg seem to specifically metabolise things slower, so to compensate it has to be declared higher
@@ -283,8 +288,7 @@
   physicalDesc: reagent-physical-desc-mjod
   flavor: frostmjod
   color: "#b57600"
-  tags:
-  - Cryogenic
+  tags: [ Cryogenic, Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   metabolisms:
       Bloodstream: # Aurora's Song - Cryogenic>Bloodstream
           metabolismRate: 2.5
@@ -333,8 +337,7 @@
   physicalDesc: reagent-physical-desc-roiling
   flavor: murderDraught
   color: "#ff2121"
-  tags:
-  - Cryogenic
+  tags: [ Cryogenic, Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   metabolisms:
     Bloodstream: # Aurora's Song - Cryogenic>Bloodstream
       metabolismRate: 5.0

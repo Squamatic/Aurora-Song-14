@@ -52,6 +52,7 @@
   contrabandSeverity: Minor
   flavor: bee
   color: "#FFD35D"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   tileReactions:
   - !type:CreateEntityTileReaction
     entity: MobBee
@@ -163,6 +164,7 @@
   contrabandSeverity: Minor
   flavor: shocking
   color: "#FDD023"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       metabolismRate: 2.0
@@ -181,6 +183,7 @@
   physicalDesc: reagent-physical-desc-reflective
   flavor: sharp
   color: "#e3fffb"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   reactiveEffects:
     Acidic:
       methods: [ Touch ]
@@ -222,6 +225,7 @@
   - Medical
   flavor: cold
   color: "#b3f1ff"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   boilingPoint: 50.0
   meltingPoint: 45.0
   tileReactions:
@@ -335,6 +339,7 @@
   physicalDesc: reagent-physical-desc-vibrant
   flavor: weh
   color: "#59b23a"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       metabolismRate: 0.25
@@ -371,6 +376,7 @@
   physicalDesc: reagent-physical-desc-inversed
   flavor: hew
   color: "#a64dc5"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       metabolismRate: 0.25
@@ -407,6 +413,7 @@
   physicalDesc: reagent-physical-desc-fluffy
   flavor: dogfood
   color: "#ed9715"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       metabolismRate: 0.2
@@ -441,6 +448,7 @@
   physicalDesc: reagent-physical-desc-milky
   flavor: cannedtuna
   color: "#d8bed8"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       metabolismRate: 0.2
@@ -492,6 +500,7 @@
   physicalDesc: reagent-physical-desc-bubbly
   flavor: dogfood
   color: "#b87333"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       metabolismRate: 0.2

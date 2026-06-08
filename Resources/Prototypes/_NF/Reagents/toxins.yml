@@ -7,6 +7,7 @@
   physicalDesc: reagent-physical-desc-translucent
   flavor: antiseptic
   color: "#457c7d"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   recognizable: true
   boilingPoint: 100.0
   meltingPoint: 0.0
@@ -36,6 +37,7 @@
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: bitter
   color: "#6c805c"
+  tags: [ Toxin ] # Aurora's Song | Toxin tag required for updated metabolisers
   plantMetabolism:
   - !type:PlantAdjustToxins
     amount: 10

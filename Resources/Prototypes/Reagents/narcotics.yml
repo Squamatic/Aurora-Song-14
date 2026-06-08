@@ -7,6 +7,7 @@
   contrabandSeverity: Minor
   flavor: bitter
   color: "#FAFAFA"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   boilingPoint: 212.0  # Dexosyephedrine vape when?
   meltingPoint: 170.0
   metabolisms:
@@ -73,6 +74,7 @@
   physicalDesc: reagent-physical-desc-powdery
   flavor: bitter
   color: "#D2FFFA"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   boilingPoint: 255.0
   meltingPoint: 36.0
   metabolisms:
@@ -131,6 +133,7 @@
   contrabandSeverity: Syndicate
   flavor: sharp
   color: "#9A040E"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   boilingPoint: 212.0
   meltingPoint: 170.0
   metabolisms:
@@ -217,6 +220,7 @@
   flavor: bitter
   flavorMinimum: 0.05
   color: "#808080"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   physicalDesc: reagent-physical-desc-crystalline
   plantMetabolism:
   - !type:PlantAdjustNutrition
@@ -238,6 +242,7 @@
   desc: reagent-desc-nicotine
   flavor: bitter
   color: "#C0C0C0"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   physicalDesc: reagent-physical-desc-strong-smelling
   plantMetabolism:
   - !type:PlantAdjustHealth
@@ -253,6 +258,7 @@
   contrabandSeverity: Minor
   flavor: bitter
   color: "#215263"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       effects:
@@ -280,6 +286,7 @@
   physicalDesc: reagent-physical-desc-syrupy
   flavor: bitter
   color: "#63806e"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       effects:
@@ -296,6 +303,7 @@
   physicalDesc: reagent-physical-desc-powdery
   flavor: bitter
   color: "#ffff00"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       effects:
@@ -313,6 +321,7 @@
   physicalDesc: reagent-physical-desc-powdery
   contrabandSeverity: Syndicate
   color: "#128e80"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   boilingPoint: 444.0
   meltingPoint: 128.0
   metabolisms:
@@ -328,7 +337,7 @@
           min: 8
         effectProto: StatusEffectForcedSleeping
         time: 9
-        delay: 5
+        # delay: 5 # Aurora's Song | Nocturine doesn't need the delay, you already
 
 - type: reagent
   id: MuteToxin
@@ -338,6 +347,7 @@
   physicalDesc: reagent-physical-desc-syrupy
   contrabandSeverity: Syndicate
   color: "#000000"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   boilingPoint: 255.0
   meltingPoint: 36.0
   metabolisms:
@@ -358,6 +368,7 @@
   contrabandSeverity: Minor
   flavor: salty
   color: "#96a8b5"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   boilingPoint: 255.0
   meltingPoint: 36.0
   metabolisms:
@@ -406,6 +417,7 @@
   - Security
   flavor: salty
   color: "#ffffff4d"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   boilingPoint: 255.0
   meltingPoint: 36.0
   metabolisms:
@@ -465,6 +477,7 @@
   physicalDesc: reagent-physical-desc-soothing
   flavor: paintthinner
   color: "#EE35FF"
+  tags: [ Narcotic ] # Aurora's Song | Narcotic tag required for updated metabolisers
   metabolisms:
     Bloodstream:
       effects:

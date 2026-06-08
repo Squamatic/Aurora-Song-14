@@ -78,6 +78,12 @@
   id: Cryogenic
 
 - type: Tag
+  id: Narcotic
+
+- type: Tag
+  id: Toxin
+
+- type: Tag
   id: Sheleg
 #endregion
 

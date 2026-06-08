@@ -357,6 +357,8 @@
     tags:
     - Cryogenic
     - Sheleg
+    - Toxins # Aurora's Song | Toxins and Narcotics tags added so that Sheleg can use them and get poisoned
+    - Narcotics
     stages: [ "Bloodstream" ]
 
 - type: entity
