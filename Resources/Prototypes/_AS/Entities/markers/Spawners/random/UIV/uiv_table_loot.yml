@@ -297,7 +297,10 @@
   id: DungeonNanoTrasenUIVOfficerVend
   table: !type:GroupSelector
     children:
-    - id: ASVendingMachineNanoVend
+    - id: ASVendingMachineNanoVendA
+    - id: ASVendingMachineNanoVendB
+    - id: ASVendingMachineNanoVendC
+    - id: ASVendingMachineNanoVendD
 
 # NT UIV gun safes
 - type: entityTable
