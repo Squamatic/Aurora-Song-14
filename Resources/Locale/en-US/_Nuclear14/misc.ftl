@@ -1,6 +1,6 @@
 # flora
 ent-N14FloraDesertCactus = cactus
-    .desc = Some kind of wasteland flora.
+    .desc = Some kind of desert flora.
 
 ent-N14FloraTreeBald = bald tree
     .desc = "What? Even trees go bald."

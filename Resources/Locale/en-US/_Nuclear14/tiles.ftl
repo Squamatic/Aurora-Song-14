@@ -235,7 +235,7 @@ tile-FloorMS13WoodMosaicDamaged = damaged mosaic wood floor
 
 ent-FloorTileItemWoodOak = oak floor
 tile-FloorWoodOak = oak floor
-stack-FloorTileWoodOak = oeak floor
+stack-FloorTileWoodOak = oak floor
 
 tile-FloorWoodOakBroken = broken oak floor
 
@@ -263,7 +263,7 @@ ent-N14FloorWaterSewerShallow = shallow sewer water
     .desc = Years of built up feces and urine and other fluids.
 
 ent-N14FloorWaterSaltMedium = salt water
-    .desc =  Unclean water, tainted with sal
+    .desc =  Unclean water, tainted with salt.
 ent-N14FloorWaterSaltDeep = deep salt water
     .desc = Endless Abyss
 tile-N14FloorWaterSaltShallow = shallow salt water

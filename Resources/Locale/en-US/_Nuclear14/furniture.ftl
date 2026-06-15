@@ -37,7 +37,7 @@ ent-N14ChairWood1 = wooden chair
 ent-N14ChairWoodPadded = padded chair
 
 ent-N14ChairWoodSettler = settler chair
-    .desc = A wooden chair claimed by some settlers.
+    .desc = A wooden chair.
 
 ent-N14ChairStoolBarBlack = black stool
     .desc = A black bar stool.
@@ -269,7 +269,7 @@ ent-N14ToiletDirty = toilet
 ent-N14ToiletIrradiated = toilet
 
 ent-N14Television = television
-    .desc = An old pre-war television.
+    .desc = An ancient television.
 ent-N14TelevisionCabinetOpen = television
 ent-N14TelevisionRadking = television
     .desc = A Radking brand television.
