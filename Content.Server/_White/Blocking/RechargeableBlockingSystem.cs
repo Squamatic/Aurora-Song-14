@@ -18,7 +18,7 @@ public sealed class RechargeableBlockingSystem : EntitySystem
     [Dependency] private readonly BatterySystem _battery = default!;
     [Dependency] private readonly ItemToggleSystem _itemToggle = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
-    [Dependency] private readonly PowerCellSystem _powerCell = default!;
+    // [Dependency] private readonly PowerCellSystem _powerCell = default!; // Aurora's Song | Not currently used, possibly in future iterations with swappable power devices?
 
     public override void Initialize()
     {
@@ -87,7 +87,6 @@ public sealed class RechargeableBlockingSystem : EntitySystem
         if (currentCharge < 1) // Aurora's Song | batteryComponent.CurrentCharge->currentCharge
         {
             _itemToggle.TryDeactivate(uid, predicted: false);
-            return;
         }
 
     }// Aurora's Song End - rewrite function
