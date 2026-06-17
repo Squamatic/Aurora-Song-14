@@ -112,6 +112,16 @@
     - id: NFWeaponSubMachineGunDrozdExpedition
     - id: NFMagazineSubMachineGun35
     - id: NFMagazineSubMachineGun35
+    - id: Gauze
+    - id: Gauze
+    - id: EmergencyMedipen
+      prob: 0.6
+    - id: StimulantAutoInjector
+      prob: 0.6
+    - id: HemostasisAutoInjector
+      prob: 0.6
+    - id: PolyAutoInjector
+      prob: 0.33
     - id: SpaceCash5000
       prob: 0.8
     - id: SpawnDungeonLootMaterialsBasicFull
@@ -132,6 +142,16 @@
     - id: NFWeaponSubMachineGunWt550Expedition
     - id: NFMagazineSubMachineGunTopMounted35
     - id: NFMagazineSubMachineGunTopMounted35
+    - id: Gauze
+    - id: Gauze
+    - id: EmergencyMedipen
+      prob: 0.6
+    - id: StimulantAutoInjector
+      prob: 0.6
+    - id: HemostasisAutoInjector
+      prob: 0.6
+    - id: PolyAutoInjector
+      prob: 0.33
     - id: SpaceCash5000
       prob: 0.8
     - id: SpawnDungeonLootMaterialsBasicFull
