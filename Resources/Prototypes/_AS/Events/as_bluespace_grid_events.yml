@@ -9,7 +9,7 @@
     warningAnnouncement: station-event-bluespace-generic-ftl-warning-announcement
     endAnnouncement: station-event-bluespace-generic-ftl-end-announcement
     earliestStart: 80
-    minimumPlayers: 20
+    minimumPlayers: 15
     weight: 1
     duration: 1800
     maxDuration: 24000
