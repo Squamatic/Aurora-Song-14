@@ -105,12 +105,10 @@
     - type: Battery
       maxCharge: 180
       startingCharge: 180
-    #- type: RechargeableBlocking
-    #  dischargedRechargeRate: 7.5
-    #  chargedRechargeRate: 10
     - type: BatterySelfRecharger
-      autoRechargeRate: 10
-      autoRecharge: true
+      autoRechargeRate: 5
+      autoRechargePauseTime: 10
+    - type: RechargeableBlocking
     - type: ItemSlots
       slots:
         item:

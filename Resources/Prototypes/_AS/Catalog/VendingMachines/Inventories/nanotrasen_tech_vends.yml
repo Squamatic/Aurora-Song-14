@@ -2,7 +2,7 @@
 - type: vendingMachineInventory
   id: ASNanoTrasenOfficerVendA
   startingInventory:
-    BlueShieldShield: 2
+    BlueShieldShield: 1
     GreatswordBlueshield: 1
     ClothingBlueshieldArmoredKimono: 1
     ClothingBlueshieldArmoredJacket: 1
