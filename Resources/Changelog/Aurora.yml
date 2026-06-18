@@ -1464,3 +1464,10 @@ Entries:
   id: 9544
   time: '2026-06-18T03:03:22.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1156
+- author: salamanderskies
+  changes:
+    - type: Fix
+      message: Sofa corners and bench middle pieces can no longer be rotated.
+  id: 9545
+  time: '2026-06-18T03:03:40.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1158
