@@ -14,3 +14,5 @@ contraband-examine-text-Class3MobConstruct = [color=magenta]This intelligence is
 # Aurora
 contraband-examine-text-Class2Unregistered = [color=red]This item is considered class 2 unregistered contraband, please either turn it in to the authorities or have it registered with them.[/color]
 contraband-examine-text-Class3NanoTrasen = [color=blue]This NanoTrasen property is considered class 3 contraband, and its use is illegal.[/color]
+contraband-examine-text-Class3NanoTrasenCentComm = [color=blue]This NanoTrasen CentComm property is considered class 3 contraband, and its use is illegal.[/color]
+contraband-examine-text-Class3ColonialArmedForces = [color=magenta]This equipment belongs to the Colonial Armed Forces and is considered class 3 contraband. Civilian possession is illegal.[/color]

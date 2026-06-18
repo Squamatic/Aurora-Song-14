@@ -31,10 +31,6 @@
   examineText: contraband-examine-text-Class3Syndicate
 
 - type: contrabandSeverity
-  id: Class3NanoTrasen
-  examineText: contraband-examine-text-Class3NanoTrasen
-
-- type: contrabandSeverity
   id: Class3Wizard
   examineText: contraband-examine-text-Class3Wizard
 
