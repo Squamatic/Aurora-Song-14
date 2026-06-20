@@ -1519,3 +1519,10 @@ Entries:
   id: 9551
   time: '2026-06-20T03:35:47.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1162
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: IPCs can weld themselves again
+  id: 9552
+  time: '2026-06-20T04:29:49.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1161
