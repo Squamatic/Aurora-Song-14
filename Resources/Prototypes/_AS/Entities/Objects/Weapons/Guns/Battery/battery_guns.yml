@@ -490,3 +490,5 @@
   - type: Battery
     maxCharge: 1500
     startingCharge: 1500
+  - type: StaticPrice
+    price: 10000
