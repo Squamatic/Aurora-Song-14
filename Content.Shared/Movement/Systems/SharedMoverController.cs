@@ -625,7 +625,7 @@ public abstract partial class SharedMoverController : VirtualController
 
         // Aurora's Song: Moved Den changes to here, and reworked to fix silent footstepping.
         if (_inventory.TryGetSlotEntity(uid, "shoes", out var shoes) &&
-            TryComp<NaturalFootstepSoundsComponent>(shoes, out var _))
+            HasComp<NaturalFootstepSoundsComponent>(shoes))
         {
             haveShoes = false;
         }
@@ -645,7 +645,7 @@ public abstract partial class SharedMoverController : VirtualController
                 return true;
             }
 
-            if (FootstepModifierQuery.TryComp(maybeFootstep, out var footstep))
+            if (FootstepModifierQuery.TryComp(maybeFootstep, out var footstep)) // Aurora's Song, pulled shoe searching out to code above
             {
                 sound = footstep.FootstepSoundCollection;
                 return sound != null;
