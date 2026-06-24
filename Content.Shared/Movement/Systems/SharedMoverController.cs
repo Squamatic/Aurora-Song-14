@@ -596,12 +596,6 @@ public abstract partial class SharedMoverController : VirtualController
             sound = modifier.FootstepSoundCollection;
             return sound != null;
         }
-        // Den changes to create shoes (but but not shoes) slightly reorganized
-        if (TryComp<NaturalFootstepSoundsComponent>(shoes, out var _))
-        {
-            return false;
-        }
-        // End of den changes
 
         return TryGetFootstepSound(uid, xform, shoes != null, out sound, tileDef: tileDef);
     }
@@ -629,6 +623,14 @@ public abstract partial class SharedMoverController : VirtualController
         var position = _mapSystem.LocalToTile(xform.GridUid.Value, grid, xform.Coordinates);
         var soundEv = new GetFootstepSoundEvent(uid);
 
+        // Aurora's Song: Moved Den changes to here, and reworked to fix silent footstepping.
+        if (_inventory.TryGetSlotEntity(uid, "shoes", out var shoes) &&
+            TryComp<NaturalFootstepSoundsComponent>(shoes, out var _))
+        {
+            haveShoes = false;
+        }
+        // End Aurora's Song
+
         // If the coordinates have a FootstepModifier component
         // i.e. component that emit sound on footsteps emit that sound
         var anchored = _mapSystem.GetAnchoredEntitiesEnumerator(xform.GridUid.Value, grid, position);
@@ -643,8 +645,7 @@ public abstract partial class SharedMoverController : VirtualController
                 return true;
             }
 
-            if (_inventory.TryGetSlotEntity(uid, "shoes", out var shoes) &&
-                FootstepModifierQuery.TryComp(maybeFootstep, out var footstep))
+            if (FootstepModifierQuery.TryComp(maybeFootstep, out var footstep))
             {
                 sound = footstep.FootstepSoundCollection;
                 return sound != null;
