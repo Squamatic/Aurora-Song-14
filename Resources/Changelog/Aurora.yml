@@ -1610,3 +1610,14 @@ Entries:
   id: 9561
   time: '2026-06-25T00:31:23.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1174
+- author: BudaLope
+  changes:
+    - type: Tweak
+      message: wallet magnets no longer pick up paper
+    - type: Tweak
+      message: wallet inventory has been expanded to be 4x3
+    - type: Tweak
+      message: scu and doubloons now count as coins and get picked up by wallets
+  id: 9562
+  time: '2026-06-25T00:41:05.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1177
