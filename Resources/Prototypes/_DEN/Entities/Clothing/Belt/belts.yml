@@ -233,13 +233,10 @@
   description: A robust chest rig made to fit the needs of a blueshield officer.
   suffix: Filled # TheDen
   components:
-  - type: StorageFill
-    contents:
-      - id: Stunbaton
-      - id: Flash
-      - id: Handcuffs
-      - id: FlashlightSeclite
-      #- id: HandheldCrewMonitorBSO # Aurora's Song | No actual BSOs here, we don't keep the item
+  - type: EntityTableContainerFill # Aurora's Song | replace old StorageFill with EntityTable fill
+    containers: # #Aurora's Song | Just gave it a standard Secbelt fill, though this webbing isn't used anywhere
+      storagebase: !type:NestedSelector
+        tableId: BeltSecurityEntityTable
   - type: ContainerFill
     containers:
       radio:
