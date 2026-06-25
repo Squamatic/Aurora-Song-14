@@ -176,7 +176,6 @@
     maxAngle: 17
     angleIncrease: 1
     angleDecay: 2
-    SelectedMode: FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
 
@@ -209,7 +208,6 @@
     maxAngle: 15
     angleIncrease: 1
     angleDecay: 2
-    SelectedMode: FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
 
@@ -242,7 +240,6 @@
     maxAngle: 26
     angleIncrease: 2.5
     angleDecay: 3
-    SelectedMode: SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
 
@@ -275,7 +272,6 @@
     maxAngle: 26
     angleIncrease: 2.5
     angleDecay: 3
-    SelectedMode: SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rifle2.ogg
 
@@ -307,7 +303,6 @@
     angleIncrease: 0.25
     angleDecay: 1
     fireRate: 1.5 # Pulse rapid fire is a HORROR
-    SelectedMode: SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
 
@@ -340,7 +335,6 @@
     maxAngle: 26
     angleIncrease: 2.5
     angleDecay: 3
-    SelectedMode: SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
 
@@ -372,6 +366,5 @@
     angleIncrease: 0.25
     angleDecay: 1
     fireRate: 2.5 # Pulse rapid fire is a HORROR
-    SelectedMode: SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
