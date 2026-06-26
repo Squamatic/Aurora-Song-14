@@ -46,7 +46,7 @@
   id: ASWeaponRifleGarandCeremonial
   parent: [ ASBaseWeaponRifleEnblocChamber30Long , ASBaseWeaponFrameRifleMarksmanAuroraGunsmith ]
   suffix: AS
-  name: Garand(C) rifle
+  name: Garand rifle
   description: |-
     A ceremonial version of an ancient battle rifle, used for parades and honor guards. The bolt carrier is engraved with the words "lest we forget."
   components:
