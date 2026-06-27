@@ -40,7 +40,7 @@ namespace Content.Server.NPC.Systems;
 
 public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
 {
-    [Dependency] private readonly IPlayerManager _playerManager = default!;
+    [Dependency] private IPlayerManager _playerManager = default!;
 
     private static readonly Gauge ActiveSteeringGauge = Metrics.CreateGauge(
         "npc_steering_active_count",

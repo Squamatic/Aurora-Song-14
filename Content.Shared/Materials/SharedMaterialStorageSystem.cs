@@ -22,7 +22,7 @@ public abstract partial class SharedMaterialStorageSystem : EntitySystem
     [Dependency] private IPrototypeManager _prototype = default!;
     [Dependency] private EntityWhitelistSystem _whitelistSystem = default!;
 
-    [Dependency] private readonly SharedStackSystem _sharedStackSystem = default!; // Frontier
+    [Dependency] private SharedStackSystem _sharedStackSystem = default!; // Frontier
 
     /// <summary>
     /// Default volume for a sheet if the material's entity prototype has no material composition.

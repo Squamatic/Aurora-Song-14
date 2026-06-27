@@ -21,10 +21,10 @@ namespace Content.Server.Shuttles.Systems;
 public sealed partial class ShuttleConsoleSystem
 {
     // Begin Mono
-    // [Dependency] private readonly IMapManager _mapManager = default!; // Aurora's Song
-    [Dependency] private readonly SharedShuttleSystem _sharedShuttle = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly EntityManager _entity = default!;
+    // [Dependency] private IMapManager _mapManager = default!; // Aurora's Song
+    [Dependency] private SharedShuttleSystem _sharedShuttle = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
+    [Dependency] private EntityManager _entity = default!;
 
     private readonly SoundSpecifier _errorSound = new SoundPathSpecifier("/Audio/Effects/Cargo/buzz_sigh.ogg")
     {

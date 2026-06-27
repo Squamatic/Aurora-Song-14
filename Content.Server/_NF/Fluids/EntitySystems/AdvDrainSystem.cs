@@ -20,7 +20,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Server._NF.Fluids.EntitySystems;
 
-public sealed class AdvDrainSystem : DrainSystem
+public sealed partial class AdvDrainSystem : DrainSystem
 {
     [Dependency] private EntityLookupSystem _lookup = default!;
     [Dependency] private SharedSolutionContainerSystem _solutionContainerSystem = default!;

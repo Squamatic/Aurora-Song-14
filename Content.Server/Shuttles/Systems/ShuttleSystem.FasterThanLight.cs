@@ -37,9 +37,9 @@ namespace Content.Server.Shuttles.Systems;
 
 public sealed partial class ShuttleSystem
 {
-    [Dependency] private readonly SharedPopupSystem _popup = default!; // AS
+    [Dependency] private SharedPopupSystem _popup = default!; // AS
 
-    [Dependency] private readonly EntityManager _entity = default!;
+    [Dependency] private EntityManager _entity = default!;
 
     /*
      * This is a way to move a shuttle from one location to another, via an intermediate map for fanciness.

@@ -351,7 +351,7 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
             location = location.AlignWithClosestGridTile();
             gridId = location.GetGridUid(EntityManager);
             // Check if fixing it failed / get final grid ID
-            if (EntityManager.TryGetComponent<MapGridComponent>(gridId, out var mapGrid))
+            if (TryComp<MapGridComponent>(gridId, out var mapGrid))
             {
                 var ev = new FloorTileAttemptEvent();
                 if ((TryComp<ProtectedGridComponent>(gridId, out var prot) && prot.PreventExplosions) || ev.Cancelled)

@@ -22,7 +22,7 @@ public abstract partial class SharedJetpackSystem : EntitySystem
     [Dependency] private SharedPopupSystem _popup = default!;
     [Dependency] private SharedPhysicsSystem _physics = default!;
     [Dependency] private ActionContainerSystem _actionContainer = default!;
-    [Dependency] private readonly IConfigurationManager _config = default!; // EE
+    [Dependency] private IConfigurationManager _config = default!; // EE
 
     [Dependency] private EntityQuery<JetpackComponent> _jetpackQuery = default!;
 

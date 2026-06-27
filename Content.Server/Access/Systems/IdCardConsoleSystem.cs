@@ -134,7 +134,7 @@ public sealed partial class IdCardConsoleSystem : SharedIdCardConsoleSystem
             // Start Frontier
             string?[]? shuttleNameParts = null;
             var hasShuttle = false;
-            if (EntityManager.TryGetComponent<ShuttleDeedComponent>(targetId, out var comp))
+            if (TryComp<ShuttleDeedComponent>(targetId, out var comp))
             {
                 shuttleNameParts = new[] { comp.ShuttleName, comp.ShuttleNameSuffix };
                 hasShuttle = true;
@@ -254,7 +254,7 @@ public sealed partial class IdCardConsoleSystem : SharedIdCardConsoleSystem
         if (component.TargetIdSlot.Item is not { Valid: true } targetId || !PrivilegedIdIsAuthorized(uid, component, out _))
             return;
 
-        if (!EntityManager.TryGetComponent<ShuttleDeedComponent>(targetId, out var shuttleDeed))
+        if (!TryComp<ShuttleDeedComponent>(targetId, out var shuttleDeed))
             return;
 
         if (Deleted(shuttleDeed!.ShuttleUid))

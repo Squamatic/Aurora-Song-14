@@ -20,7 +20,7 @@ using Content.Shared.Exchanger; // Aurora's Song
 
 namespace Content.Server._NF.Construction;
 
-public sealed class PartExchangerSystem : EntitySystem
+public sealed partial class PartExchangerSystem : EntitySystem
 {
     [Dependency] private ConstructionSystem _construction = default!;
     [Dependency] private SharedDoAfterSystem _doAfter = default!;

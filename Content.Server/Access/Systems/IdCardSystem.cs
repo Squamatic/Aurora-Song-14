@@ -28,7 +28,7 @@ public sealed partial class IdCardSystem : SharedIdCardSystem
     [Dependency] private ChatSystem _chat = default!;
     [Dependency] private MicrowaveSystem _microwave = default!;
 
-    [Dependency] private readonly RadioSystem _radio = default!; // Aurora's Song
+    [Dependency] private RadioSystem _radio = default!; // Aurora's Song
 
     public override void Initialize()
     {

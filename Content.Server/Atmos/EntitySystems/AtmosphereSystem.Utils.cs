@@ -11,7 +11,7 @@ namespace Content.Server.Atmos.EntitySystems;
 
 public partial class AtmosphereSystem
 {
-    [Robust.Shared.IoC.Dependency] private readonly GameTicker _gameTicker = default!;
+    [Robust.Shared.IoC.Dependency] private GameTicker _gameTicker = default!;
 
     /*
     Partial class that stores miscellaneous utility methods for Atmospherics.

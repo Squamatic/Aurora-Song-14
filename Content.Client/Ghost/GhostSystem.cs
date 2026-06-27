@@ -24,13 +24,12 @@ namespace Content.Client.Ghost
         [Dependency] private ContentEyeSystem _contentEye = default!;
         [Dependency] private SpriteSystem _sprite = default!;
         // Frontier: respawn, separate ghost UI
-        [Dependency] private readonly IUserInterfaceManager _uiManager = default!;
-        [Dependency] private readonly IGameTiming _gameTiming = default!;
-        [Dependency] private readonly RespawnSystem _respawn = default!;
+        [Dependency] private IUserInterfaceManager _uiManager = default!;
+        [Dependency] private RespawnSystem _respawn = default!;
 
         public override void Update(float frameTime)
         {
-            foreach (var ghost in EntityManager.EntityQuery<GhostComponent, MindComponent>(true))
+            foreach (var ghost in EntityQuery<GhostComponent, MindComponent>(true))
             {
                 var ui = _uiManager.GetActiveUIWidgetOrNull<GhostGui>();
                 if (ui != null && Player != null)

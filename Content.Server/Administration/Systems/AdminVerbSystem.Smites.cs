@@ -1022,7 +1022,7 @@ public sealed partial class AdminVerbSystem
                 if (hand != null)
                 {
                     _handsSystem.TryDrop(args.Target, hand);
-                    var club = EntityManager.SpawnNextToOrDrop("CavemanClubCursed", args.Target);
+                    var club = SpawnNextToOrDrop("CavemanClubCursed", args.Target);
                     if (club.Valid &&
                         !_handsSystem.TryPickupAnyHand(args.Target, club, false))
                     {

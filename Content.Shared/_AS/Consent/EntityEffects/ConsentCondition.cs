@@ -7,7 +7,7 @@ using Robust.Shared.Player;
 
 namespace Content.Shared._AS.Consent.EntityEffects;
 
-public sealed class ConsentEntityConditionSystem
+public sealed partial class ConsentEntityConditionSystem
     : EntityConditionSystem<MindContainerComponent, Consent>
 {
     [Dependency] private SharedConsentSystem _consent = default!;

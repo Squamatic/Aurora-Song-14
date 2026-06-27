@@ -127,7 +127,7 @@ public sealed partial class SingularityGeneratorSystem : SharedSingularityGenera
         // Frontier: check tether
         if (generatorComp.RequiresTether && !_dangerTether.AnyTetherInRange(args.OtherEntity))
         {
-            EntityManager.QueueDeleteEntity(uid);
+            QueueDel(uid);
             PopupSystem.PopupEntity(Loc.GetString("comp-generator-tether", ("target", args.OtherEntity)), args.OtherEntity, PopupType.LargeCaution);
             return;
         }

@@ -24,11 +24,11 @@ namespace Content.Client._Floof.Consent.UI.Windows;
 [GenerateTypedNameReferences]
 public sealed partial class ConsentWindow : FancyWindow
 {
-    [Dependency] private readonly SharedConsentCardSystem _card = default!;
-    [Dependency] private readonly IClientConsentManager _consentManager = default!;
-    [Dependency] private readonly IConfigurationManager _configManager = default!;
-    [Dependency] private readonly ISharedPlayerManager _player = default!;
-    [Dependency] private readonly IPrototypeManager _protoManager = default!;
+    [Dependency] private SharedConsentCardSystem _card = default!;
+    [Dependency] private IClientConsentManager _consentManager = default!;
+    [Dependency] private IConfigurationManager _configManager = default!;
+    [Dependency] private ISharedPlayerManager _player = default!;
+    [Dependency] private IPrototypeManager _protoManager = default!;
 
     private readonly Dictionary<string, int> _tabs = new();
     private readonly HashSet<ConsentCategoryPrototype> _categories = new();
