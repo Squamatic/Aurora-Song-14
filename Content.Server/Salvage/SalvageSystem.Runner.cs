@@ -39,11 +39,11 @@ public sealed partial class SalvageSystem
      * Handles actively running a salvage expedition.
      */
 
-    [Dependency] private readonly MobStateSystem _mobState = default!;
-    [Dependency] private readonly GameTicker _gameTicker = default!; // Frontier
-    [Dependency] private readonly DamageableSystem _damageable = default!; // AS
-    [Dependency] private readonly IPlayerManager _players = default!; // Coyote
-    [Dependency] private readonly SharedBuckleSystem _buckle = default!; // AS
+    [Dependency] private MobStateSystem _mobState = default!;
+    [Dependency] private GameTicker _gameTicker = default!; // Frontier
+    [Dependency] private DamageableSystem _damageable = default!; // AS
+    [Dependency] private IPlayerManager _players = default!; // Coyote
+    [Dependency] private SharedBuckleSystem _buckle = default!; // AS
 
     private void InitializeRunner()
     {

@@ -1,4 +1,4 @@
-﻿using Content.Shared.Examine;
+using Content.Shared.Examine;
 using Content.Shared.Ghost;
 using Content.Shared.Station; // Frontier
 
@@ -20,7 +20,7 @@ public sealed class WarpPointSystem : EntitySystem
         if (!HasComp<GhostComponent>(args.Examiner))
             return;
 
-        var loc = component.Location == null ? "<null>" : $"'{component.Location}'";
+        var loc = component.Location == null ? Name(uid) : component.Location;
         args.PushText(Loc.GetString("warp-point-component-on-examine-success", ("location", loc)));
     }
 
