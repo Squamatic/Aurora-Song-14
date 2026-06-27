@@ -1,5 +1,8 @@
-﻿using Content.Server.Worldgen.Components;
+using Content.Server.Worldgen.Components;
 using Robust.Server.GameObjects;
+using Content.Server._NF.Worldgen.Components.Debris; // Frontier
+using Content.Server._NF.Salvage; // Frontier
+using Content.Server.StationEvents.Events; // Frontier
 
 namespace Content.Server.Worldgen.Systems;
 
@@ -9,6 +12,14 @@ namespace Content.Server.Worldgen.Systems;
 public sealed class LocalityLoaderSystem : BaseWorldSystem
 {
     [Dependency] private readonly TransformSystem _xformSys = default!;
+    [Dependency] private readonly LinkedLifecycleGridSystem _linkedLifecycleGrid = default!; // Frontier
+
+    // Frontier: space debris destruction
+    public override void Initialize()
+    {
+        SubscribeLocalEvent<SpaceDebrisComponent, EntityTerminatingEvent>(OnDebrisDespawn);
+    }
+    // End Frontier: space debris destruction
 
     /// <inheritdoc />
     public override void Update(float frameTime)
@@ -54,10 +65,26 @@ public sealed class LocalityLoaderSystem : BaseWorldSystem
             }
         }
     }
+
+    // Frontier
+    private void OnDebrisDespawn(EntityUid entity, SpaceDebrisComponent component, EntityTerminatingEvent e)
+    {
+        // Handle mobrestrictions getting deleted
+        var query = AllEntityQuery<NFSalvageMobRestrictionsComponent>();
+
+        while (query.MoveNext(out var salvUid, out var salvMob))
+        {
+            if (entity == salvMob.LinkedGridEntity)
+                QueueDel(salvUid);
+        }
+
+        // Do not delete the grid, it is being deleted.
+        _linkedLifecycleGrid.UnparentPlayersFromGrid(grid: entity, deleteGrid: false, ignoreLifeStage: true);
+    }
+    // End Frontier
 }
 
 /// <summary>
 ///     A directed fired on a loadable entity when a local loader enters it's vicinity.
 /// </summary>
 public record struct LocalStructureLoadedEvent;
-
