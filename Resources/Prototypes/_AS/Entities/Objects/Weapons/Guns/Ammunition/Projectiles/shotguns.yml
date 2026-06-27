@@ -25,7 +25,7 @@
         Structural: 23
 
 - type: entity
-  id: AS8g
+  id: ASProjectileSlug8gHE
   name: blast grenade
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]

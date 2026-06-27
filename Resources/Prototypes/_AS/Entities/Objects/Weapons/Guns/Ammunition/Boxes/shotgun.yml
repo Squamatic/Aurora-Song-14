@@ -65,6 +65,6 @@
       color: "#897e6a"
     - state: decal-01
       color: "#333333"
-    - state: decal-shell-slug
+    - state: decal-shell-incendiary
     - state: mag-1
       map: [ "enum.GunVisualLayers.Mag" ]

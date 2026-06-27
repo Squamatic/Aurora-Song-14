@@ -150,7 +150,7 @@
           amount: 1
         - id: MagazineShotgunLever
           amount: 2
-        - id: ASBlueprintShotgun8gMunitions
+        - id: ASBlueprintShotgun8gMunitionsBasic
           amount: 1
 
 - type: entity

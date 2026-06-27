@@ -235,6 +235,22 @@
   materials:
     Steel: 480 # box - free, 16 [shells] * 30 [Steel per shell]
 
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: ASAmmunitionBoxShellShotgun8gSlug
+  result: ASAmmunitionBoxShellShotgun8gSlug
+  materials:
+    Steel: 960 # Box - free, 16 [Shells] * 60 [Steel per shell]
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: ASAmmunitionBoxShellShotgun8gHE
+  result: ASAmmunitionBoxShellShotgun8gHE
+  materials:
+    Steel: 360 # 8 [shells] * 45 [Steel per shell]
+    Plastic: 240 # 8 [shells] * 30 [Plastic per shell]
+    Plasma: 240 # # 8 [shells] * 30 [Plastic per shell]
+
 #region Misc
 - type: latheRecipe
   id: ASClothingEyesHudSLE

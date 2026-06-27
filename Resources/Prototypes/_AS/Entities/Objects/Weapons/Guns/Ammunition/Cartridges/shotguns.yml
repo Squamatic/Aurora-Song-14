@@ -45,9 +45,9 @@
   components:
   - type: Sprite
     layers:
-    - state: slug
+    - state: incendiary
       map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
-    proto: ASProjectileSlug8g
+    proto: ASProjectileSlug8gHE
   - type: SpentAmmoVisuals
-    state: "slug"
+    state: "incendiary"
