@@ -260,7 +260,7 @@ public abstract partial class SharedRoleSystem : EntitySystem
         Dirty(mind, comp);
 
         // Update player character window
-        if (_minds.TryGetSession(mind, out var session))
+        if (Player.TryGetSessionById(comp.UserId, out var session))
             RaiseNetworkEvent(new MindRoleTypeChangedEvent(), session.Channel);
         else
         {
@@ -681,8 +681,11 @@ public abstract partial class SharedRoleSystem : EntitySystem
     /// </summary>
     public void MindPlaySound(EntityUid mindId, SoundSpecifier? sound, MindComponent? mind = null)
     {
-        if (Resolve(mindId, ref mind) && mind.Session != null)
-            _audio.PlayGlobal(sound, mind.Session);
+        if (!Resolve(mindId, ref mind))
+            return;
+
+        if (Player.TryGetSessionById(mind.UserId, out var session))
+            _audio.PlayGlobal(sound, session);
     }
 
     // TODO ROLES Change to readonly?

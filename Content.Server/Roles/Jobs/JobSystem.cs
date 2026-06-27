@@ -1,6 +1,5 @@
 ﻿using System.Globalization;
 using Content.Server.Chat.Managers;
-using Content.Server.Mind;
 using Content.Shared.Mind;
 using Content.Shared.Roles;
 using Content.Shared.Roles.Jobs;
@@ -14,8 +13,7 @@ namespace Content.Server.Roles.Jobs;
 public sealed partial class JobSystem : SharedJobSystem
 {
     [Dependency] private IChatManager _chat = default!;
-    // [Dependency] private ISharedPlayerManager _player = default!; // Aurora's Song
-    [Dependency] private MindSystem _mind = default!; // Aurora's Song
+    [Dependency] private ISharedPlayerManager _player = default!;
     [Dependency] private RoleSystem _roles = default!;
 
     public override void Initialize()
@@ -44,7 +42,7 @@ public sealed partial class JobSystem : SharedJobSystem
         if (args.Silent)
             return;
 
-        if (!_mind.TryGetSession(mindId, out var session))
+        if (!_player.TryGetSessionById(component.UserId, out var session))
             return;
 
         if (!MindTryGetJob(mindId, out var prototype))

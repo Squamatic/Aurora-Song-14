@@ -9,11 +9,11 @@ namespace Content.Server.Medical;
 public sealed partial class DefibrillatorSystem : SharedDefibrillatorSystem
 {
     [Dependency] private EuiManager _eui = default!;
-    // [Dependency] private ISharedPlayerManager _player = default!; // Aurora's Song
+    [Dependency] private ISharedPlayerManager _player = default!;
     [Dependency] private SharedMindSystem _mind = default!;
 
     protected override void OpenReturnToBodyEui(Entity<MindComponent> mind, ICommonSession session)
     {
-        _eui.OpenEui(new ReturnToBodyEui(mind, _mind), session); // Aurora's Song - remove _player
+        _eui.OpenEui(new ReturnToBodyEui(mind, _mind, _player), session);
     }
 }

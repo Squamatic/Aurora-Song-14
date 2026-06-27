@@ -27,7 +27,7 @@ public sealed partial class ZombieRuleSystem : GameRuleSystem<ZombieRuleComponen
     [Dependency] private AntagSelectionSystem _antag = default!;
     [Dependency] private ChatSystem _chat = default!;
     [Dependency] private IGameTiming _timing = default!;
-    // [Dependency] private ISharedPlayerManager _player = default!; // Aurora's Song
+    [Dependency] private ISharedPlayerManager _player = default!;
     [Dependency] private MobStateSystem _mobState = default!;
     [Dependency] private PopupSystem _popup = default!;
     [Dependency] private RoundEndSystem _roundEnd = default!;
@@ -98,9 +98,10 @@ public sealed partial class ZombieRuleSystem : GameRuleSystem<ZombieRuleComponen
         {
             var meta = MetaData(survivor);
             var username = string.Empty;
-            if (_mindSystem.TryGetMind(survivor, out _, out var mind) && mind.Session != null)
+            if (_mindSystem.TryGetMind(survivor, out _, out var mind) &&
+                _player.TryGetSessionById(mind.UserId, out var session))
             {
-                username = mind.Session.Name;
+                username = session.Name;
             }
 
             args.AddLine(Loc.GetString("zombie-round-end-user-was-survivor",

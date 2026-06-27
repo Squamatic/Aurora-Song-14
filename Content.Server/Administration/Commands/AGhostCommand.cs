@@ -107,8 +107,8 @@ public sealed partial class AGhostCommand : LocalizedCommands
             // TODO: Remove duplication between all this and "GamePreset.OnGhostAttempt()"...
             if (!string.IsNullOrWhiteSpace(mind.CharacterName))
                 metaDataSystem.SetEntityName(ghost, mind.CharacterName);
-            else if (!string.IsNullOrWhiteSpace(mind.Session?.Name))
-                metaDataSystem.SetEntityName(ghost, mind.Session.Name);
+            else if (!string.IsNullOrWhiteSpace(player.Name))
+                metaDataSystem.SetEntityName(ghost, player.Name);
 
             mindSystem.Visit(mindId, ghost, mind);
         }
