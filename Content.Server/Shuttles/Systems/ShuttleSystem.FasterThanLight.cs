@@ -784,7 +784,7 @@ public sealed partial class ShuttleSystem
         {
             if (dockedUid == uid) continue;
 
-            var dockedXform = _xformQuery.GetComponent(dockedUid);
+            var dockedXform = Transform(dockedUid);
             var mainPos = _transform.GetWorldPosition(uid);
             var dockedPos = _transform.GetWorldPosition(dockedUid);
             var mainRot = _transform.GetWorldRotation(uid);

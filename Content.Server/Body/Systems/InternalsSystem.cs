@@ -1,4 +1,5 @@
 using Content.Server.Atmos.EntitySystems;
+using Content.Server.Body.Components; // Aurora's Song
 using Content.Shared.Alert;
 using Content.Shared.Atmos.Components;
 using Content.Shared.Body.Components;

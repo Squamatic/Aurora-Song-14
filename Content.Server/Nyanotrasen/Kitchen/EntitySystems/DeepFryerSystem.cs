@@ -107,7 +107,7 @@ public sealed partial class DeepFryerSystem : SharedDeepfryerSystem
 
         _sawmill = Logger.GetSawmill("deepfryer");
 
-        SubscribeLocalEvent<DeepFryerComponent, ComponentInit>(OnInitDeepFryer);
+        SubscribeLocalEvent<DeepFryerComponent, MapInitEvent>(OnInitDeepFryer); // Aurora's song - Use map init instead
         SubscribeLocalEvent<DeepFryerComponent, PowerChangedEvent>(OnPowerChange);
         SubscribeLocalEvent<DeepFryerComponent, RefreshPartsEvent>(OnRefreshParts);
         SubscribeLocalEvent<DeepFryerComponent, MachineDeconstructedEvent>(OnDeconstruct);
@@ -219,13 +219,10 @@ public sealed partial class DeepFryerSystem : SharedDeepfryerSystem
                 _temperature.ChangeHeat(item, delta, false, tempComp);
         }
 
-        if (TryComp<SolutionContainerManagerComponent>(item, out var solutions) && solutions.Solutions != null)
+        // Aurora's Song - Simplify to use SolutionComponent
+        if (TryComp<SolutionComponent>(item, out var solutionComponent))
         {
-            foreach (var (_, solution) in solutions.Solutions)
-            {
-                if (_solutionContainerSystem.TryGetSolution(item, solution.Name, out var solutionRef))
-                    _solutionContainerSystem.SetTemperature(solutionRef!.Value, component.PoweredTemperature);
-            }
+            _solutionContainerSystem.SetTemperature((item, solutionComponent), component.PoweredTemperature);
         }
 
         // Damage non-food items and mobs.
@@ -429,7 +426,7 @@ public sealed partial class DeepFryerSystem : SharedDeepfryerSystem
     }
     // End Frontier
 
-    private void OnInitDeepFryer(EntityUid uid, DeepFryerComponent component, ComponentInit args)
+    private void OnInitDeepFryer(EntityUid uid, DeepFryerComponent component, MapInitEvent args) // Aurora's song - Use map init instead
     {
         component.Storage =
             _containerSystem.EnsureContainer<Container>(uid, component.StorageName, out var containerExisted);
@@ -438,12 +435,14 @@ public sealed partial class DeepFryerSystem : SharedDeepfryerSystem
             _sawmill.Warning(
                 $"{ToPrettyString(uid)} did not have a {component.StorageName} container. It has been created.");
 
-        if (_solutionContainerSystem.EnsureSolution(uid, component.SolutionName, out var solutionExisted, out var solution))
-            component.Solution = solution;
-
-        if (!solutionExisted)
+        // Aurora's Song Start - Reorganize to use new EnsureSolution
+        if (!_solutionContainerSystem.EnsureSolution(uid, component.SolutionName, out var solution))
             _sawmill.Warning(
                 $"{ToPrettyString(uid)} did not have a {component.SolutionName} solution container. It has been created.");
+
+        component.Solution = solution.Comp.Solution;
+        // Aurora's Song End
+
         // Aurora's Song - Seemingly unused
         // foreach (var reagent in component.Solution.Contents.ToArray())
         // {
@@ -654,7 +653,7 @@ public sealed partial class DeepFryerSystem : SharedDeepfryerSystem
                 out var transferAmount))
             return;
 
-        if (!_solutionContainerSystem.TryGetSolution(uid, component.Solution.Name, out var solution))
+        if (!_solutionContainerSystem.TryGetSolution(uid, component.SolutionName, out var solution)) // Aurora's Song - Use component.SolutionName
             return;
 
         // Start Aurora's Song - Convert to new system
@@ -695,7 +694,7 @@ public sealed partial class DeepFryerSystem : SharedDeepfryerSystem
 
         var delay = TimeSpan.FromSeconds(Math.Clamp((float)wasteVolume * 0.1f, 1f, 5f));
 
-        var ev = new ClearSlagDoAfterEvent(heldSolution.Value.Comp.Solution, transferAmount);
+        var ev = new ClearSlagDoAfterEvent(heldSolution.Value.Comp.Solution, heldSolution.Value.Comp.Id, transferAmount); // Aurora's Song - Pass name too
 
         //JJ Comment - not sure I have DoAfterArgs configured correctly.
         var doAfterArgs = new DoAfterArgs(EntityManager, user, delay, ev, uid, uid, heldItem)
@@ -743,7 +742,7 @@ public sealed partial class DeepFryerSystem : SharedDeepfryerSystem
         if (!_solutionContainerSystem.TryGetSolution(uid, component.SolutionName, out var solution))
             return;
 
-        if (!_solutionContainerSystem.TryGetSolution(args.Used!.Value, args.Solution.Name, out var targetSolution))
+        if (!_solutionContainerSystem.TryGetSolution(args.Used!.Value, args.SolutionName, out var targetSolution)) // Aurora's Song - Pass name too
             return;
 
         _solutionContainerSystem.UpdateChemicals(solution.Value);

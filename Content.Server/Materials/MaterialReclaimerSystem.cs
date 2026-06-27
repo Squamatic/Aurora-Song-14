@@ -286,17 +286,16 @@ public sealed partial class MaterialReclaimerSystem : SharedMaterialReclaimerSys
 
         // Frontier: use old material reclaimer code
         if (reclaimerComponent.UseOldSolutionLogic &&
-            TryComp<SolutionContainerManagerComponent>(item, out var solutionContainer))
+            TryComp<SolutionComponent>(item, out var solutionComponent)) // Aurora's Song - Convert to use single solution
         {
             var solutionScale = efficiency;
             if (TryComp<StackComponent>(item, out var stack))
                 solutionScale *= stack.Count;
-            foreach (var (_, soln) in _solutionContainer.EnumerateSolutions((item, solutionContainer)))
-            {
-                var solution = soln.Comp.Solution;
-                solution.ScaleSolution(solutionScale); // Scale in situ, entity will be destroyed.
-                totalChemicals.AddSolution(solution, _prototype);
-            }
+
+            // Aurora's Song - Get rid of enumeration
+            var solution = solutionComponent.Solution;
+            solution.ScaleSolution(solutionScale); // Scale in situ, entity will be destroyed.
+            totalChemicals.AddSolution(solution, _prototype);
         }
         // End Frontier: use old material reclaimer code
         else if (reclaimerComponent.OnlyReclaimDrainable) // Frontier: add else

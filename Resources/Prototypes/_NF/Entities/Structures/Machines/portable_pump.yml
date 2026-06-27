@@ -93,10 +93,10 @@
                 max: 2
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
-  - type: SolutionContainerManager
-    solutions:
-      drainBuffer:
-        maxVol: 1200
+  - type: Solution
+    id: drainBuffer
+    solution:
+      maxVol: 1200
   - type: DrainableSolution
     solution: drainBuffer
   - type: AdvDrain

@@ -72,7 +72,7 @@ public sealed partial class ZombieSystem
     [Dependency] private NameModifierSystem _nameMod = default!;
     [Dependency] private NPCSystem _npc = default!;
     [Dependency] private TagSystem _tag = default!;
-    // [Dependency] private ISharedPlayerManager _player = default!; // Aurora's Song
+    [Dependency] private ISharedPlayerManager _player = default!;
 
     private static readonly ProtoId<TagPrototype> InvalidForGlobalSpawnSpellTag = "InvalidForGlobalSpawnSpell";
     private static readonly ProtoId<TagPrototype> CannotSuicideTag = "CannotSuicide";

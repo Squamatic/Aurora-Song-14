@@ -232,8 +232,8 @@ public sealed partial class PinpointerSystem : SharedPinpointerSystem
             return;
 
         pinpointer.Target = null;
-        UpdateDirectionToTarget(uid, pinpointer);
-        UpdateAppearance(uid, pinpointer);
+        UpdateDirectionToTarget((uid, pinpointer));
+        UpdateAppearance((uid, pinpointer));
     }
     // End Frontier: clear function
 

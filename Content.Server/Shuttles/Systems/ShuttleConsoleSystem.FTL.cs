@@ -3,6 +3,7 @@ using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Events;
 using Content.Shared._Mono.Ships; // Mono
 using Content.Shared.Popups; // Mono
+using Content.Shared.Shuttles.BUIStates; // AS
 using Content.Shared.Shuttles.Components; // AS
 using Content.Shared.Shuttles.Events;
 using Content.Shared.Shuttles.Systems; // Mono
@@ -13,6 +14,7 @@ using Robust.Shared.Physics.Components;
 using Robust.Shared.Audio; // AS
 using Robust.Shared.Audio.Components; // AS
 using Robust.Shared.Audio.Systems; // AS
+using Robust.Shared.Map.Components; // AS
 
 namespace Content.Server.Shuttles.Systems;
 
@@ -186,7 +188,7 @@ public sealed partial class ShuttleConsoleSystem
 
         // Mono: Check for nearby grids that are above the mass threshold
         var xform = Transform(shuttleUid.Value);
-        var bounds = xform.WorldMatrix.TransformBox(Comp<MapGridComponent>(shuttleUid.Value).LocalAABB).Enlarged(ShuttleFTLRange);
+        var bounds = _transform.GetWorldMatrix(shuttleUid.Value).TransformBox(Comp<MapGridComponent>(shuttleUid.Value).LocalAABB).Enlarged(ShuttleFTLRange);
         var bodyQuery = GetEntityQuery<PhysicsComponent>();
         // Keep track of docked grids to exclude them from the proximity check
         var dockedGrids = new HashSet<EntityUid>();

@@ -33,6 +33,7 @@ using Content.Shared.Station.Components; // Frontier
 using Content.Server.Station.Systems; // Frontier
 using Content.Server.Shuttles.Systems;
 using Content.Server._NF.Salvage.Expeditions.Structure; // Frontier
+using Robust.Shared.Map; // Frontier
 
 namespace Content.Server.Salvage;
 

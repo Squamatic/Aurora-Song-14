@@ -66,13 +66,14 @@ public sealed class RoadkillSystem : EntitySystem
             if (_mobState.IsDead(ent))
                 return;
 
+            var totalDamage = _damageable.GetTotalDamage(ent.Owner); // Aurora's Song - Damage refactor
+
             // Try to apply damage if this thing can take damage.
             if (_mobThreshold.TryGetThresholdForState(ent, MobState.Dead, out var threshold) &&
-                TryComp<DamageableComponent>(ent, out var damageableComponent) &&
-                damageableComponent.TotalDamage < threshold)
+                totalDamage < threshold) // Aurora's Song - Damage refactor
             {
                 var damage = new DamageSpecifier();
-                damage.DamageDict[_bluntDamageType] = threshold.Value - damageableComponent.TotalDamage + _extraDamage;
+                damage.DamageDict[_bluntDamageType] = threshold.Value - totalDamage + _extraDamage; // Aurora's Song - Damage refactor
                 _damageable.TryChangeDamage(ent.Owner, damage, ignoreResistances: true);
             }
             _mobState.ChangeMobState(ent, MobState.Dead);

@@ -121,10 +121,10 @@
     goodFlavorPriceBonus: 0.5
     solutionSplitMax: 20
 
-  - type: SolutionContainerManager
-    solutions:
-      vat_oil:
-        maxVol: 100
+  - type: Solution # Aurora's Song - Use solution instead
+    id: vat_oil
+    solution:
+      maxVol: 100
   - type: DrainableSolution
     solution: vat_oil
   - type: ExaminableSolution
