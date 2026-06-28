@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ BaseItem, BaseSyndicateContraband ]
+  parent: [ BaseItem, BaseC3SyndicateContraband ] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
   id: HijackBeacon
   name: hijack beacon
   description: A device that bypasses the firewall on Nanotrasen-brand Automated Trade Stations.
