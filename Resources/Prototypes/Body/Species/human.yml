@@ -11,9 +11,6 @@
     enum.HumanoidVisualLayers.FacialHair:
       limit: 1
       required: false
-    enum.HumanoidVisualLayers.HeadTop: # Aurora's Song
-      limit: 1
-      required: false
     enum.HumanoidVisualLayers.HeadSide: #imp
       limit: 2 #up from 1 because i moved earrings here
       required: false

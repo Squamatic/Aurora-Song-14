@@ -333,11 +333,12 @@
       - potatoes
   - type: Sprite
     sprite: _NF/Objects/Specific/Hydroponics/potato.rsi
-  - type: Extractable
-    juiceSolution:
-      reagents:
-      - ReagentId: JuicePotato
-        Quantity: 8
+  # Aurora's Song - No more potato juice
+#  - type: Extractable
+#    juiceSolution:
+#      reagents:
+#      - ReagentId: JuicePotato
+#        Quantity: 8
   - type: Tag
     tags:
     - Vegetable

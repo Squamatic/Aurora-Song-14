@@ -157,7 +157,7 @@
           shader: unshaded
         - state: canister
     - type: GasCanister
-      gasMixture:
+      air: # Aurora's Song - gasMixture>air
         volume: 15000 # 1500[base canister volume] * 10
         moles: # List of gasses for easy reference
           - 18717.1051 # oxygen
@@ -187,7 +187,7 @@
           shader: unshaded
         - state: canister
     - type: GasCanister
-      gasMixture:
+      air: # Aurora's Song - gasMixture>air
         volume: 15000 # 1500[base canister volume] * 10
         moles: # List of gasses for easy reference
           - 0 # oxygen

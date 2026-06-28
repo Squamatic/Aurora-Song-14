@@ -675,7 +675,6 @@
       reagents:
       - ReagentId: WeldingFuel
         Quantity: 100
-  - type: Timer
   - type: TimedSpawner
     prototypes:
     - NFZombiePileLoophole

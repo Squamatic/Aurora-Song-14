@@ -1,6 +1,5 @@
 - type: reagent
   id: Respiron
-  abbreviation: gas-respiron-abbreviation # Aurora's Song
   name: reagent-name-respiron
   desc: reagent-desc-respiron
   physicalDesc: reagent-physical-desc-gaseous
@@ -53,7 +52,6 @@
 
 - type: reagent
   id: Helium
-  abbreviation: gas-helium-abbreviation # Aurora's Song
   name: reagent-name-helium
   desc: reagent-desc-helium
   physicalDesc: reagent-physical-desc-nondescript

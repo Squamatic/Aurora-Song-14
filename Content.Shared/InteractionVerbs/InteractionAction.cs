@@ -56,6 +56,5 @@ public abstract partial class InteractionAction
         [Dependency] public IRobustRandom Random = default!;
         [Dependency] public IGameTiming Timing = default!;
         [Dependency] public ISerializationManager Serialization = default!;
-        [Dependency] public EntityWhitelistSystem WhitelistSystem = default!;
     }
 }
