@@ -36,7 +36,7 @@
 
 #Alternate / slim basic armor vest, allowed for security and bartenders
 - type: entity
-  parent: [ BaseSecurityBartenderContraband, ClothingOuterArmorBasic ]
+  parent: [ BaseC1Contraband, ClothingOuterArmorBasic ] # Aurora's Song - BaseSecurityBartenderContraband>BaseC1Contraband
   id: ClothingOuterArmorBasicSlim
   name: armor vest
   suffix: slim

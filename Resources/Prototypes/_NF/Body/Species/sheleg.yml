@@ -109,7 +109,6 @@
   - type: Speech
     speechSounds: Sheleg
     speechVerb: Sheleg
-#    allowedEmotes: [ 'Belch' ]
   - type: TypingIndicator
     proto: sheleg
   - type: Butcherable

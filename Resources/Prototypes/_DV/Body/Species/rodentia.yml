@@ -102,7 +102,7 @@
   - type: Speech
     speechVerb: Rodentia
     speechSounds: Squeak
-    allowedEmotes: ['Squeak', 'Belch'] # Frontier - Add Belch
+    allowedEmotes: ['Squeak']
 #  Aurora's Song - Standardize fixtures
 #  - type: Fixtures
 #    fixtures: # TODO: This needs a second fixture just for mob collisions.
