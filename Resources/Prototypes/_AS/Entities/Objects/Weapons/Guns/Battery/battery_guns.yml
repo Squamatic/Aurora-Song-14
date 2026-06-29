@@ -538,3 +538,48 @@
   - type: BatterySelfRecharger
     autoRechargeRate: 70
     autoRechargePauseTime: 6
+
+- type: entity
+  name: energy shotgun # Yeah I ripped this from upstream's files too because it wasn't initialising the prototype and I'm lazy, sue me
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseC3NanoTrasenContraband, ASBaseWeaponManufacturerNanoTrasen] # Aurora's Song | BaseGrandTheftContraband<BaseC2ContrabandUnredeemable<BaseCeNanoTrasenContraband
+  id: ASWeaponEnergyShotgun
+  description: A limited run energy weapon that uses various shotgun configurations. It offers the possibility of both lethal and non-lethal shots, making it a versatile weapon. # Aurora's Song | Not one of a kind
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/energy_shotgun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: false
+  - type: Appearance
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Battery/energy_shotgun.rsi
+  - type: Gun
+    fireRate: 2
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: BatteryAmmoProvider
+    proto: ASBulletLaserSpread # Aurora's Song | moved to AS variant
+    fireCost: 80
+  - type: BatteryWeaponFireModes
+    fireModes: # Aurora's Song | Moved to AS variants
+    - proto: ASBulletLaserSpread
+      fireCost: 80
+    - proto: ASBulletLaserSpreadNarrow
+      fireCost: 80
+    - proto: ASBulletDisablerSmgSpread
+      fireCost: 48
+  - type: Item
+    size: Large
+    sprite: Objects/Weapons/Guns/Battery/inhands_64x.rsi
+    heldPrefix: energy
+  - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
+  - type: Battery
+    maxCharge: 480
+    startingCharge: 480

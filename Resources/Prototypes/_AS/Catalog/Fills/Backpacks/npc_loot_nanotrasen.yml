@@ -195,7 +195,7 @@
     - id: SpaceCash5000
     - id: NFWeaponShotgunEnforcerExpedition
       orGroup: Weapon
-    - id: WeaponEnergyShotgun
+    - id: ASWeaponEnergyShotgun
       orGroup: Weapon
     - id: SpaceCash5000
       prob: 0.8
