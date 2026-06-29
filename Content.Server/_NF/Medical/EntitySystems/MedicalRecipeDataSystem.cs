@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Client.Chemistry.EntitySystems;
+using Content.Server.Chemistry.EntitySystems; // Aurora's Song
 using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Damage;
@@ -19,6 +20,7 @@ public sealed partial class MedicalRecipeDataSystem : SharedMedicalGuideDataSyst
     [Dependency] private IPlayerManager _player = default!;
     [Dependency] private IPrototypeManager _protoMan = default!;
     [Dependency] private IComponentFactory _componentFactory = default!;
+    [Dependency] private SolutionContainerSystem _solution = default!; // Aurora's Song
 
     private Dictionary<string, List<MedicalRecipeData>> _sources = new();
 
@@ -64,8 +66,8 @@ public sealed partial class MedicalRecipeDataSystem : SharedMedicalGuideDataSyst
             var proto = _protoMan.Index<EntityPrototype>(result);
             ReagentQuantity[] reagents = [];
             // Hack: assume there is only one solution in the result
-            if (proto.TryGetComponent<SolutionContainerManagerComponent>(out var manager, _componentFactory))
-                reagents = manager?.Solutions?.FirstOrNull()?.Value?.Contents?.ToArray() ?? [];
+            if (_solution.TryGetAnySolution(proto, out var solution)) // Aurora's Song - Use custom function here to get prototypes
+                reagents = solution.Solution.Contents.ToArray();
 
             DamageSpecifier? damage = null;
             if (proto.TryGetComponent<HealingComponent>(out var healing, _componentFactory))
