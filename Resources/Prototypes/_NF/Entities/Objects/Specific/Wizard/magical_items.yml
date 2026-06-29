@@ -187,7 +187,7 @@
   - type: Jetpack
     moleUsage: 0.00020
   - type: GasTank
-    outputPressure: 21.3
+    releasePressure: 21.3 # Aurora's Song - outputPressure>releasePressure
     air:
       volume: 50
       temperature: 293.15
