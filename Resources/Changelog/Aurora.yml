@@ -1670,3 +1670,10 @@ Entries:
   id: 9569
   time: '2026-06-29T18:06:48.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1190
+- author: Dizzy-Eevee
+  changes:
+    - type: Fix
+      message: Sheleg and IPCs can no longer be injected with syringes/hyposprays.
+  id: 9570
+  time: '2026-06-29T19:24:48.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1188
