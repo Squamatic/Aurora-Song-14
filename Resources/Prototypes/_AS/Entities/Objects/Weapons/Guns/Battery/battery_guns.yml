@@ -477,7 +477,7 @@
 
 - type: entity
   id: ASWeaponEnergyPistolPulse
-  parent: [ ASBaseWeaponFramePulsePistol, BaseC3Contraband, ASBaseWeaponManufacturerNanoTrasen ]
+  parent: [ ASBaseWeaponFramePulsePistol, ASBaseWeaponManufacturerNanoTrasen ] #removed contraband cus this thing has expedition spawn variants to assign it
   name: pulse pistol
   suffix: Aurora's Song
   description: |-
