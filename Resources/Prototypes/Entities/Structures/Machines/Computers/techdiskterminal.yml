@@ -38,8 +38,9 @@
   id: TechDiskTierWeights
   weights:
     1: 25
-    2: 10
-    3: 1
+# Aurora's Song - We have no recipies in this category
+#    2: 10
+#    3: 1
 
 - type: weightedRandom
   id: RareTechDiskTierWeights

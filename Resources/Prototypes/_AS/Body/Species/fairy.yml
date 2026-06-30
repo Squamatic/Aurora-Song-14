@@ -285,10 +285,14 @@
   parent: [ OrganBaseStomach, OrganFairyInternal, OrganFairyMetabolizer ]
   id: OrganFairyStomach
   components:
-  - type: SolutionContainerManager
+  - type: SolutionManager
     solutions:
-      stomach:
-        maxVol: 30
+    - SolutionFairyStomach
+
+- type: entity
+  parent: [SolutionTiny, SolutionStomach]
+  id: SolutionFairyStomach
+  categories: [ HideSpawnMenu ]
 
 - type: entity
   parent: [ OrganBaseLiver, OrganFairy, OrganHumanInternal, OrganFairyMetabolizer ]

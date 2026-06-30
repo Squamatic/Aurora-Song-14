@@ -105,64 +105,67 @@
   parent: TechnologyDisk
   id: TechnologyDiskT1
   suffix: Tier 1
+  categories: [ HideSpawnMenu ] # Aurora's Song - No tech disks
   components:
   - type: TechnologyDisk
     tier: 1
 
-- type: entity
-  parent: TechnologyDisk
-  id: TechnologyDiskT2
-  suffix: Tier 2
-  components:
-  - type: TechnologyDisk
-    tier: 2
+# Aurora's Song Start - Disable these as we don't really have tech disks at the moment
+# - type: entity
+#   parent: TechnologyDisk
+#   id: TechnologyDiskT2
+#   suffix: Tier 2
+#   components:
+#   - type: TechnologyDisk
+#     tier: 2
 
-- type: entity
-  parent: TechnologyDisk
-  id: TechnologyDiskT3
-  suffix: Tier 3
-  components:
-  - type: TechnologyDisk
-    tier: 3
+# - type: entity
+#   parent: TechnologyDisk
+#   id: TechnologyDiskT3
+#   suff ix: Tier 3
+#   components:
+#   - type: TechnologyDisk
+#     tier: 3
 
 # random tech disks by discipline
-- type: entity
-  parent: TechnologyDisk
-  id: TechnologyDiskIndustrial
-  suffix: Industrial
-  components:
-  - type: TechnologyDisk
-    discipline: Industrial
+# - type: entity
+#   parent: TechnologyDisk
+#   id: TechnologyDiskIndustrial
+#   suffix: Industrial
+#   components:
+#   - type: TechnologyDisk
+#     discipline: Industrial
 
-- type: entity
-  parent: TechnologyDisk
-  id: TechnologyDiskArsenal
-  suffix: Arsenal
-  components:
-  - type: TechnologyDisk
-    discipline: Arsenal
+# - type: entity
+#   parent: TechnologyDisk
+#   id: TechnologyDiskArsenal
+#   suffix: Arsenal
+#   components:
+#   - type: TechnologyDisk
+#     discipline: Arsenal
 
-- type: entity
-  parent: TechnologyDisk
-  id: TechnologyDiskExperimental
-  suffix: Experimental
-  components:
-  - type: TechnologyDisk
-    discipline: Experimental
+# - type: entity
+#   parent: TechnologyDisk
+#   id: TechnologyDiskExperimental
+#   suffix: Experimental
+#   components:
+#   - type: TechnologyDisk
+#     discipline: Experimental
 
-- type: entity
-  parent: TechnologyDisk
-  id: TechnologyDiskCivilianServices
-  suffix: Civilian Services
-  components:
-  - type: TechnologyDisk
-    discipline: CivilianServices
+# - type: entity
+#   parent: TechnologyDisk
+#   id: TechnologyDiskCivilianServices
+#   suffix: Civilian Services
+#   components:
+#   - type: TechnologyDisk
+#     discipline: CivilianServices
 
-- type: entity
-  parent: TechnologyDisk
-  id: TechnologyDiskRare
-  suffix: rare.
-  categories: [ HideSpawnMenu ] # Frontier: no tech disks
-  components:
-  - type: TechnologyDisk
-    tierWeightPrototype: RareTechDiskTierWeights
+# - type: entity
+#   parent: TechnologyDisk
+#   id: TechnologyDiskRare
+#   suffix: rare.
+#   categories: [ HideSpawnMenu ] # Frontier: no tech disks
+#   components:
+#   - type: TechnologyDisk
+#     tierWeightPrototype: RareTechDiskTierWeights
+# Aurora's Song End

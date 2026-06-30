@@ -22,11 +22,12 @@ namespace Content.Client.Guidebook.Controls;
 [UsedImplicitly, GenerateTypedNameReferences]
 public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, ISearchableControl, IPrototypeRepresentationControl
 {
+    [Dependency] private IEntitySystemManager _entity = default!; // Aurora's Song
     [Dependency] private IPrototypeManager _prototype = default!;
     [Dependency] private ILogManager _logManager = default!;
-    [Dependency] private SpriteSystem _sprite = default!; // Frontier
 
     private readonly ISawmill _sawmill = default!;
+    private readonly SpriteSystem _sprite; // Aurora's Song
 
     public IPrototype? RepresentedPrototype { get; private set; }
 
@@ -37,6 +38,7 @@ public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, 
         MouseFilter = MouseFilterMode.Stop;
 
         _sawmill = _logManager.GetSawmill("guidebook.microwave");
+        _sprite = _entity.GetEntitySystem<SpriteSystem>();
     }
 
     public GuideMicrowaveEmbed(string recipe) : this()

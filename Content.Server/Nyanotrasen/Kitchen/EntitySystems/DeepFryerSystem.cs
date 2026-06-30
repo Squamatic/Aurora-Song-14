@@ -560,6 +560,10 @@ public sealed partial class DeepFryerSystem : SharedDeepfryerSystem
 
     private void OnSolutionChange(EntityUid uid, DeepFryerComponent component, SolutionChangedEvent args)
     {
+        // Aurora's Song - We do not want this to run before we've initialized the solutions
+        if (LifeStage(uid) == EntityLifeStage.MapInitialized)
+            return;
+
         UpdateUserInterface(uid, component);
         UpdateAmbientSound(uid, component);
     }
