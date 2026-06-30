@@ -120,14 +120,16 @@
     lateJoinAdditional: true
     antags:
     # Pirate Captain role
-    - !type:AntagCountSelector
+    - !type:FixedAntagCount
       proto: PirateCaptain
+      count: 999
       playerRatio: -1
-    - !type:AntagCountSelector
+    - !type:FixedAntagCount
       proto: PirateFirstMate
       playerRatio: -1
-    - !type:AntagCountSelector
+    - !type:FixedAntagCount
       proto: Pirate
+      count: 999
       playerRatio: -1
 
 # Concrete ignored upstream definitions

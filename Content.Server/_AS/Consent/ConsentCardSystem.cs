@@ -14,7 +14,7 @@ using Robust.Shared.Player;
 
 namespace Content.Server._AS.Consent;
 
-public sealed partial class ConsentCardSystem : SharedConsentCardSystem
+public sealed partial class ConsentCardSystem : EntitySystem
 {
     [Dependency] private ISharedAdminLogManager _adminLog = default!;
     [Dependency] private SharedPopupSystem _popup = default!;
