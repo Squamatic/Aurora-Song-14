@@ -388,7 +388,7 @@
     price: 225
 
 - type: entity
-  parent: [BaseItem, BaseHypospray] # Aurora's Song - Add BaseHypospray
+  parent: [SolutionHypospray, SolutionToolSmall, BaseItem, BaseHypospray] # Aurora's Song - Add BaseHypospray # Aurora's Song - Convert to solution
   id: BorgHypoNoRefill
   abstract: true
   components:
@@ -402,10 +402,6 @@
       map: [ enum.SolutionContainerLayers.Fill ]
   - type: Item
     sprite: Objects/Specific/Medical/hypospray.rsi
-  - type: SolutionContainerManager
-    solutions:
-      hypospray:
-        maxVol: 30
   - type: ExaminableSolution
     solution: hypospray
   - type: Injector # Aurora's Song - Make inject only

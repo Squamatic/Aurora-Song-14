@@ -77,10 +77,6 @@
   name: wooden keg
   description: A musty old wooden keg, with a tap attached to the front.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        maxVol: 1000 # Frontier 500<1000
   - type: ExaminableSolution
     solution: tank
   - type: UserInterface
@@ -137,12 +133,11 @@
   components:
   - type: Label
     currentLabel: reagent-name-root-beer
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        reagents:
-        - ReagentId: RootBeer
-          Quantity: 1000 # Frontier 500<1000
+  - type: Solution # Aurora's Song - Convert to solution
+    solution:
+      reagents:
+      - ReagentId: RootBeer
+        Quantity: 960
 
 - type: entity
   parent: WoodenKeg
@@ -152,12 +147,11 @@
   components:
   - type: Label
     currentLabel: reagent-name-beer
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        reagents:
-        - ReagentId: Beer
-          Quantity: 1000 # Frontier 500<1000
+  - type: Solution # Aurora's Song - Convert to solution
+    solution:
+      reagents:
+      - ReagentId: Beer
+        Quantity: 960
 
 - type: entity
   parent: WoodenKeg
@@ -167,9 +161,8 @@
   components:
   - type: Label
     currentLabel: reagent-name-wine
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        reagents:
-        - ReagentId: Wine
-          Quantity: 1000 # Frontier 500<1000
+  - type: Solution # Aurora's Song - Convert to solution
+    solution:
+      reagents:
+      - ReagentId: Wine
+        Quantity: 960

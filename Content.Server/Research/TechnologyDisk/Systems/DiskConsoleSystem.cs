@@ -39,10 +39,13 @@ public sealed partial class DiskConsoleSystem : EntitySystem
                 continue;
 
             RemComp(uid, printing);
-            if (!console.DiskRare)
-                Spawn(console.DiskPrototype, xform.Coordinates);
-            else
-                Spawn(console.DiskPrototypeRare, xform.Coordinates);
+            // Aurora's Song Start
+            Spawn(console.DiskPrototype, xform.Coordinates);
+            // if (!console.DiskRare)
+            //     Spawn(console.DiskPrototype, xform.Coordinates);
+            // else
+            //     Spawn(console.DiskPrototypeRare, xform.Coordinates);
+            // Aurora's Song End
         }
     }
 

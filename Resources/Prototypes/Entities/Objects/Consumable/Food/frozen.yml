@@ -330,21 +330,19 @@
     - sweet
     - cold
     - magical
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-          - ReagentId: SpaceDrugs
-            Quantity: 4
-          - ReagentId: MindbreakerToxin
-            Quantity: 2.5
-          - ReagentId: Happiness
-            Quantity: 2.5
-          - ReagentId: Psicodine
-            Quantity: 1
-          - ReagentId: Sugar
-            Quantity: 2
+  - type: Solution # Aurora's Song - Convert to solution
+    solution:
+      reagents:
+      - ReagentId: SpaceDrugs
+        Quantity: 4
+      - ReagentId: MindbreakerToxin
+        Quantity: 2.5
+      - ReagentId: Happiness
+        Quantity: 2.5
+      - ReagentId: Psicodine
+        Quantity: 1
+      - ReagentId: Sugar
+        Quantity: 2
   # End Frontier: flavors, custom fill
 
 # Trash

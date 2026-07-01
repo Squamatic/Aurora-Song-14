@@ -680,19 +680,17 @@
   #  guides: [ Psionics ]
 
 - type: entity # TheDen - Pax pill prefill
-  suffix: Pax 10u
+  suffix: Pax 20u # Aurora's Song - Make 20u
   parent: Pill
   id: PillPax
   components:
   - type: Label
-    currentLabel: pax 10u
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: Pax
-          Quantity: 10
+    currentLabel: pax 20u # Aurora's Song - Make 20u
+  - type: Solution # Aurora's Song - Convert to solution
+    solution:
+      reagents:
+      - ReagentId: Pax
+        Quantity: 20
 
 - type: entity # TheDen - Pax pill canister
   parent: PillCanister
@@ -700,7 +698,7 @@
   suffix: Pax, 5
   components:
   - type: Label
-    currentLabel: Pax 10u
+    currentLabel: Pax 20u # Aurora's Song - Make 20u
   - type: EntityTableContainerFill # Aurora's Song - StorageFill>EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector

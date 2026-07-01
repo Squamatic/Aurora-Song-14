@@ -20,6 +20,7 @@
 - type: entity
   abstract: true
   parent:
+  - SolutionHypospraySmall # Aurora's Song - Convert to solution
   - MobMovementSpeedModifierEVAMelee
   - MobStaminaBoss
   - MobNonHumanHostileBase
@@ -56,10 +57,6 @@
         Structural: 45
     soundHit:
       path: /Audio/Effects/bite.ogg
-  - type: SolutionContainerManager
-    solutions:
-      melee:
-        maxVol: 20
   - type: SolutionRegeneration # Aurora's Song - Removed solution property
     generated:
       reagents:
@@ -67,7 +64,7 @@
         Quantity: 1
   - type: MeleeChemicalInjector
     transferAmount: 1
-    solution: melee
+    solution: hypospray # Aurora's Song - melee>hypospray
   - type: Butcherable
     spawned:
     - id: NFSpawnZombieLoot

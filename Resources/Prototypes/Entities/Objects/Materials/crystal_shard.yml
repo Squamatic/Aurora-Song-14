@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: MaterialBase
+  parent: [SolutionFood, SolutionTiny, MaterialBase] # Aurora's Song - Convert to solution
   id: ShardCrystalBase
   name: crystal shard
   description:  A small piece of crystal.
@@ -32,14 +32,13 @@
     price: 50
   - type: Extractable # Frontier
     grindableSolutionName: food # Frontier
-  - type: SolutionContainerManager # Frontier
-    solutions: # Frontier
-      food: # Frontier
-        reagents: # Frontier
-        - ReagentId: Ethanol # Frontier
-          Quantity: 5 # Frontier
-        - ReagentId: Sugar # Frontier
-          Quantity: 15 # Frontier
+  - type: Solution # Frontier # Aurora's Song - Convert to solution
+    solution: # Frontier
+      reagents: # Frontier
+      - ReagentId: Ethanol # Frontier
+        Quantity: 5 # Frontier
+      - ReagentId: Sugar # Frontier
+        Quantity: 15 # Frontier
 
 - type: entity
   parent: ShardCrystalBase

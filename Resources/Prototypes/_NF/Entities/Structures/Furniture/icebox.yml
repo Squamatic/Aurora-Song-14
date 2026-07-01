@@ -28,11 +28,8 @@
   parent: IceboxEmpty
   suffix: Ice
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drainBuffer:
-        maxVol: 100
-      tank:
-        reagents:
-        - ReagentId: Ice
-          Quantity: 500
+  - type: Solution # Aurora's Song - Convert to solution
+    solution:
+      reagents:
+      - ReagentId: Ice
+        Quantity: 480

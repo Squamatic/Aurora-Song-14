@@ -468,11 +468,9 @@
   parent: NFGoblinMadeWelder
   suffix: Goblin Made, Empty
   components:
-  - type: SolutionContainerManager
-    solutions:
-      Welder:
-        reagents: []
-        maxVol: 100
+  - type: Solution # Aurora's Song - Convert to solution
+    solution:
+      reagents: []
   - type: Construction
     graph: NFGoblinMadeWelder
     node: NFGoblinMadeWelder

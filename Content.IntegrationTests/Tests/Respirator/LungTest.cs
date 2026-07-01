@@ -23,7 +23,7 @@ public sealed class LungTest : GameTest
   name: HumanLungDummy
   id: HumanLungDummy
   components:
-  - type: SolutionContainerManager
+  - type: SolutionManager # Aurora's Song - SolutionContainerManager>SolutionManager
   - type: Body
   - type: EntityTableContainerFill
     containers:

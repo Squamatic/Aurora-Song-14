@@ -283,13 +283,11 @@
       map: ["pancakes9"]
       visible: false
   - type: Appearance
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 6
-        reagents:
-        - ReagentId: Flavorol
-          Quantity: 5
+  - type: Solution # Aurora's Song - Convert to solution
+    solution:
+      reagents:
+      - ReagentId: Flavorol
+        Quantity: 5
   - type: Tag
     tags:
     - Pancake
@@ -346,13 +344,11 @@
     tags:
     - Pancake
     - Fruit
-  - type: SolutionContainerManager # Frontier: flavorol
-    solutions:
-      food:
-        maxVol: 6
-        reagents:
-        - ReagentId: Flavorol
-          Quantity: 5 # End Frontier: flavorol
+  - type: Solution # Aurora's Song - Convert to solution
+    solution:
+      reagents:
+      - ReagentId: Flavorol
+        Quantity: 5 # Frontier: flavorol
 
 - type: entity
   name: chocolate chip pancake

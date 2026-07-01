@@ -55,14 +55,10 @@
         - Impassable
         - MidImpassable
         - LowImpassable
-  - type: SolutionContainerManager
+  - type: SolutionManager # Aurora's Song - Convert to solution
     solutions:
-      drainBuffer:
-        maxVol: 100
-      tank:
-        reagents:
-        - ReagentId: Water
-          Quantity: 500
+    - SolutionDrainNormal
+    - SolutionFilledWaterTank
   - type: DrainableSolution
     solution: tank
   - type: ReagentTank
@@ -72,40 +68,24 @@
       - ReagentId: Water
         Quantity: 1
 
+# Aurora's Song Start - Convert to solution
+- type: entity
+  parent: [SolutionTank, SolutionHuge]
+  id: SolutionFilledWaterTank
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Water
+        Quantity: 480
+# Aurora's Song End
+
 - type: entity
   parent: N14WellWaterClean
   id: N14WellWaterDirty
   suffix: Dirty
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drainBuffer:
-        maxVol: 100
-      tank:
-        reagents:
-        - ReagentId: Water
-          Quantity: 500
-  - type: SolutionRegeneration # Aurora's Song - Removed solution property
-    generated:
-      reagents:
-      - ReagentId: Water
-        Quantity: 1
 
 - type: entity
   parent: N14WellWaterClean
   id: N14WellWaterIrradiated # N14TODO: As above
   suffix: Irradiated
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drainBuffer:
-        maxVol: 100
-      tank:
-        reagents:
-        - ReagentId: Water
-          Quantity: 500
-  - type: SolutionRegeneration # Aurora's Song - Removed solution property
-    generated:
-      reagents:
-      - ReagentId: Water
-        Quantity: 1

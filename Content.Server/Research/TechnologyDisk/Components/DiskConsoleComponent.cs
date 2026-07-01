@@ -25,8 +25,9 @@ public sealed partial class DiskConsoleComponent : Component
     [DataField]
     public EntProtoId DiskPrototype = "TechnologyDisk";
 
-    [DataField("diskPrototypeRare", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>)), ViewVariables(VVAccess.ReadWrite)] // Frontier
-    public string DiskPrototypeRare = "TechnologyDiskRare"; // Frontier
+    // Aurora's Song - Disable TechDiskRare's
+    // [DataField("diskPrototypeRare", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>)), ViewVariables(VVAccess.ReadWrite)] // Frontier
+    // public string DiskPrototypeRare = "TechnologyDiskRare"; // Frontier
 
     [DataField, ViewVariables(VVAccess.ReadWrite)] // Frontier
     public bool DiskRare = false; // Frontier
