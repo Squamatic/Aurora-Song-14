@@ -154,7 +154,7 @@ public sealed class AllGamePresetsStartTest : AntagTest
         // Maps now exist
         Assert.That(SEntMan.Count<MapComponent>(), Is.GreaterThan(0));
         Assert.That(SEntMan.Count<MapGridComponent>(), Is.GreaterThan(0));
-        Assert.That(SEntMan.Count<StationCentcommComponent>(), Is.EqualTo(1));
+        // Assert.That(SEntMan.Count<StationCentcommComponent>(), Is.EqualTo(1)); // Aurora's Song - Centcomm isn't real here
 
         // Clear game preset and return to lobby
         await Pair.WaitCommand("golobby");
