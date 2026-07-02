@@ -1723,3 +1723,10 @@ Entries:
   id: 9576
   time: '2026-07-02T04:46:38.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1195
+- author: BudaLope
+  changes:
+    - type: Tweak
+      message: Most lathes can now print metal rods
+  id: 9577
+  time: '2026-07-02T04:49:42.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1198
