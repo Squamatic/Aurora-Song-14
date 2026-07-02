@@ -1716,3 +1716,10 @@ Entries:
   id: 9575
   time: '2026-07-02T04:41:02.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1194
+- author: BudaLope
+  changes:
+    - type: Fix
+      message: Certain tiles can now be placed on RCD built plating
+  id: 9576
+  time: '2026-07-02T04:46:38.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1195
