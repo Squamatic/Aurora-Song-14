@@ -102,7 +102,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: StaticPrice
-    price: 40
+    price: 55 # Aurora's Song - 40>55
   - type: Construction
     graph: TableFoldingGraph
     node: TableFolding

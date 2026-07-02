@@ -207,4 +207,4 @@
   - type: EmitSoundOnCollide
     sound: *HornSound
   - type: StaticPrice # Frontier
-    price: 10
+    price: 15 # Aurora's Song - 10>15 arbitrage

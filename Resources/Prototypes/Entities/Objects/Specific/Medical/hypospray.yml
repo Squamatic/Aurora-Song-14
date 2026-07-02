@@ -701,6 +701,7 @@
     handle: false # don't want the sound to stop the self-inject from triggering
   - type: Contraband # Frontier
     hideValues: true # Frontier - stealthy
+    allowedJobs: [ DirectorOfCare ] # Aurora's Song - Director of care should be the only one with this
 
 - type: entity
   parent: [ BaseItem, BaseC3SyndicateContraband ] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband

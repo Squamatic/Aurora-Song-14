@@ -49,7 +49,7 @@
         sound:
           collection: MetalBreak
   - type: StaticPrice
-    price: 15 # Frontier: 50<15
+    price: 20 # Frontier: 50<15 # Aurora's Song 15>20
 
 #Starts unanchored, cannot be rotated while anchored
 - type: entity

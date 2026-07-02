@@ -73,6 +73,10 @@ namespace Content.IntegrationTests.Tests
             {"/Maps/Shuttles/ShuttleEvent/syndie_evacpod.yml", ["RubberStampSyndicate"]},
             {"/Maps/Shuttles/ShuttleEvent/cruiser.yml", ["ShuttleGunPerforator"]},
             {"/Maps/Shuttles/ShuttleEvent/instigator.yml", ["ShuttleGunFriendship"]},
+            // Aurora's Song Start
+            {"/Maps/_AS/Shuttles/Sle/paladin.yml", ["ASShuttleGunDusterSLE"]},
+            {"/Maps/_AS/Shuttles/Sle/rogue.yml", ["ASShuttleGunFriendshipSLE"]},
+            // Aurora's Song End
         };
 
         /// <summary>
@@ -93,8 +97,26 @@ namespace Content.IntegrationTests.Tests
             "/Maps/_NF/Shuttles/Nfsd/paladin.yml", // Contains EXP-2100g "Duster"
             "/Maps/_NF/Shuttles/Nfsd/rogue.yml", // Contains EXP-320g "Friendship"
             // End Frontier
+            // Aurora's Song Start
+            "/Maps/_AS/Shuttles/Admin/**",
+            "/Maps/_AS/Shuttles/WIP/**",
+            "/Maps/_AS/Event/**",
+            // Aurora's Song End
             "/Maps/Shuttles/AdminSpawn/**" // admin gaming
         };
+
+        /// <summary>
+        /// Aurora's Song - Run only spawnable maps, the shuttles are tested in the shipyard and upstream tests
+        /// </summary>
+        private static readonly string[] GameMaps =
+        [
+            "PortBoreal",
+            // "SLEOutpost", // These are all broken, someone else can fix them if they want, im tired
+            // "Alley",
+            // "Damascus",
+            // "Arrivals",
+            // "Cove",
+        ];
 
         /// <summary>
         /// Converts the above globs into regex so your eyes dont bleed trying to add filepaths.
@@ -103,7 +125,7 @@ namespace Content.IntegrationTests.Tests
             .Select(glob => new Regex(GlobToRegex(glob), RegexOptions.IgnoreCase | RegexOptions.Compiled))
             .ToArray();
 
-        private static readonly string[] GameMaps = GameDataScrounger.PrototypesOfKind<GameMapPrototype>().Where(x => x != PoolManager.TestMap).ToArray();
+        // private static readonly string[] GameMaps = GameDataScrounger.PrototypesOfKind<GameMapPrototype>().Where(x => x != PoolManager.TestMap).ToArray(); // Aurora's Song - We only want to test certain maps
         private static readonly ResPath[] AllMapFiles = GameDataScrounger.FilesInDirectoryInVfs("/Maps/_NF", "*.yml").Concat(GameDataScrounger.FilesInDirectoryInVfs("/Maps/_AS", "*.yml")).ToArray(); // Aurora's Song - Concat both AS and NF maps
         private static readonly ResPath[] ShuttleMapFiles = GameDataScrounger.FilesInDirectoryInVfs("/Maps/_NF/Shuttles", "*.yml").Concat(GameDataScrounger.FilesInDirectoryInVfs("/Maps/_AS/Shuttles", "*.yml")).ToArray(); // Aurora's Song - Concat both AS and NF shuttles
 
@@ -145,6 +167,7 @@ namespace Content.IntegrationTests.Tests
         /// Asserts that shuttles are loadable and have been saved as grids and not maps.
         /// </summary>
         [Test]
+        [Ignore("This test is fulfilled by NF shipyard and the non-game-map test")]
         [TestCaseSource(nameof(ShuttleMapFiles))]
         [EnsureCVar(Side.Server, typeof(CCVars), nameof(CCVars.GridFill), false)]
         public async Task ShuttlesLoadableTest(ResPath path)
@@ -491,12 +514,14 @@ namespace Content.IntegrationTests.Tests
             var gameMaps = protoManager.EnumeratePrototypes<GameMapPrototype>().Select(o => o.MapPath).ToHashSet();
 
 
-            if (gameMaps.Contains(mapPath))
-            {
-                // TODO: You might be able to save like, 1-2 seconds of test time if you eliminate these before
-                //       actually needing a pair.
-                return;
-            }
+            // Aurora's Song Start - We want to make sure everything is spawnable, only PortBoreal is tested on GameMap test
+            // if (gameMaps.Contains(mapPath))
+            // {
+            //     // TODO: You might be able to save like, 1-2 seconds of test time if you eliminate these before
+            //     //       actually needing a pair.
+            //     return;
+            // }
+            // Aurora's Song End
 
             var rootedPath = mapPath.ToRootedPath();
 

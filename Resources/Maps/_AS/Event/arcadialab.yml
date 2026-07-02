@@ -3009,9 +3009,6 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
-    - type: SalvageMobRestrictionsGrid
-      mobsToKill:
-      - invalid
     - type: NavMap
   - uid: 5
     mapInit: true
