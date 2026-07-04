@@ -362,6 +362,11 @@
 - type: entity
   parent: [ OrganBaseStomach, OrganShelegInternal, OrganShelegMetabolizer ]
   id: OrganShelegStomach
+  # Aurora's Song Start - Revert Sheleg stomach efficiency back to 1
+  components:
+  - type: Metabolizer
+    efficiencyModifier: 2
+  # Aurora's Song End
 
 - type: entity
   parent: [ OrganBaseLiver, OrganShelegInternal, OrganShelegMetabolizer ]
