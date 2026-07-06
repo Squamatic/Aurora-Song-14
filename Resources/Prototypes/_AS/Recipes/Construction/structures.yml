@@ -1,3 +1,4 @@
+# Walls
 - type: construction # Aurora - Added name field for proper menu display with (diagonal) suffix
   id: wallSolidDiagonal
   name: construction-recipe-wall-solid-diagonal
@@ -12,7 +13,22 @@
   conditions:
     - !type:TileNotBlocked
 
-- type: construction # Aurora - Added name field for proper menu display with (diagonal) suffix
+- type: construction
+  id: WallShuttleInterior
+  name: construction-recipe-wall-shuttle-interior
+  graph: Girder
+  startNode: start
+  targetNode: shuttleInteriorWall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+# Windows
+- type: construction
   id: wallReinforcedDiagonal
   name: construction-recipe-wall-reinforced-diagonal
   graph: Girder
@@ -44,6 +60,20 @@
   graph: WindowDirectional
   startNode: start
   targetNode: uraniumReinforcedWindowDirectional
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction
+  id: ShuttleWindowDiagonal
+  name: construction-recipe-window-shuttle-diagonal
+  graph: ASWindowDiagonal
+  startNode: start
+  targetNode: shuttleWindowDiagonal
   category: construction-category-structures
   canBuildInImpassable: true
   conditions:
