@@ -1788,3 +1788,12 @@ Entries:
   id: 9583
   time: '2026-07-06T01:13:00.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1214
+- author: salamanderskies
+  changes:
+    - type: Add
+      message: Added a few more Nuclear14 furnitures and rugs to the construction menu.
+    - type: Tweak
+      message: 'Made existing Nuclear14 furniture recipes slightly more consistent. '
+  id: 9584
+  time: '2026-07-06T01:21:23.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1166
