@@ -33,6 +33,7 @@ public sealed partial class MainMenuControl : Control
         "KettleStation",
         "BagelStation",
         "ExoStation",
+        "FrontierStation", // Aurora's Song
     ];
 
     public MainMenuControl(IResourceCache resCache, IConfigurationManager configMan)
