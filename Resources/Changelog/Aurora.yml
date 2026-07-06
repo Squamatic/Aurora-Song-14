@@ -1746,3 +1746,16 @@ Entries:
   id: 9579
   time: '2026-07-04T16:21:36.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1201
+- author: Zenixic
+  changes:
+    - type: Tweak
+      message: >-
+        Replaced the random suit locker on the brigand with just the merc EVA
+        locker
+    - type: Tweak
+      message: >-
+        Smoothed out the radar shapes of the Brigand and Turncoat (Brigand's
+        pirate Version)
+  id: 9580
+  time: '2026-07-06T00:31:50.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1196
