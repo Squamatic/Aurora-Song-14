@@ -1770,3 +1770,12 @@ Entries:
   id: 9581
   time: '2026-07-06T00:56:48.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1212
+- author: Sunburstschitin
+  changes:
+    - type: Tweak
+      message: >-
+        Construction bags can now be placed inside
+        backpacks/satchels/duffels/etc. like the rest of their ilk.
+  id: 9582
+  time: '2026-07-06T01:04:00.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1213
