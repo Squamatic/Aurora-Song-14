@@ -1820,3 +1820,10 @@ Entries:
   id: 9587
   time: '2026-07-06T02:06:24.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1199
+- author: ZigTag
+  changes:
+    - type: Tweak
+      message: Shelegs and IPCs can now use all NSFW chems
+  id: 9588
+  time: '2026-07-06T02:09:22.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1208
