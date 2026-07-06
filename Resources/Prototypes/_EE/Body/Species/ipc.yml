@@ -293,7 +293,8 @@
     metabolizerTypes: [ IPC ]
   - type: MetabolizerTagWhitelist
     tags:
-    - IPC
+    - Aphrodisiac
+    - IPCCompatible
     stages: [ "Bloodstream" ]
 
 - type: entity
