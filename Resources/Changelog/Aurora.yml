@@ -1838,3 +1838,16 @@ Entries:
   id: 9589
   time: '2026-07-06T02:23:16.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1202
+- author: salamanderskies
+  changes:
+    - type: Add
+      message: Added chitin, a material to construct Xeno structures with.
+    - type: Tweak
+      message: >-
+        Chitin walls, resin windows, and Xeno tables & chairs are now
+        constructable.
+    - type: Tweak
+      message: Xeno tiles are now printable in the cutter.
+  id: 9590
+  time: '2026-07-06T02:44:30.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1218
