@@ -85,7 +85,7 @@ public abstract partial class SharedStoreSystem : EntitySystem
 
         args.Handled = true;
         var msg = Loc.GetString("store-currency-inserted", ("used", args.Used), ("target", ev.TargetOverride ?? target));
-        Popup.PopupEntity(msg, target, args.User);
+        Popup.PopupClient(msg, target, args.User); // Aurora's Song - Use PopupClient here
     }
 
     /// <summary>
