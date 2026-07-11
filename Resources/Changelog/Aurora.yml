@@ -1933,3 +1933,10 @@ Entries:
   id: 9600
   time: '2026-07-11T01:35:32.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1238
+- author: Dizzy-Eevee
+  changes:
+    - type: Tweak
+      message: You can no longer draw blood from IPCs and Sheleg
+  id: 9601
+  time: '2026-07-11T03:52:20.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1224
