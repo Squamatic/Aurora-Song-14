@@ -1949,3 +1949,10 @@ Entries:
   id: 9602
   time: '2026-07-11T04:26:32.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1234
+- author: portfiend, meatsmall
+  changes:
+    - type: Add
+      message: Fairies now have antenna!
+  id: 9603
+  time: '2026-07-11T16:54:30.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1225
