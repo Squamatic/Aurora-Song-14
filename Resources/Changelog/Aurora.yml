@@ -1977,3 +1977,10 @@ Entries:
   id: 9606
   time: '2026-07-12T20:17:36.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1244
+- author: salamanderskies
+  changes:
+    - type: Add
+      message: You can now select your character's blood reagent in the traits menu.
+  id: 9607
+  time: '2026-07-12T20:37:17.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1215
