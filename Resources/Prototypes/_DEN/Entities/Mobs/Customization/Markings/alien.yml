@@ -5,6 +5,9 @@
 - type: marking
   id: AlienAntenna
   bodyPart: HeadSide
+  # markingCategory: HeadSide # Aurora's Song
+  # speciesRestriction: [ Resomi ] # Aurora's Song
+  # invertSpeciesRestriction: true # Aurora's Song
   sprites:
   - sprite: _DEN/Mobs/Customization/Head/alien_markings.rsi
     state: alien_antenna_double
@@ -12,6 +15,9 @@
 - type: marking
   id: AlienAntennaSide
   bodyPart: HeadSide
+  # markingCategory: HeadSide # Aurora's Song
+  # speciesRestriction: [ Resomi ] # Aurora's Song
+  # invertSpeciesRestriction: true # Aurora's Song
   sprites:
   - sprite: _DEN/Mobs/Customization/Head/alien_markings.rsi
     state: alien_antenna_side
@@ -19,6 +25,9 @@
 - type: marking
   id: AlienAntennaSingle
   bodyPart: HeadSide
+  # markingCategory: HeadSide # Aurora's Song
+  # speciesRestriction: [ Resomi ] # Aurora's Song
+  # invertSpeciesRestriction: true # Aurora's Song
   sprites:
   - sprite: _DEN/Mobs/Customization/Head/alien_markings.rsi
     state: alien_antenna_single
@@ -30,7 +39,8 @@
 - type: marking
   id: AlienEyes
   bodyPart: Eyes
-  speciesRestriction: [ Moth, Arachnid, IPC, Vox ] # Aurora Song - removed den species
+  # markingCategory: Face # Aurora's Song
+  speciesRestriction: [ Moth, Arachnid, IPC, Vox ] # Aurora's Song - removed den species
   invertSpeciesRestriction: true
   coloring:
     default:
@@ -43,7 +53,8 @@
 - type: marking
   id: AlienEyesBig
   bodyPart: Eyes
-  speciesRestriction: [ Moth, Arachnid, IPC, Vox ] # Aurora Song - removed den species
+  # markingCategory: Face # Aurora's Song
+  speciesRestriction: [ Moth, Arachnid, IPC, Vox ] # Aurora's Song - removed den species
   invertSpeciesRestriction: true
   coloring:
     default:
@@ -56,7 +67,8 @@
 - type: marking
   id: AlienEyesThree
   bodyPart: Eyes
-  speciesRestriction: [ Moth, Arachnid, IPC, Vox ] # Aurora Song - removed den species
+  # markingCategory: Face # Aurora's Song
+  speciesRestriction: [ Moth, Arachnid, IPC, Vox ] # Aurora's Song - removed den species
   invertSpeciesRestriction: true
   coloring:
     default:
@@ -69,7 +81,8 @@
 - type: marking
   id: AlienEyesWide
   bodyPart: Eyes
-  speciesRestriction: [ Moth, Arachnid, IPC, Vox ] # Aurora Song - removed den species
+  # markingCategory: Face # Aurora's Song
+  speciesRestriction: [ Moth, Arachnid, IPC, Vox ] # Aurora's Song - removed den species
   invertSpeciesRestriction: true
   coloring:
     default:

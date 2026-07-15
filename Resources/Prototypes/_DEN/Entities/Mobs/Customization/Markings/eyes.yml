@@ -1,7 +1,8 @@
 - type: marking
   id: HumanEyesGlow
   bodyPart: Eyes
-  speciesRestriction: [Human , Oni , Harpy , Felinid, IPC, Fairy] # Aurora Song - remove den species, add fairy
+  # markingCategory: Head # Aurora's Song
+  speciesRestriction: [Human , Oni , Harpy , Felinid, IPC, Fairy] # Aurora's Song - remove den species, add fairy
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -12,7 +13,8 @@
 - type: marking
   id: HumanEyesGlowR
   bodyPart: Eyes
-  speciesRestriction: [Human , Oni , Harpy , Felinid, IPC, Fairy] # Aurora Song - remove den species, add fairy
+  # markingCategory: Head # Aurora's Song
+  speciesRestriction: [Human , Oni , Harpy , Felinid, IPC, Fairy] # Aurora's Song - remove den species, add fairy
   forcedColoring: false
   followSkinColor: false
   sprites:
@@ -23,7 +25,8 @@
 - type: marking
   id: HumanEyesGlowL
   bodyPart: Eyes
-  speciesRestriction: [Human , Oni , Harpy , Felinid, IPC, Fairy] # Aurora Song - remove den species, add fairy
+  # markingCategory: Head # Aurora's Song
+  speciesRestriction: [Human , Oni , Harpy , Felinid, IPC, Fairy] # Aurora's Song - remove den species, add fairy
   forcedColoring: false
   followSkinColor: false
   sprites:
