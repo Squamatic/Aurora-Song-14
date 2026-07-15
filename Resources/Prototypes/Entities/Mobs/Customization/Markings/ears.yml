@@ -47,7 +47,7 @@
   id: LongEarsThin
   bodyPart: HeadTop
   forcedColoring: true
-  groupWhitelist: [Human, Oni, Sheleg,Fairy] # Frontier: Oni, Sheleg # Aurora's Song - Fairy
+  groupWhitelist: [Human, Oni, Sheleg, Fairy] # Frontier: Oni, Sheleg # Aurora's Song - Fairy
   sprites:
   - sprite: Mobs/Customization/ears.rsi
     state: long_ears_thin
