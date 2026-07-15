@@ -5,9 +5,6 @@
 - type: marking
   id: AlienAntenna
   bodyPart: HeadSide
-  markingCategory: HeadSide
-  speciesRestriction: [ Resomi ]
-  invertSpeciesRestriction: true
   sprites:
   - sprite: _DEN/Mobs/Customization/Head/alien_markings.rsi
     state: alien_antenna_double
@@ -15,9 +12,6 @@
 - type: marking
   id: AlienAntennaSide
   bodyPart: HeadSide
-  markingCategory: HeadSide
-  speciesRestriction: [ Resomi ]
-  invertSpeciesRestriction: true
   sprites:
   - sprite: _DEN/Mobs/Customization/Head/alien_markings.rsi
     state: alien_antenna_side
@@ -25,9 +19,6 @@
 - type: marking
   id: AlienAntennaSingle
   bodyPart: HeadSide
-  markingCategory: HeadSide
-  speciesRestriction: [ Resomi ]
-  invertSpeciesRestriction: true
   sprites:
   - sprite: _DEN/Mobs/Customization/Head/alien_markings.rsi
     state: alien_antenna_single
@@ -39,8 +30,7 @@
 - type: marking
   id: AlienEyes
   bodyPart: Eyes
-  markingCategory: Face
-  speciesRestriction: [ Moth, Chitinid, Shadowkin, Plasmaman, Arachne, Arachnid, Resomi, IPC, Vox ]
+  speciesRestriction: [ Moth, Arachnid, IPC, Vox ] # Aurora Song - removed den species
   invertSpeciesRestriction: true
   coloring:
     default:
@@ -53,8 +43,7 @@
 - type: marking
   id: AlienEyesBig
   bodyPart: Eyes
-  markingCategory: Face
-  speciesRestriction: [ Moth, Chitinid, Shadowkin, Plasmaman, Arachne, Arachnid, Resomi, IPC, Vox ]
+  speciesRestriction: [ Moth, Arachnid, IPC, Vox ] # Aurora Song - removed den species
   invertSpeciesRestriction: true
   coloring:
     default:
@@ -67,8 +56,7 @@
 - type: marking
   id: AlienEyesThree
   bodyPart: Eyes
-  markingCategory: Face
-  speciesRestriction: [ Moth, Chitinid, Shadowkin, Plasmaman, Arachne, Arachnid, Resomi, IPC, Vox ]
+  speciesRestriction: [ Moth, Arachnid, IPC, Vox ] # Aurora Song - removed den species
   invertSpeciesRestriction: true
   coloring:
     default:
@@ -81,8 +69,7 @@
 - type: marking
   id: AlienEyesWide
   bodyPart: Eyes
-  markingCategory: Face
-  speciesRestriction: [ Moth, Chitinid, Shadowkin, Plasmaman, Arachne, Arachnid, Resomi, IPC, Vox ]
+  speciesRestriction: [ Moth, Arachnid, IPC, Vox ] # Aurora Song - removed den species
   invertSpeciesRestriction: true
   coloring:
     default:
@@ -91,15 +78,3 @@
   sprites:
   - sprite: _DEN/Mobs/Customization/Head/alien_markings.rsi
     state: eyes_alien_wide
-
-# OVERLAYS
-
-- type: marking
-  id: AlienOverlayHead
-  bodyPart: Head
-  markingCategory: Head
-  # Specifically includes "flat-faced" species; not recommended to add this to species with prominent snouts.
-  speciesRestriction: [ Human, Felinid, Canid, Harpy, Oni, Ovinia, Rodentia, Tajaran ]
-  sprites:
-  - sprite: _DEN/Mobs/Customization/Head/alien_markings.rsi
-    state: head
