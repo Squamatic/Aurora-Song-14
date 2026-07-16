@@ -2014,3 +2014,10 @@ Entries:
   id: 9611
   time: '2026-07-14T03:43:40.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1250
+- author: BudaLope
+  changes:
+    - type: Remove
+      message: Powered Tiny Fans removed from flatpack vend
+  id: 9612
+  time: '2026-07-16T06:14:14.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1252
