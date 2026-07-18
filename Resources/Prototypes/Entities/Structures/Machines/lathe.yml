@@ -712,7 +712,7 @@
   # Coyote Start: Biogenerator Buffer System
   - type: BiogeneratorBuffer
     current: 0
-    max: 100
+    max: 200
     regenAmount: 5
     regenInterval: 15 # Wayfarer: 10<15
   # End Coyote
