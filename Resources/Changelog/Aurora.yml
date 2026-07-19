@@ -2067,3 +2067,10 @@ Entries:
   id: 9618
   time: '2026-07-19T03:49:24.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1247
+- author: BudaLope
+  changes:
+    - type: Add
+      message: Jukebox volume slider
+  id: 9619
+  time: '2026-07-19T04:22:29.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1267
