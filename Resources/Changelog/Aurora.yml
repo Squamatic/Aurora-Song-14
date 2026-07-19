@@ -2044,3 +2044,12 @@ Entries:
   id: 9615
   time: '2026-07-19T01:26:23.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1265
+- author: meatsmall
+  changes:
+    - type: Add
+      message: Added alien and glowing eye markings from Den
+    - type: Add
+      message: Fairies get ears
+  id: 9616
+  time: '2026-07-19T01:37:14.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1256
