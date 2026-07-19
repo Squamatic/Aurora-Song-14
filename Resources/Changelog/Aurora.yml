@@ -2037,3 +2037,10 @@ Entries:
   id: 9614
   time: '2026-07-18T18:41:39.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1259
+- author: ZigTag
+  changes:
+    - type: Tweak
+      message: dwarves now use different limbs instead of scaling
+  id: 9615
+  time: '2026-07-19T01:26:23.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1265
