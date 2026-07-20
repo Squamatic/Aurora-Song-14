@@ -2103,3 +2103,10 @@ Entries:
   id: 9622
   time: '2026-07-20T10:34:08.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1272
+- author: Sunburstschitin
+  changes:
+    - type: Add
+      message: Added The Emphasized Speech Trait, Which Makes You Speak Like This.
+  id: 9623
+  time: '2026-07-20T13:13:26.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1257
