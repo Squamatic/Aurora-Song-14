@@ -2117,3 +2117,10 @@ Entries:
   id: 9624
   time: '2026-07-21T10:18:37.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1274
+- author: salamanderskies
+  changes:
+    - type: Tweak
+      message: Canes are now grouped together in the loadouts screen.
+  id: 9625
+  time: '2026-07-22T03:36:22.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1268
