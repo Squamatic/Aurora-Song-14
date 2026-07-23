@@ -2124,3 +2124,12 @@ Entries:
   id: 9625
   time: '2026-07-22T03:36:22.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1268
+- author: Sunburstschitin
+  changes:
+    - type: Add
+      message: >-
+        Added the tinydot and tinyline crayon symbols from Den. HD 4K crayon
+        drawings are the future!
+  id: 9626
+  time: '2026-07-23T08:33:16.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1283
