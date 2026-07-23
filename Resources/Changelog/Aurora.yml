@@ -2133,3 +2133,12 @@ Entries:
   id: 9626
   time: '2026-07-23T08:33:16.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1283
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: >-
+        cameras now copy custom examine onto the photograph instead of taking
+        preferences of picture taker
+  id: 9627
+  time: '2026-07-23T11:48:50.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1281
